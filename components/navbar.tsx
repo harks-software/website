@@ -179,7 +179,7 @@ export function Navbar() {
                 </div>
                 <a
                     href="/donate"
-                    className="my-2 flex cursor-pointer rounded-3xl bg-white p-3 text-xs font-bold transition-all duration-200 hover:bg-zinc-400/60 lg:hidden"
+                    className="my-2 mr-2 flex cursor-pointer rounded-3xl bg-white p-3 text-xs font-bold transition-all duration-200 hover:bg-zinc-400/60 lg:hidden"
                 >
                     DONATE
                     <svg
@@ -302,14 +302,14 @@ export function Navbar() {
                             JOIN THE CREW
                         </label>
                     </Link>
-                    <a href="/contact-us" className="px-3">
+                    <Link href="/contact-us" className="px-3">
                         <label
                             tabIndex={0}
                             className="cursor-pointer whitespace-nowrap pb-2 font-extrabold text-white transition-all duration-200 hover:opacity-60"
                         >
                             CONTACT US
                         </label>
-                    </a>
+                    </Link>
                 </div>
                 <div className="navbar-end hidden w-1/4 font-semibold lg:flex">
                     <a href="https://www.youtube.com/@hussainsark/live">
