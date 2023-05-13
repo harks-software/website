@@ -1,7 +1,7 @@
 
 import { MainLayout } from "@/layouts/main";
 import { montserrat } from "@/utils/fonts";
-import Link from "next/link";
+import Image from "next/image";
 import { Testimonials } from "../components/testimonials";
 export default function Index() {
     return (
@@ -24,9 +24,10 @@ export default function Index() {
           Spark Change Around the Globe
         </h1>
         <div className="py-2">
-          <img
+          <Image
             className="float-right h-40 w-40 pl-2"
             src="/assets/join-the-crew/globe.gif"
+            alt="picture of globe"
           />
           <div className="text-lg font-medium text-[#404040]">
             We want to provide an opportunity for youths all around the world to
