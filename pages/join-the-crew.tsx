@@ -45,7 +45,7 @@ export default function Index() {
           src="https://www.youtube.com/embed/Us-VsOG2gUo"
           title="Join the HARKS Crew!"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
           className="md:mx-4"></iframe>
         <div
           className="mt-4 h-[500px] max-w-[725px] bg-[#404040] p-4 md:mt-0 md:ml-auto md:h-[400px]"
