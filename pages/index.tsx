@@ -345,7 +345,7 @@ export default function Index() {
                                         <h4 className="text-2xl font-semibold text-black sm:text-3xl">
                                             Contact Us
                                         </h4>
-                                        <a href="/contact-us" className="ml-auto">
+                                        <Link href="/contact-us" className="ml-auto">
                                             <button
                                                 className="ml-auto rounded-l-lg bg-[#E7AD36] p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
                                                 style={{
@@ -354,7 +354,7 @@ export default function Index() {
                                             >
                                                 CLICK HERE
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <p className="w-full pt-2 sm:w-3/4">
                                         Got any ideas, feedback or queries? Feel free to reach out
