@@ -3,25 +3,6 @@ import { MainLayout } from "../layouts/main";
 import { montserrat } from "../utils/fonts";
 import DonateComponent from "../components/donate";
 
-const TABS = [
-    {
-        text: "DONATE NOW",
-        divStyle: "bg-cream",
-        textStyle:
-            "bg-[linear-gradient(90deg, #BE1E2D 0%, #E7AD36 96.83%)] bg-clip-text text-transparent",
-    },
-    {
-        text: "UK BANK TRANSFER",
-        divStyle: "bg-mustard",
-        textStyle: "",
-    },
-    {
-        text: "Canada BANK TRANSFER",
-        divStyle: "bg-red.500",
-        textStyle: "",
-    },
-];
-
 export default function Donate() {
     const [tab, setTab] = useState(0);
 
