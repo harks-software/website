@@ -37,6 +37,7 @@ module.exports = {
                 "gold.500": "#D29923",
                 "gold.400": "#ECBE61",
                 "gold.300": "#F7E2B8",
+                mustard: "#E7AD36",
                 cream: "#EBE4D6",
             },
             fontFamily: {
