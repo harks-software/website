@@ -15,7 +15,9 @@ export default function Donate() {
 
     return (
         <MainLayout bottomPadding={false}>
-            <div className={`${montserrat.className} font-bold text-3xl text-center py-24`}>
+            <div
+                className={`${montserrat.className} font-bold text-3xl text-center py-64 bg-cream `}
+            >
                 Thank you for your donation
             </div>
         </MainLayout>
