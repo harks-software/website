@@ -59,7 +59,8 @@ export default function CheckoutForm({ setClientSecret }: ICheckoutFormProps) {
             elements,
             confirmParams: {
                 // Make sure to change this to your payment completion page
-                return_url: window.location.host + "/successful-donation",
+                return_url:
+                    window.location.protocol + "//" + window.location.host + "/successful-donation",
             },
         });
 
