@@ -88,7 +88,7 @@ export default function FixedDonation({ clientSecret, setClientSecret }: IFixedD
                     type="email"
                 />
                 <button
-                    className="shadow-[0_8px_20px_0_rgba(0,0,0,0.2)] rounded-full w-full text-sm bg-black py-3 text-md text-white hover:bg-black transition-all duration-200 ease-linear"
+                    className="shadow-[0_8px_20px_0_rgba(0,0,0,0.2)] rounded-full w-full text-sm bg-black py-3 text-md text-white hover:bg-gray.800 transition-all duration-200 ease-linear"
                     onClick={attemptCustomQuantity}
                 >
                     {!isProcessing ? "Donate" : "Processing"}
