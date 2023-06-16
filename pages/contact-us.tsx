@@ -38,13 +38,13 @@ export default function ContactUs() {
                                     </button>
                                 </Link>
 
-                                <a href="/donate">
+                                <Link href="/donate">
                                     <button
                                         className={`btn w-[253px] border-none bg-gold.500 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl`}
                                     >
                                         Donate Now
                                     </button>
-                                </a>
+                                </Link>
                                 <a href="/whatsapp">
                                     <button
                                         className={`btn w-[253px] border-none bg-gray.800 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-black/95 md:w-[273px] md:text-2xl`}
