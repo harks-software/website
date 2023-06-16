@@ -4,14 +4,15 @@ import { CounterNumericDisplay } from "@/components/home/counter";
 import { ExploreSlideshow } from "@/components/home/explore-slideshow";
 import { ExploreSlideshowMI } from "@/components/home/explore-slideshow-mi";
 import { MainLayout } from "@/layouts/main";
-import { montserrat } from "@/utils/fonts";
+// imported bebasNeue as a sort to preload
+import { montserrat, bebasNeue } from "@/utils/fonts";
 import Link from "next/link";
 import { Testimonials } from "../components/testimonials";
 import { CalendarEvents } from "../components/home/calendar-events";
 
 export default function Index() {
     return (
-        <MainLayout bottomPadding={false}>
+        <MainLayout bottomPadding={false} title="Home">
             <section
                 className="flex min-h-[1000px] w-full flex-col bg-cover bg-center bg-no-repeat pt-36 lg:px-24"
                 style={{ backgroundImage: "url('/assets/home/section-1-background.png')" }}

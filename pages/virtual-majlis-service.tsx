@@ -7,7 +7,7 @@ import { oswald } from "../utils/fonts";
 
 export default function VirtualMajlisService() {
     return (
-        <MainLayout bottomPadding>
+        <MainLayout bottomPadding title="Virtual Majlis Service">
             <>
                 <ParallaxTransparentBackground image="/assets/VMS/karbala-footer.png">
                     <div className="px-4 pt-40 text-center">

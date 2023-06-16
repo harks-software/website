@@ -4,7 +4,7 @@ import { SiApplemusic, SiGooglepodcasts } from "react-icons/si";
 
 export default function Podcast() {
     return (
-        <MainLayout bottomPadding>
+        <MainLayout bottomPadding title="Podcast">
             <>
                 <section className="m-0 flex h-[700px] w-full flex-col items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/assets/podcast/podcast-background.jpg')]">
                     <div className="flex h-full w-full flex-col items-center justify-center bg-black py-14 opacity-80 md:flex-row md:py-0 md:px-24">

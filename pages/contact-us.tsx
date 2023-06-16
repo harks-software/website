@@ -4,7 +4,7 @@ import { montserrat } from "../utils/fonts";
 
 export default function ContactUs() {
     return (
-        <MainLayout bottomPadding={false}>
+        <MainLayout bottomPadding={false} title="Contact Us">
             <div className="bg-beige.300 bg-contain">
                 <div className="bg-[url('/assets/contact/overlay.png')] bg-no-repeat">
                     <div className="mx-auto flex max-w-5xl flex-col gap-6 bg-contain px-4 py-6">
