@@ -11,7 +11,7 @@ export default function Index() {
   >
     <div className="hidden w-[100px] lg:flex">
       <div
-        className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-themeRed.500 via-themeNavOrange.1 to-themeYellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent"
+        className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red.500 via-gold.500 to-yellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent"
       >
         Join The Crew
       </div>
@@ -19,7 +19,7 @@ export default function Index() {
     <div className="flex w-full flex-col">
       <div className="flex flex-col p-6">
         <h1
-          className="mt-6 text-xl font-bold uppercase text-themeNavRed.1 lg:text-2xl"
+          className="mt-6 text-xl font-bold uppercase text-red.500 lg:text-2xl"
         >
           Spark Change Around the Globe
         </h1>
@@ -28,6 +28,8 @@ export default function Index() {
             className="float-right h-40 w-40 pl-2"
             src="/assets/join-the-crew/globe.gif"
             alt="picture of globe"
+            width="9"
+            height="10"
           />
           <div className="text-lg font-medium text-[#404040]">
             We want to provide an opportunity for youths all around the world to
@@ -134,7 +136,7 @@ export default function Index() {
       className="mt-4 text-center text-2xl font-semibold uppercase text-white md:text-3xl"
     >
       Are you willing to <span
-        className="text-3xl font-bold text-themeNavRed.1 md:text-4xl">commit</span
+        className="text-3xl font-bold text-red.500 md:text-4xl">commit</span
       >?
     </div>
 
