@@ -62,7 +62,7 @@ export default function Podcast() {
                                 <rect width="500" height="146.4"></rect>
                             </clipPath>
                         </defs>
-                        <g clip-path="url(#_clipPath_8eNOVcZNUqYICU97fZcYhB9NyFlsTzF6)">
+                        <g clipPath="url(#_clipPath_8eNOVcZNUqYICU97fZcYhB9NyFlsTzF6)">
                             <rect
                                 width="500"
                                 height="146.4"
@@ -91,7 +91,7 @@ export default function Podcast() {
                                 <rect width="375" height="146.4"></rect>
                             </clipPath>
                         </defs>
-                        <g clip-path="url(#_clipPath_GwNCYQO4y3sYZ5EatLzT0uGmVO4iHjTd)">
+                        <g clipPath="url(#_clipPath_GwNCYQO4y3sYZ5EatLzT0uGmVO4iHjTd)">
                             <rect
                                 width="375"
                                 height="146.4"
