@@ -1,0 +1,48 @@
+.videoSwiper .swiper {
+    z-index: 0;
+  }
+  
+  .swiper-slide {
+    width: auto;
+  }
+  
+  
+  .videoSwiper .swiper-pagination-bullet {
+    background-color: white;
+  }
+  
+  .videoSwiper .swiper-button-next, .videoSwiper .swiper-button-prev {
+    --swiper-navigation-size: 32px;
+    position: static;
+    color: white;
+    z-index: 0;
+  }
+  
+  .bigSwiper .swiper-button-next, .bigSwiper .swiper-button-prev {
+    color: white;
+  }
+  
+  .videoSwiper .swiper, .smallSwiper .swiper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .swiper-button-disabled {
+    display: none;
+  }
+  
+  .smallSwiper .swiper-button-next, .smallSwiper .swiper-button-prev {
+    --swiper-navigation-size: 22px;
+    color: white;
+    position: static;
+  }
+  
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .videoSwiper .swiper-button-next, .videoSwiper .swiper-button-prev {
+      display: none;
+    }
+  }
