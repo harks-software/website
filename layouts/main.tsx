@@ -24,7 +24,10 @@ export function MainLayout({
                 <title>{`${title} | Hussain's Ark of Salvation`}</title>
                 <meta name="description" content={description} />
                 <meta name="og:title" content="Hussain's Ark of Salvation" />
-                <meta name="og:image" content="./assets/harks-logo-circle-yellow-bg.png" />
+                <meta
+                    name="og:image"
+                    content="https://hussainsark.com/assets/harks-logo-circle-yellow-bg.png"
+                />
                 <meta name="og:description" content={description} />
 
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
