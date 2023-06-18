@@ -13,6 +13,7 @@ export const oswald = Oswald({
     subsets: ["latin"],
     variable: "--font-oswald",
     display: "block",
+    weight: "500",
 });
 export const bebasNeue = Bebas_Neue({
     subsets: ["latin"],
