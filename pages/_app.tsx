@@ -6,6 +6,8 @@ import "swiper/css/pagination";
 import "@/styles/explore-slideshow.css";
 import "@/styles/testimonials.css";
 import "@/styles/about-us.css";
+import "@/styles/image-slideshow.css";
+import "@/styles/video-slideshow.css";
 
 import { openSans, oswald, archDaughter, bebasNeue, montserrat } from "../utils/fonts";
 
