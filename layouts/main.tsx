@@ -23,7 +23,7 @@ export function MainLayout({
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>{`${title} | Hussain's Ark of Salvation`}</title>
                 <meta name="description" content={description} />
-                <meta name="og:title">Hussain's Ark of Salvation</meta>
+                <meta name="og:title" content="Hussain's Ark of Salvation" />
                 <meta name="og:image" content="./public/assets/harks-logo-circle-yellow-bg.png" />
                 <meta name="og:description" content={description} />
 
