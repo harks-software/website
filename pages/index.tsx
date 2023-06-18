@@ -4,17 +4,10 @@ import { CounterNumericDisplay } from "@/components/home/counter";
 import { ExploreSlideshow } from "@/components/home/explore-slideshow";
 import { ExploreSlideshowMI } from "@/components/home/explore-slideshow-mi";
 import { MainLayout } from "@/layouts/main";
-// imported bebasNeue as a sort to preload
-import { bebasNeue } from "@/utils/fonts";
+import { montserrat } from "@/utils/fonts";
 import Link from "next/link";
 import { Testimonials } from "../components/testimonials";
 import { CalendarEvents } from "../components/home/calendar-events";
-import { Montserrat } from "@next/font/google";
-
-export const montserrat = Montserrat({
-    subsets: ["latin"],
-    variable: "--font-montserrat",
-});
 
 export default function Index() {
     return (
