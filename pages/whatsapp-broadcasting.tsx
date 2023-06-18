@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Bullet } from "../components/bullet";
 import { MainLayout } from "../layouts/main";
 import { oswald } from "../utils/fonts";
@@ -40,7 +41,7 @@ export default function WhatsAppBroadcasting() {
                 </ul>
                 <div className="flex w-full justify-center">
                     <button className="rounded-3xl bg-black font-semibold text-white shadow-buttonShadow transition-all duration-300 hover:bg-green-600 hover:shadow-greenHover">
-                        <a
+                        <Link
                             className="flex h-full w-full px-10 pt-2"
                             href="https://wa.me/message/OCOEPD7LFODMA1"
                         >
@@ -56,7 +57,7 @@ export default function WhatsAppBroadcasting() {
                                     <path d="M17,8a1,1,0,0,0-1,1v5.59L7.71,6.29A1,1,0,0,0,6.29,7.71L14.59,16H9a1,1,0,0,0,0,2h8a1,1,0,0,0,1-1V9A1,1,0,0,0,17,8Z"></path>
                                 </g>
                             </svg>
-                        </a>
+                        </Link>
                     </button>
                 </div>
             </div>
