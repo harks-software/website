@@ -21,12 +21,13 @@ export function MainLayout({
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>{title} | Hussain&apos;s Ark of Salvation</title>
+                <title>{`${title} | Hussain's Ark of Salvation`}</title>
                 <meta name="description" content={description} />
-                <meta name="og:image" content="./assets/harks-logo-circle-yellow-bg.png" />
+                <meta name="og:title">Hussain's Ark of Salvation</meta>
+                <meta name="og:image" content="./public/assets/harks-logo-circle-yellow-bg.png" />
                 <meta name="og:description" content={description} />
 
-                <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+                <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <Navbar />
             <main className={`${bottomPadding ? "pb-24" : ""} pt-20`}>{children}</main>
