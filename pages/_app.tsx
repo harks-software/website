@@ -9,7 +9,7 @@ import "@/styles/about-us.css";
 import "@/styles/image-slideshow.css";
 import "@/styles/video-slideshow.css";
 
-import { openSans, oswald, archDaughter, bebasNeue, montserrat } from "../utils/fonts";
+import { openSans } from "../utils/fonts";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

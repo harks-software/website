@@ -23,10 +23,10 @@ export function MainLayout({
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>{title} | Hussain&apos;s Ark of Salvation</title>
                 <meta name="description" content={description} />
-                <meta name="og:image" content="/assets/harks-logo-circle-yellow-bg.png" />
+                <meta name="og:image" content="./assets/harks-logo-circle-yellow-bg.png" />
                 <meta name="og:description" content={description} />
 
-                <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+                <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
             </Head>
             <Navbar />
             <main className={`${bottomPadding ? "pb-24" : ""} pt-20`}>{children}</main>

@@ -7,18 +7,22 @@ export const openSans = Open_Sans({
 export const montserrat = Montserrat({
     subsets: ["latin"],
     variable: "--font-montserrat",
+    display: "block",
 });
 export const oswald = Oswald({
     subsets: ["latin"],
     variable: "--font-oswald",
+    display: "block",
 });
 export const bebasNeue = Bebas_Neue({
     subsets: ["latin"],
     weight: "400",
     variable: "--font-bebas-neue",
+    display: "block",
 });
 export const archDaughter = Architects_Daughter({
     subsets: ["latin"],
     weight: "400",
     variable: "--font-architects-daughter",
+    display: "block",
 });
