@@ -7,7 +7,7 @@ import "@/styles/explore-slideshow.css";
 import "@/styles/testimonials.css";
 import "@/styles/about-us.css";
 
-import { openSans } from "../utils/fonts";
+import { openSans, oswald, archDaughter, bebasNeue, montserrat } from "../utils/fonts";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -417,39 +417,39 @@ export default function Index() {
                     <CalendarEvents
                         data={[
                             {
+                                dayNumber: 23,
+                                suffix: "rd",
+                                day: "Friday",
+                                title: "Friday Inspiration",
+                                month: "JUN",
+                            },
+                            {
+                                dayNumber: 25,
+                                suffix: "th",
+                                day: "Sunday",
+                                title: "Sunday Quiz",
+                                month: "JUN",
+                            },
+                            {
+                                dayNumber: 30,
+                                suffix: "th",
+                                day: "Friday",
+                                title: "Friday Inspiration",
+                                month: "JUN",
+                            },
+                            {
+                                dayNumber: 2,
+                                suffix: "nd",
+                                day: "Sunday",
+                                title: "Sunday Quiz",
+                                month: "JUL",
+                            },
+                            {
                                 dayNumber: 7,
                                 suffix: "th",
                                 day: "Friday",
                                 title: "Friday Inspiration",
-                                month: "APR",
-                            },
-                            {
-                                dayNumber: 9,
-                                suffix: "th",
-                                day: "Sunday",
-                                title: "Sunday Quiz",
-                                month: "APR",
-                            },
-                            {
-                                dayNumber: 14,
-                                suffix: "th",
-                                day: "Friday",
-                                title: "Friday Inspiration",
-                                month: "APR",
-                            },
-                            {
-                                dayNumber: 16,
-                                suffix: "th",
-                                day: "Sunday",
-                                title: "Sunday Quiz",
-                                month: "APR",
-                            },
-                            {
-                                dayNumber: 21,
-                                suffix: "st",
-                                day: "Friday",
-                                title: "Friday Inspiration",
-                                month: "APR",
+                                month: "JUL",
                             },
                         ]}
                     />

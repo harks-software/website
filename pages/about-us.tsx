@@ -23,13 +23,13 @@ export default function Index() {
                             . . .
                         </p>
                         <p className="mt-3 px-3 text-center text-lg font-bold uppercase sm:max-w-[70%] md:mt-5 md:text-4xl md:leading-[50px] lg:max-w-[80%]">
-                            <span className="text-gray-800">&rdquo;Verily </span>
-                            <span className="text-red-500">Hussain </span>
+                            <span className="text-gray-800">&ldquo;Verily </span>
+                            <span className="text-red.500">Hussain </span>
                             <span className="text-gray-800">is the shining </span>
-                            <span className="text-[#D29923]">light of guidance </span>
+                            <span className="text-gold.500">light of guidance </span>
                             <span className="text-gray-800">and the </span>
-                            <span className="text-red-500">ark of salvation</span>
-                            <span className="text-gray-800">.&ldquo;</span>
+                            <span className="text-red.500">ark of salvation</span>
+                            <span className="text-gray-800">.&rdquo;</span>
                         </p>
                         <p className="mt-4 mb-8 border-2 border-[#535353] py-1 px-2 text-center text-xs font-bold text-[#BA8415] md:mt-8 md:text-lg">
                             Prophet Muhammad (PBUH)
