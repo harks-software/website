@@ -17,6 +17,7 @@
     "@stripe/stripe-js": "^1.53.0",
     "cors": "^2.8.5",
     "daisyui": "^2.50.2",
+    "dayjs": "^1.11.8",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
