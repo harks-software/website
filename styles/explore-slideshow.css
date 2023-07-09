@@ -1,30 +1,30 @@
 .exploreSwiper .swiper {
-    z-index: 0;
+  z-index: 0;
 }
 
 .exploreSwiper .swiper-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .exploreSwiper .swiper-slide {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .exploreSwiper .swiper-pagination-bullet {
-    background-color: white;
+  background-color: white;
 }
 
 .exploreSwiper .swiper-button-next,
 .exploreSwiper .swiper-button-prev {
-    --swiper-navigation-size: 32px;
-    color: white;
-    z-index: 1000;
+  --swiper-navigation-size: 32px;
+  color: white;
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 640px) {
-    .exploreSwiper .swiper-button-next,
-    .exploreSwiper .swiper-button-prev {
-        display: none;
-    }
+  .exploreSwiper .swiper-button-next,
+  .exploreSwiper .swiper-button-prev {
+    display: none;
+  }
 }
