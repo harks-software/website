@@ -256,9 +256,6 @@ export function Navbar() {
                                 <Link href="/youth-day">Youth Day</Link>
                             </li>
                             <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
-                                <Link href="/podcast">The HARKS Podcast</Link>
-                            </li>
-                            <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                                 <Link href="/majlis-shorts">Majlis Shorts</Link>
                             </li>
                         </ul>
