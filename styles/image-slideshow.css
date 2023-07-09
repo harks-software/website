@@ -1,35 +1,33 @@
 .swiper {
-    z-index: 0;
-  }
-  
-  .swiper-slide {
-    width: auto;
-  }
-  
-  .imageSwiper .swiper-button-next, .imageSwiper .swiper-button-prev {
-    --swiper-navigation-size: 22px;
-    background-color: rgb(185, 28, 28);
-    color: white;
-    border-radius: 50%;
-    width: var(--swiper-navigation-size);
-    padding: 20px;
-  }
-  
-  .imageSwiper .image-cover {
-    background: linear-gradient(to top,
-            transparent 50%,
-            rgba(0, 0, 0, 0.7) 50%);
-    background-size: 100% 200%;
-    background-position: 0 -100%;
-    transition: background-position .3s ease-out;
-  }
-  
-  .swiper-button-disabled {
-    display: none;
-  }
-  
-  .imageSwiper .image-cover:hover, .imageSwiper .image-cover:active {
-    background-position: 0 0;
-  }
-  
-  
+  z-index: 0;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.imageSwiper .swiper-button-next,
+.imageSwiper .swiper-button-prev {
+  --swiper-navigation-size: 22px;
+  background-color: rgb(185, 28, 28);
+  color: white;
+  border-radius: 50%;
+  width: var(--swiper-navigation-size);
+  padding: 20px;
+}
+
+.imageSwiper .image-cover {
+  background: linear-gradient(to top, transparent 50%, rgba(0, 0, 0, 0.7) 50%);
+  background-size: 100% 200%;
+  background-position: 0 -100%;
+  transition: background-position 0.3s ease-out;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.imageSwiper .image-cover:hover,
+.imageSwiper .image-cover:active {
+  background-position: 0 0;
+}

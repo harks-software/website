@@ -1,12 +1,12 @@
 .testimonials {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .testimonials .swiper-wrapper {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .testimonials .swiper-slide {
-    width: 100% !important;
+  width: 100% !important;
 }
