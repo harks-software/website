@@ -40,52 +40,51 @@ export function Footer() {
                             Explore
                         </span>
                         <div className="flex gap-4">
-                            <div className="grid grid-cols-4 gap-4">
+                            <div className="grid grid-cols-4 gap-4 text-sm">
                                 <div className="flex flex-col gap-2">
                                     <Link href="/" className="link-hover link uppercase">
                                         Home
                                     </Link>
-                                    {/* <Link href="/collabs" className="link-hover link uppercase">Collabs</Link> */}
+                                    <Link
+                                        href="/join-the-crew"
+                                        className="link-hover link uppercase"
+                                    >
+                                        Join The Crew
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <Link href="/about-us" className="link-hover link uppercase">
                                         About Us
                                     </Link>
                                     <Link
-                                        href="/join-the-crew"
+                                        href="/contact-us"
                                         className="link-hover link uppercase"
                                     >
-                                        Join Us
+                                        Contact Us
                                     </Link>
                                 </div>
                                 <div className="flex flex-col gap-1">
-                                    <a className="uppercase">Initiatives</a>
-                                    {/* <Link href="/monthly-initatives" className="text-xs italic" href=""
-                >Monthly Initiatives</Link
-              > */}
+                                    <p className="uppercase">Initiatives</p>
                                     <Link
                                         href="/youth-day"
                                         className="link-hover link text-xs italic"
                                     >
                                         Youth Day
                                     </Link>
+                                    <Link
+                                        href="/majlis-shorts"
+                                        className="link-hover link text-xs italic"
+                                    >
+                                        Majlis Shorts
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-1">
-                                    <a className="uppercase">Digital Hub</a>
+                                    <p className="uppercase">Digital Hub</p>
                                     <Link
-                                        href="/podcast"
+                                        href="/virtual-majlis-service"
                                         className="link-hover link text-xs italic"
                                     >
-                                        The HARKS Podcast
-                                    </Link>
-                                    {/* <!-- <Link href="/monthly-initiatives" className="text-xs italic" href=""
-                >Monthly Initiatives</Link
-              > --> */}
-                                    <Link
-                                        href="youth-day"
-                                        className="link-hover link text-xs italic"
-                                    >
-                                        HARKS Youth Day
+                                        Virtual Majlis Service
                                     </Link>
                                 </div>
                             </div>
@@ -95,7 +94,7 @@ export function Footer() {
                         <span className="hidden pb-2 font-bold uppercase text-white lg:block">
                             Connect
                         </span>
-                        <div className="flex gap-2 lg:w-full lg:gap-4">
+                        <div className="flex gap-2 lg:w-full lg:gap-4 text-sm">
                             <div className="flex flex-col gap-2 text-center">
                                 <Link
                                     href="https://instagram.com/hussainsark"
