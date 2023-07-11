@@ -68,7 +68,7 @@ export const ChangingWordsLarge = ({ className }: Props) => {
       content: t,
       fontSize: Math.floor(Math.random() * 100 + 30),
       opacity: parseFloat(Math.random().toFixed(2)),
-    }))
+    })),
   );
 
   useEffect(() => {
@@ -76,7 +76,7 @@ export const ChangingWordsLarge = ({ className }: Props) => {
       const indexToReplace = Math.floor(Math.random() * show.length);
       const copied = [...show];
       let newTextIndex = Math.floor(
-        Math.random() * text.length
+        Math.random() * text.length,
       ) as keyof typeof text;
       let usedText = copied.find((t) => t.content === text[newTextIndex]);
 
@@ -127,7 +127,7 @@ export const ChangingWordsSmall = ({ className }: Props) => {
       content: t,
       fontSize: Math.floor(Math.random() * 60 + 10),
       opacity: parseFloat(Math.random().toFixed(2)),
-    }))
+    })),
   );
 
   useEffect(() => {
@@ -135,7 +135,7 @@ export const ChangingWordsSmall = ({ className }: Props) => {
       const indexToReplace = Math.floor(Math.random() * show.length);
       const copied = [...show];
       let newTextIndex = Math.floor(
-        Math.random() * text.length
+        Math.random() * text.length,
       ) as keyof typeof text;
       let usedText = copied.find((t) => t.content === text[newTextIndex]);
 
