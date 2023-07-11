@@ -11,8 +11,13 @@ import { montserrat } from "@/utils/fonts";
 import Link from "next/link";
 import { Testimonials } from "../components/testimonials";
 import { CalendarEvents } from "../components/home/calendar-events";
+import { calendar_v3, google } from "googleapis";
 
-export default function Index() {
+export default function Index({
+  events,
+}: {
+  events: calendar_v3.Schema$Event[];
+}) {
   return (
     <MainLayout bottomPadding={false} title="Home">
       <section
@@ -422,45 +427,7 @@ export default function Index() {
             </svg>
           </div>
 
-          <CalendarEvents
-            data={[
-              {
-                dayNumber: 23,
-                suffix: "rd",
-                day: "Friday",
-                title: "Friday Inspiration",
-                month: "JUN",
-              },
-              {
-                dayNumber: 25,
-                suffix: "th",
-                day: "Sunday",
-                title: "Sunday Quiz",
-                month: "JUN",
-              },
-              {
-                dayNumber: 30,
-                suffix: "th",
-                day: "Friday",
-                title: "Friday Inspiration",
-                month: "JUN",
-              },
-              {
-                dayNumber: 2,
-                suffix: "nd",
-                day: "Sunday",
-                title: "Sunday Quiz",
-                month: "JUL",
-              },
-              {
-                dayNumber: 7,
-                suffix: "th",
-                day: "Friday",
-                title: "Friday Inspiration",
-                month: "JUL",
-              },
-            ]}
-          />
+          <CalendarEvents data={events} />
         </div>
       </section>
       <p className="w-full bg-beige.300 text-center text-2xl font-semibold text-[rgba(0,0,0,0.5)] md:text-4xl">
@@ -486,4 +453,21 @@ export default function Index() {
       </section>
     </MainLayout>
   );
+}
+
+export async function getServerSideProps() {
+  const calendar = google.calendar({
+    version: "v3",
+    auth: process.env.GOOGLE_API_KEY,
+  });
+  const res = await calendar.events.list({
+    calendarId:
+      "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
+    timeMin: new Date().toISOString(),
+    maxResults: 5,
+    singleEvents: true,
+    orderBy: "startTime",
+  });
+  const events = res.data.items;
+  return { props: { events } };
 }
