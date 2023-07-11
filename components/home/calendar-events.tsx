@@ -1,13 +1,10 @@
 import dayjs from "dayjs";
 import { calendar_v3 } from "googleapis";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import { useEffect } from "react";
+
+dayjs.extend(advancedFormat);
 
 export function CalendarEvents({ data }: { data: calendar_v3.Schema$Event[] }) {
-  useEffect(() => {
-    dayjs.extend(advancedFormat);
-  }, []);
-
   return (
     <div className="flex w-[300px] flex-col py-4 sm:w-[450px] lg:w-full">
       {data.map((event, i) => {
