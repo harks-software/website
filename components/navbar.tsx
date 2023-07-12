@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <div className="sticky top-0 left-0 z-50 w-full">
+    <div className="sticky top-0 left-0 z-40 w-full">
       <div
         className="flow-root w-full p-2 pr-6 md:pr-8 drop-shadow-xl"
         style={{
