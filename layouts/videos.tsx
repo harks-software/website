@@ -30,7 +30,7 @@ interface VideosLayoutProps {
 
 export function VideosLayout(props: VideosLayoutProps) {
   return (
-    <MainLayout title={props.heading} bottomPadding={props.bottomPadding}>
+    <MainLayout title={props.heading}>
       <div
         className="block min-w-full py-5 text-white md:py-10"
         style={props.backgroundStyle}
@@ -81,7 +81,7 @@ export function VideosLayout(props: VideosLayoutProps) {
         <ImageSlideshow images={props.images} />
       </div>
       <div
-        className={`mx-auto mt-8 w-full max-w-2xl px-3 md:mt-12 ${
+        className={`mx-auto my-8 w-full max-w-2xl px-3 md:my-12 ${
           props.quote ? "" : "hidden"
         }`}
       >

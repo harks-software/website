@@ -145,25 +145,25 @@ export default function Index() {
           src="https://docs.google.com/forms/d/e/1FAIpQLSducX3xxKefIeh5W5bBMm9AIdDkcKsd2phNL7D0sDpfzEZepQ/viewform?embedded=true"
           className="mx-auto mt-10 mb-4 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
         ></iframe>
-        <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
-          <Testimonials
-            list={[
-              {
-                content:
-                  "HARKS is a youth driven initiative. They strive for excellence in what they do. They serve the cause of the AhlulBayt (A.S) by debunking myths and sharing inspirations digitally. I encourage our youth to join the crew as they strive to empower the leaders of tomorrow.",
-                quoted: "Sheikh Nuru Muhammad",
-                img: "sheikh-nuru.jpg",
-              },
-              {
-                content:
-                  "HARKS is an amazing initiative that inspires and attracts the youth of our community towards the path of Allah (swt) and the Ahlul Bayt (as). Their events are impactful and innovative and we look forward to seeing them continue to grow and develop the future of our community.",
-                quoted: "Servants of Zahra",
-                img: "servents-of-zahra.jpg",
-              },
-            ]}
-          />
-        </section>
       </div>
+      <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
+        <Testimonials
+          list={[
+            {
+              content:
+                "HARKS is a youth driven initiative. They strive for excellence in what they do. They serve the cause of the AhlulBayt (A.S) by debunking myths and sharing inspirations digitally. I encourage our youth to join the crew as they strive to empower the leaders of tomorrow.",
+              quoted: "Sheikh Nuru Muhammad",
+              img: "sheikh-nuru.jpg",
+            },
+            {
+              content:
+                "HARKS is an amazing initiative that inspires and attracts the youth of our community towards the path of Allah (swt) and the Ahlul Bayt (as). Their events are impactful and innovative and we look forward to seeing them continue to grow and develop the future of our community.",
+              quoted: "Servants of Zahra",
+              img: "servents-of-zahra.jpg",
+            },
+          ]}
+        />
+      </section>
     </MainLayout>
   );
 }
