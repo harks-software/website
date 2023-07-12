@@ -1,22 +1,22 @@
 .gradient-text-vertical {
-    background: -webkit-linear-gradient(90deg, #e7ad36 0%, #be1e2d 96.83%);
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(90deg, #e7ad36 0%, #be1e2d 96.83%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .gradient-text-horizontal {
-    background: linear-gradient(to left, #e7ad36 0%, #be1e2d 96.83%);
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to left, #e7ad36 0%, #be1e2d 96.83%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-horizontal-reversed {
-    background: linear-gradient(to left, #be1e2d 0%, #e7ad36 96.83%);
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to left, #be1e2d 0%, #e7ad36 96.83%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
