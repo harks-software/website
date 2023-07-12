@@ -4,7 +4,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Image from "next/image";
-import { openSans } from "@/utils/fonts";
 // Import Icons
 import {
   ArrowLeftIcon,
@@ -67,9 +66,7 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
   return (
     <div>
       <Modal isOpen={fullScreen} style={modalStyle}>
-        <div
-          className={`z-50 w-full overflow-hidden sm:hidden ${openSans.className}`}
-        >
+        <div className={`z-[100001] w-full overflow-hidden sm:hidden`}>
           {/* Fullscreen content for mobile devices */}
           <div className="mobile-header flex items-center p-3 text-xl">
             {/* Mobile left arrow button for exiting fullscreen. */}
@@ -132,9 +129,7 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
           </ul>
         </div>
         {/* Fullscreen content for non-mobile view. */}
-        <div
-          className={`hidden h-full w-full bg-black text-white sm:block ${openSans.className}`}
-        >
+        <div className={`hidden h-full w-full bg-black text-white sm:block`}>
           {/* Title of the slideshow and "x" button to exit fullscreen. */}
           <div className="flex w-full p-5">
             <h2>{title}</h2>
@@ -201,7 +196,7 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
                   >
                     <div
                       className={"group-active:flex sm:group-hover:flex flex-col items-center justify-center w-full h-full".concat(
-                        activeIndex === i ? " flex" : " cursor-pointer hidden",
+                        activeIndex === i ? " flex" : " cursor-pointer hidden"
                       )}
                       style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
                     >

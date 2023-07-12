@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { MainLayout } from "../layouts/main";
-import { montserrat } from "../utils/fonts";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function ContactUs() {
@@ -34,7 +33,7 @@ export default function ContactUs() {
               <div className="my-auto flex h-fit flex-col items-center justify-center gap-8 border-slate-500 py-8 md:ml-4 md:w-auto md:items-start md:border-l-2 md:pl-8">
                 <Link href="/join-the-crew">
                   <button
-                    className={`btn w-[253px] border-none bg-red.500 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-red.700 md:w-[273px] md:text-2xl`}
+                    className={`btn w-[253px] border-none bg-red.500 text-xl text-white drop-shadow-md hover:bg-red.700 md:w-[273px] md:text-2xl`}
                   >
                     Join the Crew
                   </button>
@@ -42,14 +41,14 @@ export default function ContactUs() {
 
                 <Link href="/donate">
                   <button
-                    className={`btn w-[253px] border-none bg-gold.500 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl`}
+                    className={`btn w-[253px] border-none bg-gold.500 text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl`}
                   >
                     Donate Now
                   </button>
                 </Link>
                 <a href="/whatsapp">
                   <button
-                    className={`btn w-[253px] border-none bg-gray.800 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-black/95 md:w-[273px] md:text-2xl`}
+                    className={`btn w-[253px] border-none bg-gray.800 text-xl text-white drop-shadow-md hover:bg-black/95 md:w-[273px] md:text-2xl`}
                   >
                     Stay In Touch
                   </button>

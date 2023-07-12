@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { montserrat } from "../utils/fonts";
 
 export function Footer() {
   return (
     <footer
-      className={`flex flex-col place-items-center bg-gradient-to-r from-[#be1e2d] to-[#e7ad36] ${montserrat.className} text-white`}
+      className={`flex flex-col place-items-center bg-gradient-to-r from-[#be1e2d] to-[#e7ad36] text-white`}
     >
       <div className="mt-2 w-full bg-white py-2 text-black">
         <p className="text-center text-xs font-bold uppercase lg:text-base">

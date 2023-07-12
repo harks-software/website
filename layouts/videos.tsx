@@ -7,7 +7,6 @@ import { VideoSlideshow } from "@/components/video-slideshow";
 
 import Image from "next/image";
 
-import { oswald } from "@/utils/fonts";
 import { ReactElement } from "react";
 
 interface VideosLayoutProps {
@@ -35,12 +34,12 @@ export function VideosLayout(props: VideosLayoutProps) {
         style={props.backgroundStyle}
       >
         <h2
-          className={`mt-10 px-5 ${oswald.className} text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base`}
+          className={`mt-10 px-5 text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base`}
         >
           {props.category.toUpperCase()}
         </h2>
         <h2 className="mt-3 px-5 text-xl font-thin text-white md:mt-5 md:px-10 md:text-4xl">
-          <strong className={`${oswald.className}`}>{props.heading}</strong> on
+          <strong>{props.heading}</strong> on
           <Image
             className="ml-2 inline-block h-[1.75rem] w-[1.75rem] md:h-[2.5rem] md:w-[2.5rem]"
             src={require("/public/assets/youtube.png")}

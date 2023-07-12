@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { montserrat } from "../../utils/fonts";
 
 export type Item = {
   image: string;
@@ -36,7 +35,7 @@ export const PreviousWork = ({ items }: Props) => {
         {items.map((item, i) => (
           <SwiperSlide key={`previous_work_${i}`}>
             <div
-              className={`group ${montserrat.className} h-96 !bg-cover !bg-no-repeat !bg-center`}
+              className={`group h-96 !bg-cover !bg-no-repeat !bg-center`}
               style={{
                 background: `url('${item.image}')`,
               }}

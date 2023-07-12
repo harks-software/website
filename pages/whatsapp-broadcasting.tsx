@@ -1,15 +1,12 @@
 import Link from "next/link";
 import { Bullet } from "../components/bullet";
 import { MainLayout } from "../layouts/main";
-import { oswald } from "../utils/fonts";
 
 export default function WhatsAppBroadcasting() {
   return (
     <MainLayout title="WhatsApp Broadcasting">
       <div className="py-32 flex flex-col gap-8">
-        <h1
-          className={`text-center ${oswald.className} text-3xl text-gray-600`}
-        >
+        <h1 className="text-center text-3xl text-gray-600">
           Whatsapp Broadcasting
         </h1>
         <div className="mx-auto my-0 w-full max-w-5xl rounded-xl px-5 py-10 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)]">

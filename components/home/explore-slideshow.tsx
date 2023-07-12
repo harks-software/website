@@ -54,7 +54,7 @@ export const ExploreSlideshow = ({ items }: Props) => {
               ></div>
               {/* Item title and description */}
               <div
-                className="mt-5 h-[198px] cursor-pointer px-2 text-center font-montserrat text-white"
+                className="mt-5 h-[198px] cursor-pointer px-2 text-center text-white"
                 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 <h1 className="text-lg font-bold">{item.title}</h1>

@@ -1,5 +1,4 @@
 import { MainLayout } from "@/layouts/main";
-import { montserrat } from "@/utils/fonts";
 import Image from "next/image";
 import { Testimonials } from "../components/testimonials";
 
@@ -7,7 +6,7 @@ export default function Index() {
   return (
     <MainLayout title="Join the crew">
       <div
-        className={`flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4 ${montserrat.className}`}
+        className={`flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4`}
       >
         <div className="hidden w-[100px] lg:flex">
           <div className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red.500 via-gold.500 to-yellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent">
@@ -66,7 +65,7 @@ export default function Index() {
       </div>
 
       <div
-        className={`flex w-full flex-col truncate bg-beige.300 py-8 pt-6 ${montserrat.className} text-lg font-bold uppercase text-[#28282833] lg:hidden`}
+        className={`flex w-full flex-col truncate bg-beige.300 py-8 pt-6 text-lg font-bold uppercase text-[#28282833] lg:hidden`}
       >
         <div className="mb-3 select-none whitespace-nowrap">
           Planner • Social Media • islamic researcher • streamer • graphic
@@ -91,7 +90,7 @@ export default function Index() {
       </div>
 
       <div
-        className={`hidden w-full flex-col truncate bg-beige.300 py-8 ${montserrat.className} text-lg font-bold uppercase text-[#28282833] lg:flex lg:text-2xl`}
+        className={`hidden w-full flex-col truncate bg-beige.300 py-8 text-lg font-bold uppercase text-[#28282833] lg:flex lg:text-2xl`}
       >
         <div className="mb-3 select-none whitespace-nowrap">
           Planner • Social Media • islamic researcher • streamer • graphic
@@ -116,7 +115,7 @@ export default function Index() {
       </div>
 
       <div
-        className={`-mt-9 flex w-full flex-col p-4 pt-10 ${montserrat.className} lg:mt-0`}
+        className={`-mt-9 flex w-full flex-col p-4 pt-10 lg:mt-0`}
         style={{
           backgroundImage:
             "linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0.8) 100%)",
