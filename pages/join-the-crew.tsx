@@ -23,9 +23,7 @@ export default function Index() {
               <Image
                 className="float-right h-40 w-40 pl-2"
                 src="/assets/join-the-crew/globe.gif"
-                alt="picture of globe"
-                width="9"
-                height="10"
+                alt=""
               />
               <div className="text-lg font-medium text-[#404040]">
                 We want to provide an opportunity for youths all around the
