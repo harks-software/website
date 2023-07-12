@@ -20,7 +20,7 @@ export default function Donate() {
   const [tab, setTab] = useState(0);
 
   return (
-    <MainLayout bottomPadding={false} title="Donate">
+    <MainLayout title="Donate">
       <PreviousWork items={PREVIOUS_WORK_IMAGES} />
       <div className="tabs -mt-12">
         <a

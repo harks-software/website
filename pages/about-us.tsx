@@ -5,7 +5,7 @@ import { montserrat, archDaughter } from "@/utils/fonts";
 
 export default function AboutUs() {
   return (
-    <MainLayout bottomPadding={false} title="About Us">
+    <MainLayout title="About Us">
       <div className={`w-full bg-cream ${montserrat.className}`}>
         <p className="mx-auto w-full px-3 py-8 text-center text-xs font-semibold text-gray-800 md:max-w-[80%] md:pt-10 md:text-xl">
           Learn more about us and the scope of our mission in strengthening our

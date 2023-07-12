@@ -30,7 +30,7 @@ export default function Index({
   events: calendar_v3.Schema$Event[];
 }) {
   return (
-    <MainLayout bottomPadding={false} title="Home">
+    <MainLayout title="Home">
       <section
         className="flex min-h-[1000px] w-full flex-col bg-cover bg-center bg-no-repeat pt-36 lg:px-24"
         style={{

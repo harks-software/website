@@ -5,7 +5,7 @@ import { Testimonials } from "../components/testimonials";
 
 export default function Index() {
   return (
-    <MainLayout bottomPadding={false} title="Join the crew">
+    <MainLayout title="Join the crew">
       <div
         className={`flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4 ${montserrat.className}`}
       >

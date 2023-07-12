@@ -12,7 +12,6 @@ import { ReactElement } from "react";
 
 interface VideosLayoutProps {
   children?: ReactElement | ReactElement[];
-  bottomPadding?: boolean;
   category: string;
   heading: string;
   backgroundStyle: Object;

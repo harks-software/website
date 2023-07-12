@@ -11,7 +11,7 @@ const PREVIOUS_WORK_IMAGES = [
 
 export default function SuccessfulDonation() {
   return (
-    <MainLayout bottomPadding={false} title="Thank you">
+    <MainLayout title="Thank you">
       <div
         className={`${montserrat.className} text-2xl font-bold text-center pt-24 bg-cream `}
       >

@@ -5,7 +5,6 @@ import Head from "next/head";
 
 interface MainLayoutProps {
   children: ReactElement | ReactElement[];
-  bottomPadding?: boolean;
   title: string;
   description?: string;
 }

@@ -47,7 +47,6 @@ const videos = [
 export default function YouthDay() {
   return (
     <VideosLayout
-      bottomPadding={false}
       category="Community"
       heading="Annual Youth Day"
       backgroundStyle={{
