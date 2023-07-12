@@ -132,7 +132,7 @@ export function Navbar() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                stroke-width="3"
+                strokeWidth="3"
                 stroke="white"
                 className="w-612 float-right m-2 h-8"
               >
