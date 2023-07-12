@@ -45,7 +45,7 @@ export default function DonateComponent() {
   return (
     <div className="z-30">
       {success && clientSecret == "" && (
-        <div className="items-center bg-green-100 text-black font-bold px-4 py-3 mt-4">
+        <div className="mt-4 items-center bg-green-100 px-4 py-3 font-bold text-black">
           Thank you for your donation!
         </div>
       )}

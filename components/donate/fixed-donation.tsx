@@ -54,7 +54,7 @@ export default function FixedDonation({
     <div className="bottom-0 left-0 sm:w-[350px] md:w-[600px]">
       <div className="flex flex-col gap-4">
         {message && (
-          <div className="items-center bg-red-100 text-black text-sm font-bold px-4 py-3">
+          <div className="items-center bg-red-100 px-4 py-3 text-sm font-bold text-black">
             {message}
           </div>
         )}
@@ -64,7 +64,7 @@ export default function FixedDonation({
             <button
               className={`border hover:bg-gray-200 ${
                 amount === num.toString() ? "bg-gray-200" : "bg-white"
-              } rounded-md border-gray-400 text-center w-full py-1`}
+              } w-full rounded-md border-gray-400 py-1 text-center`}
               key={num}
               onClick={() => setAmount(num.toString())}
             >
@@ -74,25 +74,25 @@ export default function FixedDonation({
         </div>
         <div className="flex">
           <input
-            className="order-2 w-full py-2 pr-2 rounded-r-md rounded-l-none m-0 border-2 border-l-0  bg-gray-200 border-black peer focus:bg-transparent"
+            className="peer order-2 m-0 w-full rounded-r-md rounded-l-none border-2 border-l-0 border-black  bg-gray-200 py-2 pr-2 focus:bg-transparent"
             placeholder="Amount"
             value={amount}
             onChange={(event) => setAmount(event.target.value)}
             type="text"
           />
-          <p className="order-1 py-2 px-3 rounded-l-md border-r-0 border-2 bg-gray-200 border-black peer-focus:bg-transparent">
+          <p className="order-1 rounded-l-md border-2 border-r-0 border-black bg-gray-200 py-2 px-3 peer-focus:bg-transparent">
             {currencyCodeToSymbol(currency)}
           </p>
         </div>
         <input
-          className="w-full py-2 px-2 rounded-md border-2  bg-gray-200 border-black"
+          className="w-full rounded-md border-2 border-black bg-gray-200  py-2 px-2"
           placeholder="Email Address"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           type="email"
         />
         <button
-          className="shadow-[0_8px_20px_0_rgba(0,0,0,0.2)] rounded-full w-full text-sm bg-black py-3 text-md text-white hover:bg-gray.800 transition-all duration-200 ease-linear"
+          className="text-md w-full rounded-full bg-black py-3 text-sm text-white shadow-[0_8px_20px_0_rgba(0,0,0,0.2)] transition-all duration-200 ease-linear hover:bg-gray.800"
           onClick={attemptCustomQuantity}
         >
           {!isProcessing ? "Donate" : "Processing"}

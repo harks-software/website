@@ -93,7 +93,7 @@ export default function CheckoutForm({ setClientSecret }: ICheckoutFormProps) {
         className="checkout-form flex flex-col gap-4"
       >
         {message && (
-          <div className="items-center bg-red-100 text-black text-sm font-bold px-4 py-3">
+          <div className="items-center bg-red-100 px-4 py-3 text-sm font-bold text-black">
             {message}
           </div>
         )}

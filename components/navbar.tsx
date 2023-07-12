@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <div className="sticky top-0 left-0 z-40 w-full">
       <div
-        className="flow-root w-full p-2 pr-6 md:pr-8 drop-shadow-xl"
+        className="flow-root w-full p-2 pr-6 drop-shadow-xl md:pr-8"
         style={{
           backgroundImage: "linear-gradient(0deg, #1A1A1A, #1A1A1A)",
         }}
@@ -369,7 +369,7 @@ export function Navbar() {
           </a>
           <Link
             href="/donate"
-            className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white py-2 px-4 font-bold shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs uppercase"
+            className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white py-2 px-4 font-bold uppercase shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs"
           >
             Donate
             <svg
