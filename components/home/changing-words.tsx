@@ -167,7 +167,7 @@ export const ChangingWordsSmall = ({ className }: Props) => {
 
   return (
     <div
-      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className} ${bebasNeue.className}}`}
+      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className} ${bebasNeue.className}`}
     >
       {show.map((textObject, i) => {
         return (

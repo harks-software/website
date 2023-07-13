@@ -368,18 +368,21 @@ export default function Index({
 }
 
 export async function getServerSideProps() {
-  const calendar = google.calendar({
-    version: "v3",
-    auth: process.env.GOOGLE_API_KEY,
-  });
-  const res = await calendar.events.list({
-    calendarId:
-      "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
-    timeMin: new Date().toISOString(),
-    maxResults: 5,
-    singleEvents: true,
-    orderBy: "startTime",
-  });
-  const events = res.data.items;
+  let events: any[] | undefined = [];
+  if (process.env.GOOGLE_API_KEY) {
+    const calendar = google.calendar({
+      version: "v3",
+      auth: process.env.GOOGLE_API_KEY,
+    });
+    const res = await calendar.events.list({
+      calendarId:
+        "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
+      timeMin: new Date().toISOString(),
+      maxResults: 5,
+      singleEvents: true,
+      orderBy: "startTime",
+    });
+    events = res.data.items;
+  }
   return { props: { events } };
 }
