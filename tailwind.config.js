@@ -39,6 +39,10 @@ module.exports = {
         "gold.300": "#F7E2B8",
         mustard: "#E7AD36",
         cream: "#EBE4D6",
+        "vmsRed.500": "#D6112E",
+        "vmsGrey.500": "#49443E",
+        "vmsGrey.100": "#EFEEE9",
+        "vmsBrown.500": "#6D5F51",
       },
       fontFamily: {
         oswald: "var(--font-oswald)",
