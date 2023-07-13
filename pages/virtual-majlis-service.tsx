@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { ParallaxTransparentBackground } from "../components/parallax-transparent-background";
-import { BsFillCameraFill } from "react-icons/bs";
-import { FaMicrophone } from "react-icons/fa";
 import { MainLayout } from "../layouts/main";
-import { montserrat, oswald } from "../utils/fonts";
+import { montserrat } from "../utils/fonts";
 import {
   ProcessSectionDesktop,
   ProcessSectionMobile,
@@ -37,14 +34,14 @@ export default function VirtualMajlisService() {
         </div>
         <div className="flex flex-col items-end flex-[0.6]">
           <Image
-            src={require("../public/assets/VMS/desktop-section-pictures.png")}
+            src={require("../public/assets/VMS/section1-thumbnail.png")}
             width={390}
             height={345}
             alt="Majlis Pictures"
             className="md:block hidden"
           />
           <Image
-            src={require("../public/assets/VMS/desktop-section-pictures.png")}
+            src={require("../public/assets/VMS/section1-thumbnail.png")}
             width={293}
             height={239}
             alt="Majlis Pictures"
@@ -71,17 +68,17 @@ export default function VirtualMajlisService() {
           PRICING
         </h1>
         <h2 className="text-white text-2xl lg:text-4xl text-center w-full">
-          Pricing plans for our{" "}
           <span className="text-[#FECB06] font-semibold">
             Virtual Majlis Service
-          </span>
+          </span>{" "}
+          Items
         </h2>
         <p className="lg:py-6 py-12 text-white text-sm text-center w-full">
           You can select one of the three items below.
         </p>
         <p className="text-[#BBB] text-center text-sm w-full">
-          All payments made are made to the Hussain's Ark of Salvation charity
-          (1202021)
+          All payments made are fed back into our UK registered Charity
+          "Hussain's Ark of Salvation (1202021)" All payments made are made
         </p>
         <div className="flex justify-center items-center mt-6 flex-wrap">
           <PaymentItem
@@ -131,6 +128,9 @@ export default function VirtualMajlisService() {
         <h1 className="font-bold text-white text-sm text-center w-full pb-8">
           CUSTOM
         </h1>
+        <h3 className="font-bold text-white text-xl text-center w-full pb-4">
+          Want to host a bigger event?
+        </h3>
         <p className="text-white text-center w-full leading-8">
           In addition to the VMS items and add-ons, you can discuss additional
           customizations to your virtual majlis/event with our VMS coordinators!
