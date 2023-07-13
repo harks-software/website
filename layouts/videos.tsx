@@ -33,9 +33,7 @@ export function VideosLayout(props: VideosLayoutProps) {
         className="block min-w-full py-5 text-white md:py-10"
         style={props.backgroundStyle}
       >
-        <h2
-          className={`mt-10 px-5 text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base`}
-        >
+        <h2 className="mt-10 px-5 text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base">
           {props.category.toUpperCase()}
         </h2>
         <h2 className="mt-3 px-5 text-xl font-thin text-white md:mt-5 md:px-10 md:text-4xl">

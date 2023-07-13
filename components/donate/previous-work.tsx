@@ -35,7 +35,7 @@ export const PreviousWork = ({ items }: Props) => {
         {items.map((item, i) => (
           <SwiperSlide key={`previous_work_${i}`}>
             <div
-              className={`group h-96 !bg-cover !bg-no-repeat !bg-center`}
+              className="group h-96 !bg-cover !bg-no-repeat !bg-center"
               style={{
                 background: `url('${item.image}')`,
               }}

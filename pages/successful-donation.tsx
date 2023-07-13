@@ -11,7 +11,7 @@ const PREVIOUS_WORK_IMAGES = [
 export default function SuccessfulDonation() {
   return (
     <MainLayout title="Thank you">
-      <div className={`text-2xl font-bold text-center pt-24 bg-cream `}>
+      <div className="text-2xl font-bold text-center pt-24 bg-cream">
         <p className="px-8 md:px-24">
           Thank you for your donation. Your support means a great deal to us,
           and we pray that Allah rewards you abundantly for your kindness. Below

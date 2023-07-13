@@ -37,7 +37,7 @@ export default function Index({
         }}
       >
         <div className="flex justify-center px-4 lg:justify-start">
-          <div className={`flex-1 text-white md:flex-[0.7]`}>
+          <div className="flex-1 text-white md:flex-[0.7]">
             <h2 className="pb-6 text-3xl font-bold md:pb-0 md:text-4xl">
               Establishing a <br className="block md:hidden" /> digital hub &
               <br className="hidden md:block" /> engaging the
@@ -63,9 +63,7 @@ export default function Index({
             </div>
           </div>
         </div>
-        <div
-          className={`flex flex-wrap items-center justify-evenly pt-36 pb-14 md:flex-row md:items-start md:pb-12 lg:flex-nowrap lg:justify-start`}
-        >
+        <div className="flex flex-wrap items-center justify-evenly pt-36 pb-14 md:flex-row md:items-start md:pb-12 lg:flex-nowrap lg:justify-start">
           <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0">
             <UserGroupIcon className="h-14 w-14" />
             <CounterNumericDisplay
@@ -101,7 +99,7 @@ export default function Index({
         </div>
         <div className="mt-6 flex w-full flex-1 flex-col justify-center py-12 md:mt-12">
           <div
-            className={`mx-auto text-center text-xl font-bold uppercase leading-[30px] text-white lg:text-3xl lg:leading-[60px]`}
+            className="mx-auto text-center text-xl font-bold uppercase leading-[30px] text-white lg:text-3xl lg:leading-[60px]"
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
           >
             “Verily <span className="text-[#BE1E2D]">Hussain</span> is the
@@ -109,9 +107,7 @@ export default function Index({
             <br /> and the{" "}
             <span className="text-[#BE1E2D]">ark of salvation.</span>”
           </div>
-          <div
-            className={`w-max mx-auto mt-12 border-4 p-4 text-lg font-bold text-[#D29923] sm:text-xl md:mt-8 md:text-xl lg:text-2xl`}
-          >
+          <div className="w-max mx-auto mt-12 border-4 p-4 text-lg font-bold text-[#D29923] sm:text-xl md:mt-8 md:text-xl lg:text-2xl">
             Prophet Muhammad (PBUH)
           </div>
         </div>
@@ -128,7 +124,7 @@ export default function Index({
         }}
       >
         <div
-          className={`flex w-full items-center justify-center bg-white py-2 text-center text-base font-bold`}
+          className="flex w-full items-center justify-center bg-white py-2 text-center text-base font-bold"
           style={{ boxShadow: "0px 6px 6px rgba(0, 0, 0, 0.25)" }}
         >
           USING DIGITAL INNOVATION TO STRENGTHEN OUR FAITH AND SERVE COMMUNITIES
@@ -136,14 +132,10 @@ export default function Index({
         </div>
         <div className="relative w-full py-8">
           <div className="px-16">
-            <h3
-              className={`pb-2 text-center text-xl font-bold text-white opacity-80 md:text-left`}
-            >
+            <h3 className="pb-2 text-center text-xl font-bold text-white opacity-80 md:text-left">
               EXPLORE
             </h3>
-            <h2
-              className={`text-center text-3xl font-bold text-white md:text-left`}
-            >
+            <h2 className="text-center text-3xl font-bold text-white md:text-left">
               PROJECTS
             </h2>
           </div>
@@ -182,14 +174,10 @@ export default function Index({
             />
           </div>
           <div className="px-16">
-            <h3
-              className={`pb-2 text-center text-xl font-bold text-white opacity-80 md:text-left`}
-            >
+            <h3 className="pb-2 text-center text-xl font-bold text-white opacity-80 md:text-left">
               EXPLORE
             </h3>
-            <h2
-              className={`text-center text-3xl font-bold text-white md:text-left`}
-            >
+            <h2 className="text-center text-3xl font-bold text-white md:text-left">
               MONTHLY INITIATIVES
             </h2>
           </div>
@@ -248,9 +236,7 @@ export default function Index({
           </div>
         </div>
       </section>
-      <section
-        className={`flex w-full flex-col items-center bg-beige.300 px-0 md:py-14 lg:flex-row lg:items-start lg:px-8 xl:px-24`}
-      >
+      <section className="flex w-full flex-col items-center bg-beige.300 px-0 md:py-14 lg:flex-row lg:items-start lg:px-8 xl:px-24">
         <div className="flex flex-col lg:flex-[0.6]">
           <div className="flex flex-row items-center">
             <h2 className="mt-6 pr-2 text-3xl font-bold text-gray.800 sm:pr-4 sm:text-4xl md:mt-0">
@@ -343,7 +329,7 @@ export default function Index({
             </div>
           </div>
         </div>
-        <div className={`flex flex-col lg:flex-[0.4]`}>
+        <div className="flex flex-col lg:flex-[0.4]">
           <div className="mt-8 flex flex-row items-center lg:mt-0">
             <h2 className="pr-2 text-3xl font-bold text-gray.800 sm:pr-4 sm:text-4xl">
               Up Next

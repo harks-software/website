@@ -5,7 +5,7 @@ import { MainLayout } from "@/layouts/main";
 export default function AboutUs() {
   return (
     <MainLayout title="About Us">
-      <div className={`w-full bg-cream`}>
+      <div className="w-full bg-cream">
         <p className="mx-auto w-full px-3 py-8 text-center text-xs font-semibold text-gray-800 md:max-w-[80%] md:pt-10 md:text-xl">
           Learn more about us and the scope of our mission in strengthening our
           bond between the AhlulBayt (A.S) and our beloved, your beloved Imam
@@ -130,7 +130,7 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="flex">
-                  <p className={`mt-3 text-xs font-normal md:text-base`}>
+                  <p className="mt-3 text-xs font-normal md:text-base">
                     Social Media has emerged as one of the most powerful
                     influencers in today&lsquo;s day and age. We strive to
                     introduce new and original ideas to change people&lsquo;s
@@ -164,9 +164,7 @@ export default function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <p
-                  className={`mt-3 text-xs font-normal md:text-right md:text-base`}
-                >
+                <p className="mt-3 text-xs font-normal md:text-right md:text-base">
                   Living in a technology-driven world, we believe it is crucial
                   to use digital innovation to strengthen our faith and uplift
                   communities worldwide. Therefore, we aim to offer a range of
