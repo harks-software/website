@@ -227,10 +227,10 @@ function ProcessAspectMobile({
 export function ProcessSectionDesktop() {
   return (
     <div className="hidden lg:flex flex-col w-full items-center py-24">
-      <div className="flex mb-32">
+      <div className="flex mb-36">
         <ProcessAspectDesktop
           title="1. Fill Form"
-          description="Fill out the 'VMS Requests' form below with your majlis details & requirements."
+          description="Fill out the 'VMS Requests' form below with your majlis/event details & requirements."
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@ export function ProcessSectionDesktop() {
         />
         <ProcessAspectDesktop
           title="3. Discuss"
-          description="We will discuss your majlis details & requirements with you further."
+          description="We will discuss your majlis/event details & requirements with you further."
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +268,7 @@ export function ProcessSectionDesktop() {
         />
         <ProcessAspectDesktop
           title="5. Service Provided"
-          description="We will then deliver our services and ensure the smooth running of your majlis, coordinating with you throughout."
+          description="We will then deliver our services and ensure the smooth running of your majlis/event, coordinating with you throughout."
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -376,7 +376,7 @@ export function ProcessSectionMobile() {
     <div className="lg:hidden mt-12 flex flex-col border-l-[1px] border-black">
       <ProcessAspectMobile
         title="1. Fill Form"
-        description="Fill out the 'VMS Requests' form below with your majlis details & requirements."
+        description="Fill out the 'VMS Requests' form below with your majlis/event details & requirements."
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -414,7 +414,7 @@ export function ProcessSectionMobile() {
       />
       <ProcessAspectMobile
         title="3. Discuss"
-        description="We will discuss your majlis details & requirements with you further."
+        description="We will discuss your majlis/event details & requirements with you further."
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -455,7 +455,7 @@ export function ProcessSectionMobile() {
       />
       <ProcessAspectMobile
         title="5. Service Provided"
-        description="We will then deliver our services and ensure the smooth running of your majlis,coordinating with you throughout."
+        description="We will then deliver our services and ensure the smooth running of your majlis/event, coordinating with you throughout."
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"

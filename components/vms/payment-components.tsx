@@ -11,7 +11,7 @@ interface IPaymentItemProps {
 export function PaymentItem({ title, description, image }: IPaymentItemProps) {
   return (
     <div
-      className={`w-60 h-60 bg-gray.800 rounded-2xl my-4 mx-6 text-white ${montserrat.className}`}
+      className={`w-60 h-64 bg-gray.800 rounded-2xl my-4 mx-6 text-white ${montserrat.className}`}
     >
       <Image
         src={image}
