@@ -7,7 +7,7 @@ import { montserrat, oswald } from "../utils/fonts";
 
 export default function VirtualMajlisService() {
   return (
-    <MainLayout bottomPadding={false} title="Virtual Majlis Service">
+    <MainLayout title="Virtual Majlis Service">
       <div className="bg-beige.300 py-56">
         <h1
           className={`w-full text-center ${montserrat.className} text-7xl font-bold`}

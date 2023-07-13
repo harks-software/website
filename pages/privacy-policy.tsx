@@ -3,7 +3,7 @@ import { MainLayout } from "../layouts/main";
 
 export default function PrivacyPolicy() {
   return (
-    <MainLayout bottomPadding={false} title="Privacy Policy">
+    <MainLayout title="Privacy Policy">
       <div className="bg-cream px-24 pb-12">
         <h1 className="pt-40 text-2xl font-bold lg:text-3xl">Privacy Policy</h1>
         <p className="mt-8 font-semibold">Last updated: February 12, 2022</p>

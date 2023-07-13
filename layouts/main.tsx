@@ -5,14 +5,12 @@ import Head from "next/head";
 
 interface MainLayoutProps {
   children: ReactElement | ReactElement[];
-  bottomPadding?: boolean;
   title: string;
   description?: string;
 }
 
 export function MainLayout({
   children,
-  bottomPadding = true,
   title,
   description = "Using digital innovation to strengthen our faith and serve communities around the globe",
 }: MainLayoutProps) {
@@ -33,9 +31,7 @@ export function MainLayout({
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
       </Head>
       <Navbar />
-      <main className={`${bottomPadding ? "pb-24" : ""} pt-20`}>
-        {children}
-      </main>
+      <main className="relative">{children}</main>
       <Footer />
     </>
   );

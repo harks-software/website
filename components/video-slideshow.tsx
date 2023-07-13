@@ -68,7 +68,7 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
     <div>
       <Modal isOpen={fullScreen} style={modalStyle}>
         <div
-          className={`z-[100001] w-full overflow-hidden sm:hidden ${openSans.className}`}
+          className={`z-50 w-full overflow-hidden sm:hidden ${openSans.className}`}
         >
           {/* Fullscreen content for mobile devices */}
           <div className="mobile-header flex items-center p-3 text-xl">

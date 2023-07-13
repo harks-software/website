@@ -14,7 +14,7 @@ const ParallaxTransparentBackground = ({
     style={{ backgroundImage: `url(${image})` }}
   >
     <div className="absolute z-10 h-full w-full bg-black opacity-50"></div>
-    <div className="absolute z-40 ">{children}</div>
+    <div className="absolute z-30 ">{children}</div>
   </section>
 );
 
