@@ -21,9 +21,9 @@ export default function VirtualMajlisService() {
             alt="Virtual Majlis Service"
           />
           <p className="text-white mb-6">
-            The Virtual Majlis Service is the first ever Shia digital streaming
-            platform and it is an amazing opportunity for you to use our
-            platform in hosting your religious events
+            The Virtual Majlis Service is the first ever Islamic digital
+            streaming platform that gives you an amazing opportunity to host
+            your own online Islamic events with our support & resources
           </p>
           <a
             href="#get-started"
@@ -74,11 +74,11 @@ export default function VirtualMajlisService() {
           Items
         </h2>
         <p className="lg:py-6 py-12 text-white text-sm text-center w-full">
-          You can select one of the three items below.
+          You can select one of the three packages below.
         </p>
         <p className="text-[#BBB] text-center text-sm w-full">
           All payments made are fed back into our UK registered Charity
-          "Hussain's Ark of Salvation (1202021)" All payments made are made
+          "Hussain's Ark of Salvation (1202021)"
         </p>
         <div className="flex justify-center items-center mt-6 flex-wrap">
           <PaymentItem
