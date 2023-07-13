@@ -24,11 +24,12 @@ export default function VirtualMajlisService() {
             alt="Virtual Majlis Service"
           />
           <p className="text-white mb-6">
-            We are offering you the opportunity to use our platform and support
-            to host an online private majlis.
+            The Virtual Majlis Service is the first ever Shia digital streaming
+            platform and it is an amazing opportunity for you to use our
+            platform in hosting your religious events
           </p>
           <a
-            href="#"
+            href="#get-started"
             className="bg-vmsRed.500 hover:opacity-50 transition-all duration-200 px-10 py-6 max-w-[181px] rounded-2xl text-white text-center font-bold"
           >
             Get started
@@ -80,6 +81,7 @@ export default function VirtualMajlisService() {
         </p>
         <p className="text-[#BBB] text-center text-sm w-full">
           All payments made are made to the Hussain's Ark of Salvation charity
+          (1202021)
         </p>
         <div className="flex justify-center items-center mt-6 flex-wrap">
           <PaymentItem
@@ -102,7 +104,8 @@ export default function VirtualMajlisService() {
           Add-Ons
         </h2>
         <p className="lg:py-6 py-12 text-white text-sm text-center w-full">
-          You can additionally select one of the three add-ons below.
+          You can additionally select any combination of the three add-ons
+          below.
         </p>
         <div className="flex justify-center flex-wrap items-center lg:mt-6">
           <PaymentItem
@@ -130,11 +133,12 @@ export default function VirtualMajlisService() {
         </h1>
         <p className="text-white text-center w-full leading-8">
           In addition to the VMS items and add-ons, you can discuss additional
-          customizations to your virtual majlis with our VMS coordinators!
+          customizations to your virtual majlis/event with our VMS coordinators!
         </p>
       </section>
       <section
         className={`${montserrat.className} lg:py-20 lg:px-24 py-10 px-12`}
+        id="get-started"
       >
         <h1 className="font-bold text-vmsBrown.500 text-sm text-center w-full pb-8">
           FORM
