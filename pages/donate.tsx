@@ -23,47 +23,47 @@ export default function Donate() {
       <PreviousWork items={PREVIOUS_WORK_IMAGES} />
       <div className="tabs -mt-12">
         <a
-          className="tab z-30 -ml-2 tab-xs sm:tab-lg tab-lifted rounded-tr-xl bg-cream border-none"
+          className="tab tab-lifted tab-xs z-30 -ml-2 rounded-tr-xl border-none bg-cream sm:tab-lg"
           onClick={() => {
             setTab(0);
           }}
         >
-          <span className="from-red.500 to-mustard bg-gradient-to-r sm:text-sm text-xs md:text-xl bg-clip-text text-transparent font-bold px-2 lg:px-8">
+          <span className="bg-gradient-to-r from-red.500 to-mustard bg-clip-text px-2 text-xs font-bold text-transparent sm:text-sm md:text-xl lg:px-8">
             DONATE NOW
           </span>
         </a>
         <a
-          className="tab z-20 -ml-2 tab-xs sm:tab-lg tab-lifted bg-mustard border-none"
+          className="tab tab-lifted tab-xs z-20 -ml-2 border-none bg-mustard sm:tab-lg"
           onClick={() => {
             setTab(1);
           }}
         >
-          <span className="text-white bg-gradient-to-r sm:text-sm text-xs md:text-xl bg-clip-text text-transparent font-bold px-2 lg:px-8">
+          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-white text-transparent sm:text-sm md:text-xl lg:px-8">
             UK BANK TRANSFER
           </span>
         </a>
 
         <a
-          className="tab z-10 -ml-2 tab-xs sm:tab-lg tab-lifted bg-red.500 border-none"
+          className="tab tab-lifted tab-xs z-10 -ml-2 border-none bg-red.500 sm:tab-lg"
           onClick={() => {
             setTab(2);
           }}
         >
-          <span className="text-white bg-gradient-to-r text-xs sm:text-sm md:w-auto md:text-xl bg-clip-text text-transparent font-bold px-2 lg:px-8">
+          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-white text-transparent sm:text-sm md:w-auto md:text-xl lg:px-8">
             CANADA BANK TRANSFER
           </span>
         </a>
       </div>
       {/* tabbed sections */}
       {tab === 0 ? (
-        <div className="w-full flex justify-center items-center mt-0 h-[500px] bg-cream">
+        <div className="mt-0 flex h-[500px] w-full items-center justify-center bg-cream">
           <DonateComponent />
         </div>
       ) : (
         <></>
       )}
       {tab === 1 ? (
-        <div className="w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-mustard text-white">
+        <div className="w-full bg-mustard p-8 text-sm font-medium text-white md:p-16 md:text-xl">
           <p>
             <span className="font-bold">Account holder:</span> Hussain&apos;s
             Ark of Salvation
@@ -84,7 +84,7 @@ export default function Donate() {
         <></>
       )}
       {tab === 2 ? (
-        <div className="w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-red.500 text-white">
+        <div className="w-full bg-red.500 p-8 text-sm font-medium text-white md:p-16 md:text-xl">
           <p>
             <span className="font-bold">Account holder:</span> Hussain&apos;s
             Ark of Salvation
@@ -102,11 +102,11 @@ export default function Donate() {
         <></>
       )}
       <div
-        className="flex flex-wrap items-center justify-evenly py-16 bg-center bg-cover md:flex-row md:items-start md:pb-12 lg:px-64 lg:flex-nowrap bg-black/80"
+        className="flex flex-wrap items-center justify-evenly bg-black/80 bg-cover bg-center py-16 md:flex-row md:items-start md:pb-12 lg:flex-nowrap lg:px-64"
         style={{ backgroundImage: "url(./assets/about-us/caligraphy.png" }}
       >
         <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0">
-          <UserGroupIcon className="w-14 h-14" />
+          <UserGroupIcon className="h-14 w-14" />
           <CounterNumericDisplay
             to={40}
             className="text-xl font-semibold md:py-2 md:text-4xl "
@@ -114,7 +114,7 @@ export default function Donate() {
           <span className="font-medium md:text-base">VOLUNTEERS</span>
         </div>
         <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0 lg:pl-24">
-          <GlobeAmericasIcon className="w-14 h-14" />
+          <GlobeAmericasIcon className="h-14 w-14" />
           <CounterNumericDisplay
             to={7}
             className="text-xl font-semibold md:py-2 md:text-4xl"
@@ -122,7 +122,7 @@ export default function Donate() {
           <span className="font-medium leading-8 md:text-lg">COUNTRIES</span>
         </div>
         <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0 lg:pl-24">
-          <LightBulbIcon className="w-14 h-14" />
+          <LightBulbIcon className="h-14 w-14" />
           <CounterNumericDisplay
             to={5}
             className="text-xl font-semibold md:py-2 md:text-4xl"
@@ -130,7 +130,7 @@ export default function Donate() {
           <span className="font-medium leading-8 md:text-lg">PROJECTS</span>
         </div>
         <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0 lg:pl-24">
-          <ChatBubbleLeftRightIcon className="w-14 h-14" />
+          <ChatBubbleLeftRightIcon className="h-14 w-14" />
           <CounterNumericDisplay
             to={10}
             className="text-xl font-semibold md:py-2 md:text-4xl "

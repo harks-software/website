@@ -58,7 +58,7 @@ export default function Index({
                 <br className="block md:hidden" /> the AhlulBayt (A.S)
               </p>
               <Link href="/about-us" className="pt-6 md:pt-0">
-                <ArrowRightCircleIcon className="w-12 h-12" />
+                <ArrowRightCircleIcon className="h-12 w-12" />
               </Link>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Index({
             <br /> and the{" "}
             <span className="text-[#BE1E2D]">ark of salvation.</span>”
           </div>
-          <div className="w-max mx-auto mt-12 border-4 p-4 text-lg font-bold text-[#D29923] sm:text-xl md:mt-8 md:text-xl lg:text-2xl">
+          <div className="mx-auto mt-12 w-max border-4 p-4 text-lg font-bold text-[#D29923] sm:text-xl md:mt-8 md:text-xl lg:text-2xl">
             Prophet Muhammad (PBUH)
           </div>
         </div>
@@ -243,13 +243,13 @@ export default function Index({
               Get Involved
             </h2>
             <UserGroupOutlineIcon
-              className="mt-6 md:mt-0 w-10 h-10"
+              className="mt-6 h-10 w-10 md:mt-0"
               style={{ filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))" }}
             />
           </div>
 
           <div className="flex flex-col py-4">
-            <div className="my-4 h-[175px] w-[300px] rounded-lg shadow-lg sm:w-[472px] bg-white/70">
+            <div className="my-4 h-[175px] w-[300px] rounded-lg bg-white/70 shadow-lg sm:w-[472px]">
               <div className="flex h-full w-full flex-row">
                 <div className="h-[175px] w-4 rounded-l-lg bg-red.500"></div>
                 <div className="w-full p-4 pr-0">
@@ -275,7 +275,7 @@ export default function Index({
                 </div>
               </div>
             </div>
-            <div className="my-4 h-[175px] w-[300px] rounded-lg shadow-lg sm:w-[472px] bg-white/70">
+            <div className="my-4 h-[175px] w-[300px] rounded-lg bg-white/70 shadow-lg sm:w-[472px]">
               <div className="flex h-full w-full flex-row">
                 <div className="h-[175px] w-4 rounded-l-lg bg-[#E7AD36]"></div>
                 <div className="w-full p-4 pr-0">
@@ -301,7 +301,7 @@ export default function Index({
                 </div>
               </div>
             </div>
-            <div className="my-4 h-[175px] w-[300px] rounded-lg shadow-lg sm:w-[472px] bg-white/70">
+            <div className="my-4 h-[175px] w-[300px] rounded-lg bg-white/70 shadow-lg sm:w-[472px]">
               <div className="flex h-full w-full flex-row">
                 <div className="h-[175px] w-4 rounded-l-lg bg-black/80"></div>
                 <div className="w-full p-4 pr-0">
@@ -335,7 +335,7 @@ export default function Index({
               Up Next
             </h2>
             <CalendarDaysIcon
-              className="w-10 h-10"
+              className="h-10 w-10"
               style={{ filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))" }}
             />
           </div>

@@ -5,7 +5,7 @@ import { MainLayout } from "../layouts/main";
 export default function WhatsAppBroadcasting() {
   return (
     <MainLayout title="WhatsApp Broadcasting">
-      <div className="py-32 flex flex-col gap-8">
+      <div className="flex flex-col gap-8 py-32">
         <h1 className="text-center text-3xl text-gray-600">
           Whatsapp Broadcasting
         </h1>
@@ -39,7 +39,7 @@ export default function WhatsAppBroadcasting() {
             </li>
           </ul>
           <div className="flex w-full justify-center">
-            <button className="rounded-3xl bg-black font-semibold text-white shadow-buttonShadow transition-all duration-300 hover:bg-green-600 hover:shadow-greenHover">
+            <button className="shadow-buttonShadow hover:shadow-greenHover rounded-3xl bg-black font-semibold text-white transition-all duration-300 hover:bg-green-600">
               <Link
                 className="flex h-full w-full px-10 pt-2"
                 href="https://wa.me/message/OCOEPD7LFODMA1"
