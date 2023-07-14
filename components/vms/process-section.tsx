@@ -1,5 +1,4 @@
 import React from "react";
-import { Bullet } from "../bullet";
 
 function ProcessLine() {
   return (
@@ -213,7 +212,7 @@ function ProcessAspectMobile({
         className="w-2.5 h-2.5 rounded-full -ml-1.5"
         style={{ backgroundColor: dotColor }}
       ></div>
-      <div className="bg-vmsBrown.500 rounded-full flex items-center justify-center w-6 h-6 mx-4">
+      <div className="bg-vmsBrown.500 rounded-full flex items-center justify-center w-6 h-6 mx-2 sm:mx-4">
         {icon}
       </div>
       <div className="w-[300px]">

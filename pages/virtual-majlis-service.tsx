@@ -50,7 +50,7 @@ export default function VirtualMajlisService() {
         </div>
       </section>
       <section
-        className={`${montserrat.className} bg-vmsGrey.100 p-8 lg:py-14 lg:px-20`}
+        className={`${montserrat.className} bg-vmsGrey.100 p-2 sm:p-8 lg:py-14 lg:px-20`}
       >
         <h1 className="font-bold text-vmsGrey.500 text-xs lg:text-sm text-center w-full pb-2 lg:pb-8">
           PROCESS
