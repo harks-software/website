@@ -52,13 +52,13 @@ export function VideosLayout(props: VideosLayoutProps) {
           {props.description}
         </p>
         <div className="mt-5 flex items-center px-5 md:mt-8 md:px-10">
-          <div className="rounded-xl p-2 text-center md:p-4 bg-[rgba(255,255,255,0.25)]">
+          <div className="rounded-xl bg-[rgba(255,255,255,0.25)] p-2 text-center md:p-4">
             <p className="">Videos</p>
             <p className="font-bold">{`${props.videos.length}${
               props.plus.videos ? "+" : ""
             }`}</p>
           </div>
-          <div className="ml-5 rounded-xl p-2 text-center md:p-4 bg-[rgba(255,255,255,0.25)]">
+          <div className="ml-5 rounded-xl bg-[rgba(255,255,255,0.25)] p-2 text-center md:p-4">
             <p className="">Guests</p>
             <p className="font-bold">{`${props.images.length}${
               props.plus.guests ? "+" : ""

@@ -91,7 +91,7 @@ export function Footer() {
             <span className="hidden pb-2 font-bold uppercase text-white lg:block">
               Connect
             </span>
-            <div className="flex gap-2 lg:w-full lg:gap-4 text-sm">
+            <div className="flex gap-2 text-sm lg:w-full lg:gap-4">
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://instagram.com/hussainsark"

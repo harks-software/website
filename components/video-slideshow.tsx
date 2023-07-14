@@ -195,8 +195,8 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
                     }}
                   >
                     <div
-                      className={"group-active:flex sm:group-hover:flex flex-col items-center justify-center w-full h-full".concat(
-                        activeIndex === i ? " flex" : " cursor-pointer hidden",
+                      className={"h-full w-full flex-col items-center justify-center group-active:flex sm:group-hover:flex".concat(
+                        activeIndex === i ? " flex" : " hidden cursor-pointer",
                       )}
                       style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
                     >

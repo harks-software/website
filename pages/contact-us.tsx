@@ -50,7 +50,7 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="flex w-fit gap-4 place-self-center rounded-xl border-2 border-black p-4">
-              <EnvelopeIcon className="w-6 h-6" />
+              <EnvelopeIcon className="h-6 w-6" />
               <a
                 href="mailto:info@hussainsark.org"
                 className="link border-l border-black pl-4 text-lg"
