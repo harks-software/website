@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MainLayout } from "../layouts/main";
-import { montserrat } from "../utils/fonts";
 import DonateComponent from "../components/donate";
 import { PreviousWork } from "../components/donate/previous-work";
 import { CounterNumericDisplay } from "../components/home/counter";
@@ -64,9 +63,7 @@ export default function Donate() {
         <></>
       )}
       {tab === 1 ? (
-        <div
-          className={`w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-mustard ${montserrat.className} text-white`}
-        >
+        <div className="w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-mustard text-white">
           <p>
             <span className="font-bold">Account holder:</span> Hussain&apos;s
             Ark of Salvation
@@ -87,9 +84,7 @@ export default function Donate() {
         <></>
       )}
       {tab === 2 ? (
-        <div
-          className={`w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-red.500 ${montserrat.className} text-white`}
-        >
+        <div className="w-full p-8 text-sm md:p-16 md:text-xl font-medium bg-red.500 text-white">
           <p>
             <span className="font-bold">Account holder:</span> Hussain&apos;s
             Ark of Salvation
@@ -107,7 +102,7 @@ export default function Donate() {
         <></>
       )}
       <div
-        className={`flex flex-wrap items-center justify-evenly py-16 ${montserrat.className} bg-center bg-cover md:flex-row md:items-start md:pb-12 lg:px-64 lg:flex-nowrap bg-black/80`}
+        className="flex flex-wrap items-center justify-evenly py-16 bg-center bg-cover md:flex-row md:items-start md:pb-12 lg:px-64 lg:flex-nowrap bg-black/80"
         style={{ backgroundImage: "url(./assets/about-us/caligraphy.png" }}
       >
         <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0">

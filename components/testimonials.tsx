@@ -51,13 +51,13 @@ export function Testimonials({ list }: ITestimonialsProps) {
                   }}
                 ></div>
               </div>
-              <div className="font-montserrat text-lg font-medium md:text-2xl">
+              <div className="text-lg font-medium md:text-2xl">
                 {item.quoted}
               </div>
             </div>
 
             <div className="mt-6 flex flex-1 flex-col text-center align-middle">
-              <div className="px-2 text-center font-montserrat text-sm font-normal md:text-xl">
+              <div className="px-2 text-center text-sm font-normal md:text-xl">
                 {item.content}
               </div>
             </div>
@@ -81,10 +81,10 @@ export function Testimonials({ list }: ITestimonialsProps) {
             </div>
 
             <div className="mt-6 flex flex-1 flex-col text-center align-middle">
-              <div className="text-center font-montserrat text-sm font-normal md:text-xl">
+              <div className="text-center text-sm font-normal md:text-xl">
                 {item.content}
               </div>
-              <div className="pt-4 font-montserrat text-lg font-medium md:text-2xl">
+              <div className="pt-4 text-lg font-medium md:text-2xl">
                 {item.quoted}
               </div>
             </div>
