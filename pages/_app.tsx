@@ -8,7 +8,7 @@ import "@/styles/testimonials.css";
 import "@/styles/about-us.css";
 import "@/styles/image-slideshow.css";
 import "@/styles/video-slideshow.css";
-import { Montserrat } from "next/font/google";
+import { Montserrat } from "@next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

@@ -4,7 +4,16 @@ import Link from "next/link";
 export function Navbar() {
   return (
     <div className="sticky top-0 left-0 z-40 w-full">
-      <div
+      <div className="flex justify-center w-full p-2 pr-6 md:pr-8 drop-shadow-xl bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-no-repeat bg-center">
+        <Link
+          className="ml-2 text-sm text-white md:ml-4 text-center my-0 py-0 underline"
+          href="/virtual-majlis-service"
+        >
+          Eid Mubarak! We're excited to announce the launch of our virtual
+          majlis service!
+        </Link>
+      </div>
+      {/* <div
         className="flow-root w-full p-2 pr-6 drop-shadow-xl md:pr-8"
         style={{
           backgroundImage: "linear-gradient(0deg, #1A1A1A, #1A1A1A)",
@@ -24,7 +33,7 @@ export function Navbar() {
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 md:h-5"
+              className="h-5"
               target="_blank"
             >
               <title>Instagram</title>
@@ -116,7 +125,7 @@ export function Navbar() {
             </svg>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       <div
         className="navbar min-h-0 bg-gradient-to-r from-red.500 via-orange.500 to-yellow.500 p-0 md:px-3 lg:py-1.5"
@@ -201,6 +210,7 @@ export function Navbar() {
                   <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
                     <Link href="/virtual-majlis-service">
                       Virtual Majlis Service
+                      <div className="badge badge-success">New</div>
                     </Link>
                   </li>
                 </ul>
@@ -321,11 +331,12 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+              className="dropdown-content menu rounded-box w-max bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/virtual-majlis-service">
-                  Virtual Majlis Service
+                  Virtual Majlis Service{" "}
+                  <div className="badge bg-yellow.500">New</div>
                 </Link>
               </li>
             </ul>
