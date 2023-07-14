@@ -33,20 +33,24 @@ export default function VirtualMajlisService() {
           </a>
         </div>
         <div className="flex flex-col items-end flex-[0.6]">
-          <Image
-            src={require("../public/assets/VMS/section1-thumbnail.png")}
-            width={390}
-            height={345}
-            alt="Majlis Pictures"
+          <iframe
+            width="390"
+            height="345"
+            src="https://www.youtube.com/embed/BKKuIxt2aWw"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
             className="md:block hidden"
-          />
-          <Image
-            src={require("../public/assets/VMS/section1-thumbnail.png")}
-            width={293}
-            height={239}
-            alt="Majlis Pictures"
+          ></iframe>
+          <iframe
+            width="293"
+            height="239"
+            src="https://www.youtube.com/embed/BKKuIxt2aWw"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
             className="md:hidden block mt-12"
-          />
+          ></iframe>
         </div>
       </section>
       <section
