@@ -54,7 +54,7 @@ export default function VirtualMajlisService() {
         </div>
       </section>
       <section
-        className={`${montserrat.className} bg-vmsGrey.100 p-2 sm:p-8 lg:py-14 lg:px-20`}
+        className={`${montserrat.className} bg-beige.300 p-2 sm:p-8 lg:py-14 lg:px-20`}
       >
         <h1 className="font-bold text-vmsGrey.500 text-xs lg:text-sm text-center w-full pb-2 lg:pb-8">
           PROCESS
@@ -147,7 +147,7 @@ export default function VirtualMajlisService() {
         </p>
       </section>
       <section
-        className={`${montserrat.className} lg:py-20 lg:px-24 py-10 px-12`}
+        className={`${montserrat.className} lg:py-20 lg:px-24 py-10 px-12 bg-beige.300`}
         id="get-started"
       >
         <h1 className="font-bold text-vmsBrown.500 text-sm text-center w-full pb-8">

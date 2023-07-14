@@ -207,17 +207,17 @@ function ProcessAspectMobile({
   dotColor,
 }: IProcessAspectProps) {
   return (
-    <div className="my-4 flex items-center">
+    <div className="my-4 flex gap-2 items-center">
       <div
         className="w-2.5 h-2.5 rounded-full -ml-1.5"
         style={{ backgroundColor: dotColor }}
       ></div>
-      <div className="bg-vmsBrown.500 rounded-full flex items-center justify-center w-6 h-6 mx-2 sm:mx-4">
+      <div className="bg-vmsBrown.500 w-8 h-8 p-2 flex justify-center shrink-0 grow-0 rounded-full">
         {icon}
       </div>
-      <div className="w-[300px]">
-        <h4 className="font-bold text-sm pb-1">{title}</h4>
-        <p className="text-xs">{description}</p>
+      <div>
+        <h4 className="font-bold pb-1">{title}</h4>
+        <p className="text-sm">{description}</p>
       </div>
     </div>
   );
@@ -379,8 +379,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
             viewBox="0 0 12 12"
             fill="none"
           >
@@ -398,8 +396,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
             viewBox="0 0 12 12"
             fill="none"
           >
@@ -417,8 +413,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
             viewBox="0 0 12 12"
             fill="none"
           >
@@ -438,8 +432,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="10"
             viewBox="0 0 12 10"
             fill="none"
           >
@@ -458,8 +450,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="8"
             viewBox="0 0 12 8"
             fill="none"
           >
@@ -479,8 +469,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="8"
             viewBox="0 0 12 8"
             fill="none"
           >
@@ -500,8 +488,6 @@ export function ProcessSectionMobile() {
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="10"
             viewBox="0 0 12 10"
             fill="none"
           >
