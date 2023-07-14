@@ -11,80 +11,80 @@ export default function VirtualMajlisService() {
   return (
     <MainLayout title="Virtual Majlis Service">
       <section
-        className={`bg-[url('../public/assets/VMS/section1-bg.png')] md:flex-row flex-col items-center bg-center bg-cover bg-no-repeat w-full flex px-10 py-16 md:py-24 md:px-20 ${montserrat.className}`}
+        className={`flex w-full flex-col items-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat px-10 py-16 md:flex-row md:px-20 md:py-24 ${montserrat.className}`}
       >
-        <div className="flex flex-col flex-[0.4]">
+        <div className="flex flex-[0.4] flex-col">
           <Image
             src={require("../public/assets/VMS/vms-logo.png")}
             width={450}
             height={250}
             alt="Virtual Majlis Service"
           />
-          <p className="text-white mb-6">
+          <p className="mb-6 text-white">
             The Virtual Majlis Service is the first ever Islamic digital
             streaming platform that gives you an amazing opportunity to host
             your own online Islamic events with our support & resources
           </p>
           <a
             href="#get-started"
-            className="bg-vmsRed.500 hover:opacity-50 transition-all duration-200 px-10 py-6 max-w-[181px] rounded-2xl text-white text-center font-bold"
+            className="max-w-[181px] rounded-2xl bg-vmsRed.500 px-10 py-6 text-center font-bold text-white transition-all duration-200 hover:opacity-50"
           >
             Get started
           </a>
         </div>
-        <div className="flex flex-col items-end flex-[0.6]">
+        <div className="flex flex-[0.6] flex-col items-end">
           <iframe
             width="390"
             height="345"
-            src="https://www.youtube.com/embed/BKKuIxt2aWw"
+            src="https://www.youtube.com/embed/BKKuIxt2aWw&autoplay=1"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="md:block hidden"
+            className="hidden md:block"
           ></iframe>
           <iframe
             width="293"
             height="239"
-            src="https://www.youtube.com/embed/BKKuIxt2aWw"
+            src="https://www.youtube.com/embed/BKKuIxt2aWw&autoplay=1"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="md:hidden block mt-12"
+            className="mt-12 block md:hidden"
           ></iframe>
         </div>
       </section>
       <section
-        className={`${montserrat.className} bg-beige.300 p-2 sm:p-8 lg:py-14 lg:px-20`}
+        className={`${montserrat.className} bg-beige.300 p-2 sm:p-8 lg:px-20 lg:py-14`}
       >
-        <h1 className="font-bold text-vmsGrey.500 text-xs lg:text-sm text-center w-full pb-2 lg:pb-8">
+        <h1 className="w-full pb-2 text-center text-xs font-bold text-vmsGrey.500 lg:pb-8 lg:text-sm">
           PROCESS
         </h1>
-        <h2 className="font-bold text-black text-xl lg:text-3xl text-center w-full">
+        <h2 className="w-full text-center text-xl font-bold text-black lg:text-3xl">
           How does it work?
         </h2>
         <ProcessSectionDesktop />
         <ProcessSectionMobile />
       </section>
       <section
-        className={`bg-[#0B0B0B] py-12 px-8 lg:py-24 lg:px-20 ${montserrat.className}`}
+        className={`bg-[#0B0B0B] px-8 py-12 lg:px-20 lg:py-24 ${montserrat.className}`}
       >
-        <h1 className="font-bold text-white text-xs lg:text-sm text-center w-full pb-4 lg:pb-8">
+        <h1 className="w-full pb-4 text-center text-xs font-bold text-white lg:pb-8 lg:text-sm">
           PRICING
         </h1>
-        <h2 className="text-white text-2xl lg:text-4xl text-center w-full">
-          <span className="text-[#FECB06] font-semibold">
+        <h2 className="w-full text-center text-2xl text-white lg:text-4xl">
+          <span className="font-semibold text-[#FECB06]">
             Virtual Majlis Service
           </span>{" "}
           Items
         </h2>
-        <p className="lg:py-6 py-12 text-white text-sm text-center w-full">
+        <p className="w-full py-12 text-center text-sm text-white lg:py-6">
           You can select one of the three packages below.
         </p>
-        <p className="text-[#BBB] text-center text-sm w-full">
+        <p className="w-full text-center text-sm text-[#BBB]">
           All payments made are fed back into our UK registered Charity
           "Hussain's Ark of Salvation (1202021)"
         </p>
-        <div className="flex justify-center items-center mt-6 flex-wrap">
+        <div className="mt-6 flex flex-wrap items-center justify-center">
           <PaymentItem
             title="VIDEO CONFERENCING"
             description="Starting from £15"
@@ -104,14 +104,14 @@ export default function VirtualMajlisService() {
             details="Solutions for individuals/organisations"
           />
         </div>
-        <h2 className="text-white font-bold mt-24 text-2xl lg:text-4xl text-center w-full">
+        <h2 className="mt-24 w-full text-center text-2xl font-bold text-white lg:text-4xl">
           Add-Ons
         </h2>
-        <p className="lg:py-6 py-12 text-white text-sm text-center w-full">
+        <p className="w-full py-12 text-center text-sm text-white lg:py-6">
           You can additionally select any combination of the three add-ons
           below.
         </p>
-        <div className="flex justify-center flex-wrap items-center lg:mt-6">
+        <div className="flex flex-wrap items-center justify-center lg:mt-6">
           <PaymentItem
             title="CUSTOM GRAPHICS"
             description="Starting from £10"
@@ -133,41 +133,41 @@ export default function VirtualMajlisService() {
         </div>
       </section>
       <section
-        className={`w-full flex-col flex items-center justify-center text-white ${montserrat.className} px-20 py-10 lg:py-20 lg:px-40 bg-center bg-cover bg-[url('/assets/VMS/custom-horizontal.png')]`}
+        className={`flex w-full flex-col items-center justify-center text-white ${montserrat.className} bg-[url('/assets/VMS/custom-horizontal.png')] bg-cover bg-center px-20 py-10 lg:px-40 lg:py-20`}
       >
-        <h1 className="font-bold text-white text-sm text-center w-full pb-8">
+        <h1 className="w-full pb-8 text-center text-sm font-bold text-white">
           CUSTOM
         </h1>
-        <h3 className="font-bold text-white text-xl text-center w-full pb-4">
+        <h3 className="w-full pb-4 text-center text-xl font-bold text-white">
           Want to host a bigger event?
         </h3>
-        <p className="text-white text-center w-full leading-8">
+        <p className="w-full text-center leading-8 text-white">
           In addition to the VMS items and add-ons, you can discuss additional
           customizations to your virtual majlis/event with our VMS coordinators!
         </p>
       </section>
       <section
-        className={`${montserrat.className} lg:py-20 lg:px-24 py-10 px-12 bg-beige.300`}
+        className={`${montserrat.className} bg-beige.300 px-12 py-10 lg:px-24 lg:py-20`}
         id="get-started"
       >
-        <h1 className="font-bold text-vmsBrown.500 text-sm text-center w-full pb-8">
+        <h1 className="w-full pb-8 text-center text-sm font-bold text-vmsBrown.500">
           FORM
         </h1>
-        <p className="text-vmsBrown.500 text-center w-full leading-8">
+        <p className="w-full text-center leading-8 text-vmsBrown.500">
           We kindly ask you to complete the event registration form in advance.
           We can not guarantee any late requests. We will, however, make every
           effort to accommodate.
         </p>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfWnJ1XkSFyqEZpUc5-KAGhZFrHVZkM0q60QwjKBQHj7VvzGg/viewform?embedded=true"
-          className="mx-auto mt-10 mb-4 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
+          className="mx-auto mb-4 mt-10 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
         >
           Loading…
         </iframe>
-        <h2 className="font-bold mb-4 mt-24 text-vmsBrown.500 w-full text-lg lg:text-2xl text-center">
+        <h2 className="mb-4 mt-24 w-full text-center text-lg font-bold text-vmsBrown.500 lg:text-2xl">
           Have any questions?
         </h2>
-        <p className="text-center text-sm lg:text-base w-full">
+        <p className="w-full text-center text-sm lg:text-base">
           Reach out to us at{" "}
           <a
             href="mailto:vms@hussainsark.org"
@@ -176,7 +176,7 @@ export default function VirtualMajlisService() {
             vms@hussainsark.org
           </a>
         </p>
-        <div className="flex w-full justify-center mt-6 items-center">
+        <div className="mt-6 flex w-full items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="51"
@@ -191,12 +191,12 @@ export default function VirtualMajlisService() {
           </svg>
           <a
             href="https://www.youtube.com/@hussainsark"
-            className="ml-2 text-vmsRed.500 hover:underline text-sm lg:text-base"
+            className="ml-2 text-sm text-vmsRed.500 hover:underline lg:text-base"
           >
             @harksvms
           </a>
         </div>
-        <div className="flex w-full justify-center mt-4 items-center">
+        <div className="mt-4 flex w-full items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="44"
@@ -210,7 +210,7 @@ export default function VirtualMajlisService() {
             />
           </svg>
           <a
-            className="text-vmsRed.500 hover:underline ml-2 text-sm lg:text-base"
+            className="ml-2 text-sm text-vmsRed.500 hover:underline lg:text-base"
             href="https://www.instagram.com/hussainsark"
           >
             @harksvms
