@@ -9,7 +9,7 @@ import { PaymentItem } from "../components/vms/payment-components";
 
 export default function VirtualMajlisService() {
   return (
-    <MainLayout bottomPadding={false} title="Virtual Majlis Service">
+    <MainLayout title="Virtual Majlis Service">
       <section
         className={`bg-[url('../public/assets/VMS/section1-bg.png')] md:flex-row flex-col items-center bg-center bg-cover bg-no-repeat w-full flex px-10 py-16 md:py-24 md:px-20 ${montserrat.className}`}
       >
