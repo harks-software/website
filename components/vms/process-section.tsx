@@ -216,9 +216,9 @@ function ProcessAspectMobile({
       <div className="bg-vmsBrown.500 rounded-full flex items-center justify-center w-6 h-6 mx-4">
         {icon}
       </div>
-      <div className="w-[300px]">
-        <h4 className="font-bold text-sm pb-1">{title}</h4>
-        <p className="text-xs">{description}</p>
+      <div>
+        <h4 className="font-bold pb-1">{title}</h4>
+        <p className="text-sm">{description}</p>
       </div>
     </div>
   );
@@ -440,7 +440,7 @@ export function ProcessSectionMobile() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
-            height="10"
+            height="12"
             viewBox="0 0 12 10"
             fill="none"
           >
