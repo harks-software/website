@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue } from "@next/font/google";
 
 interface Props {
   className: string;
