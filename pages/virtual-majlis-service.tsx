@@ -35,8 +35,7 @@ export default function VirtualMajlisService() {
         <div className="flex flex-[0.6] flex-col items-end">
           <iframe
             width="390"
-            height="345"
-            src="https://www.youtube.com/embed/BKKuIxt2aWw&autoplay=1"
+            height="345" src="https://www.youtube.com/embed/BKKuIxt2aWw?autoplay=1"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
