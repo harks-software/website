@@ -85,16 +85,19 @@ export default function VirtualMajlisService() {
             title="VIDEO CONFERENCING"
             description="Starting from £15"
             image="/assets/VMS/confrencing-item.png"
+            details="Zoom/Google meets"
           />
           <PaymentItem
             title="YOUTUBE LIVE"
             description="Starting from £25"
             image="/assets/VMS/youtube-item.png"
+            details="Stream yard/YouTube"
           />
           <PaymentItem
             title="CUSTOM"
             description="Starting from £30"
             image="/assets/VMS/custom-item.png"
+            details="Solutions for individuals/organisations"
           />
         </div>
         <h2 className="text-white font-bold mt-24 text-2xl lg:text-4xl text-center w-full">
@@ -107,18 +110,21 @@ export default function VirtualMajlisService() {
         <div className="flex justify-center flex-wrap items-center lg:mt-6">
           <PaymentItem
             title="CUSTOM GRAPHICS"
-            description="Two posters starting from £10"
+            description="Starting from £10"
             image="/assets/VMS/poster-addon.png"
+            details="Two custom posters"
           />
           <PaymentItem
             title="VIDEO PRODUCTION"
-            description="One custom video starting from £15"
+            description="Starting from £15"
             image="/assets/VMS/video-addon.png"
+            details="One custom video"
           />
           <PaymentItem
             title="MARKETING"
-            description="One @harksvms post starting from £5"
+            description="Starting from £5"
             image="/assets/VMS/marketing-addon.png"
+            details="One promotional post on @harksvms"
           />
         </div>
       </section>
