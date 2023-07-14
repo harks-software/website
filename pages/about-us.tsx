@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MainLayout } from "@/layouts/main";
-import { montserrat, archDaughter } from "@/utils/fonts";
 
 export default function AboutUs() {
   return (
-    <MainLayout bottomPadding={false} title="About Us">
-      <div className={`w-full bg-cream ${montserrat.className}`}>
+    <MainLayout title="About Us">
+      <div className="w-full bg-cream">
         <p className="mx-auto w-full px-3 py-8 text-center text-xs font-semibold text-gray-800 md:max-w-[80%] md:pt-10 md:text-xl">
           Learn more about us and the scope of our mission in strengthening our
           bond between the AhlulBayt (A.S) and our beloved, your beloved Imam
@@ -46,7 +45,7 @@ export default function AboutUs() {
               Our Vision
             </p>
           </div>
-          <div className="mr-3 flex basis-[40%] items-center justify-center bg-cream p-2 text-center font-montserrat text-xs font-bold text-[#282828] sm:mr-6 sm:p-5 md:text-lg lg:basis-[25%] lg:text-xl">
+          <div className="mr-3 flex basis-[40%] items-center justify-center bg-cream p-2 text-center text-xs font-bold text-[#282828] sm:mr-6 sm:p-5 md:text-lg lg:basis-[25%] lg:text-xl">
             To establish a digital hub and engage the global community to get
             closer to Allah (S.W.T) through the Holy Qur&lsquo;an and the
             AhlulBayt (A.S) in a fast changing world.
@@ -131,9 +130,7 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="flex">
-                  <p
-                    className={`mt-3 ${archDaughter.className} text-xs font-normal sm:text-justify md:text-base`}
-                  >
+                  <p className="mt-3 text-xs font-normal md:text-base">
                     Social Media has emerged as one of the most powerful
                     influencers in today&lsquo;s day and age. We strive to
                     introduce new and original ideas to change people&lsquo;s
@@ -167,9 +164,7 @@ export default function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <p
-                  className={`mt-3 ${archDaughter.className} text-xs font-normal sm:text-justify md:text-right md:text-base`}
-                >
+                <p className="mt-3 text-xs font-normal md:text-right md:text-base">
                   Living in a technology-driven world, we believe it is crucial
                   to use digital innovation to strengthen our faith and uplift
                   communities worldwide. Therefore, we aim to offer a range of

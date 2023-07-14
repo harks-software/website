@@ -1,14 +1,11 @@
 import { MainLayout } from "@/layouts/main";
-import { montserrat } from "@/utils/fonts";
 import Image from "next/image";
 import { Testimonials } from "../components/testimonials";
 
 export default function Index() {
   return (
-    <MainLayout bottomPadding={false} title="Join the crew">
-      <div
-        className={`flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4 ${montserrat.className}`}
-      >
+    <MainLayout title="Join the crew">
+      <div className="flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4">
         <div className="hidden w-[100px] lg:flex">
           <div className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red.500 via-gold.500 to-yellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent">
             Join The Crew
@@ -21,11 +18,11 @@ export default function Index() {
             </h1>
             <div className="py-2">
               <Image
-                className="float-right h-40 w-40 pl-2"
+                className="float-right pl-2"
                 src="/assets/join-the-crew/globe.gif"
-                alt="picture of globe"
-                width="9"
-                height="10"
+                alt=""
+                width={160}
+                height={160}
               />
               <div className="text-lg font-medium text-[#404040]">
                 We want to provide an opportunity for youths all around the
@@ -65,9 +62,30 @@ export default function Index() {
         </div>
       </div>
 
-      <div
-        className={`flex w-full flex-col truncate bg-beige.300 py-8 pt-6 ${montserrat.className} text-lg font-bold uppercase text-[#28282833] lg:hidden`}
-      >
+      <div className="flex w-full flex-col truncate bg-beige.300 py-8 pt-6 text-lg font-bold uppercase text-[#28282833] lg:hidden">
+        <div className="mb-3 select-none whitespace-nowrap">
+          Planner • Social Media • islamic researcher • streamer • graphic
+          Designer • video editor • animation creator • marketing • coordinator
+          • uI designer
+        </div>
+        <div className="mb-3 select-none whitespace-nowrap">
+          Streamer • graphic designer • video editor • animator • software
+          developer • marketing • Administrator • Planner • Social Media •
+          islamic researcher • streamer
+        </div>
+        <div className="mb-3 select-none whitespace-nowrap">
+          graphic Designer • video editor • animation creator • marketing •
+          coordinator • uI designer • Administrator • Planner • Social Media •
+          islamic researcher
+        </div>
+        <div className="mb-3 select-none whitespace-nowrap">
+          creator • marketing • coordinator • uI designer • software developer •
+          content writer • Administrator • Planner • Social Media • islamic
+          researcher • streamer
+        </div>
+      </div>
+
+      <div className="hidden w-full flex-col truncate bg-beige.300 py-8 text-lg font-bold uppercase text-[#28282833] lg:flex lg:text-2xl">
         <div className="mb-3 select-none whitespace-nowrap">
           Planner • Social Media • islamic researcher • streamer • graphic
           Designer • video editor • animation creator • marketing • coordinator
@@ -91,32 +109,7 @@ export default function Index() {
       </div>
 
       <div
-        className={`hidden w-full flex-col truncate bg-beige.300 py-8 ${montserrat.className} text-lg font-bold uppercase text-[#28282833] lg:flex lg:text-2xl`}
-      >
-        <div className="mb-3 select-none whitespace-nowrap">
-          Planner • Social Media • islamic researcher • streamer • graphic
-          Designer • video editor • animation creator • marketing • coordinator
-          • uI designer
-        </div>
-        <div className="mb-3 select-none whitespace-nowrap">
-          Streamer • graphic designer • video editor • animator • software
-          developer • marketing • Administrator • Planner • Social Media •
-          islamic researcher • streamer
-        </div>
-        <div className="mb-3 select-none whitespace-nowrap">
-          graphic Designer • video editor • animation creator • marketing •
-          coordinator • uI designer • Administrator • Planner • Social Media •
-          islamic researcher
-        </div>
-        <div className="mb-3 select-none whitespace-nowrap">
-          creator • marketing • coordinator • uI designer • software developer •
-          content writer • Administrator • Planner • Social Media • islamic
-          researcher • streamer
-        </div>
-      </div>
-
-      <div
-        className={`-mt-9 flex w-full flex-col p-4 pt-10 ${montserrat.className} lg:mt-0`}
+        className="-mt-9 flex w-full flex-col p-4 pt-10 lg:mt-0"
         style={{
           backgroundImage:
             "linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0.8) 100%)",
@@ -145,25 +138,25 @@ export default function Index() {
           src="https://docs.google.com/forms/d/e/1FAIpQLSducX3xxKefIeh5W5bBMm9AIdDkcKsd2phNL7D0sDpfzEZepQ/viewform?embedded=true"
           className="mx-auto mt-10 mb-4 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
         ></iframe>
-        <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
-          <Testimonials
-            list={[
-              {
-                content:
-                  "HARKS is a youth driven initiative. They strive for excellence in what they do. They serve the cause of the AhlulBayt (A.S) by debunking myths and sharing inspirations digitally. I encourage our youth to join the crew as they strive to empower the leaders of tomorrow.",
-                quoted: "Sheikh Nuru Muhammad",
-                img: "sheikh-nuru.jpg",
-              },
-              {
-                content:
-                  "HARKS is an amazing initiative that inspires and attracts the youth of our community towards the path of Allah (swt) and the Ahlul Bayt (as). Their events are impactful and innovative and we look forward to seeing them continue to grow and develop the future of our community.",
-                quoted: "Servants of Zahra",
-                img: "servents-of-zahra.jpg",
-              },
-            ]}
-          />
-        </section>
       </div>
+      <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
+        <Testimonials
+          list={[
+            {
+              content:
+                "HARKS is a youth driven initiative. They strive for excellence in what they do. They serve the cause of the AhlulBayt (A.S) by debunking myths and sharing inspirations digitally. I encourage our youth to join the crew as they strive to empower the leaders of tomorrow.",
+              quoted: "Sheikh Nuru Muhammad",
+              img: "sheikh-nuru.jpg",
+            },
+            {
+              content:
+                "HARKS is an amazing initiative that inspires and attracts the youth of our community towards the path of Allah (swt) and the Ahlul Bayt (as). Their events are impactful and innovative and we look forward to seeing them continue to grow and develop the future of our community.",
+              quoted: "Servants of Zahra",
+              img: "servents-of-zahra.jpg",
+            },
+          ]}
+        />
+      </section>
     </MainLayout>
   );
 }

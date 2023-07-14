@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { montserrat } from "../../utils/fonts";
 
 export type Item = {
   image: string;
@@ -36,23 +35,23 @@ export const PreviousWork = ({ items }: Props) => {
         {items.map((item, i) => (
           <SwiperSlide key={`previous_work_${i}`}>
             <div
-              className={`group ${montserrat.className} h-96 !bg-cover !bg-no-repeat !bg-center`}
+              className="group h-96 !bg-cover !bg-center !bg-no-repeat"
               style={{
                 background: `url('${item.image}')`,
               }}
             >
-              <div className="flex flex-col justify-center h-96 px-12 pb-8 bg-black/50">
-                <h3 className="font-extrabold text-white text-xs sm:text-sm md:text-xl">
+              <div className="flex h-96 flex-col justify-center bg-black/50 px-12 pb-8">
+                <h3 className="text-xs font-extrabold text-white sm:text-sm md:text-xl">
                   IT IS REPORTED THAT IMAM ALI (A.S) SAID:
                 </h3>
-                <p className="font-semibold text-white text-xs sm:text-sm md:text-xl py-4 lg:py-8 lg:w-[715px]">
+                <p className="py-4 text-xs font-semibold text-white sm:text-sm md:text-xl lg:w-[715px] lg:py-8">
                   &ldquo;Allah says: &apos;Paradise is forbidden for one who is
                   wealthy yet stingy; as well as for the backbiter, who is the
                   gossiper.&apos; Surely, whoever gives in charity, each silver
                   coin that he gives will be a blessing in Paradise, the weight
                   of each of which is like that of Mount Uhud.&rdquo;
                 </p>
-                <p className="font-medium text-white text-xs sm:text-sm md:text-xl">
+                <p className="text-xs font-medium text-white sm:text-sm md:text-xl">
                   [Al-Amālī of Saduq, The Sixty-Sixth Assembly]
                 </p>
               </div>

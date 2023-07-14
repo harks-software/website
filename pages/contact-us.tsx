@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { MainLayout } from "../layouts/main";
-import { montserrat } from "../utils/fonts";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function ContactUs() {
   return (
-    <MainLayout bottomPadding={false} title="Contact Us">
+    <MainLayout title="Contact Us">
       <div className="bg-beige.300 bg-contain">
         <div className="bg-[url('/assets/contact/overlay.png')] bg-no-repeat">
           <div className="mx-auto flex max-w-5xl flex-col gap-6 bg-contain px-4 py-6">
@@ -32,44 +32,25 @@ export default function ContactUs() {
               </iframe>
               <div className="my-auto flex h-fit flex-col items-center justify-center gap-8 border-slate-500 py-8 md:ml-4 md:w-auto md:items-start md:border-l-2 md:pl-8">
                 <Link href="/join-the-crew">
-                  <button
-                    className={`btn w-[253px] border-none bg-red.500 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-red.700 md:w-[273px] md:text-2xl`}
-                  >
+                  <button className="btn w-[253px] border-none bg-red.500 text-xl text-white drop-shadow-md hover:bg-red.700 md:w-[273px] md:text-2xl">
                     Join the Crew
                   </button>
                 </Link>
 
                 <Link href="/donate">
-                  <button
-                    className={`btn w-[253px] border-none bg-gold.500 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl`}
-                  >
+                  <button className="btn w-[253px] border-none bg-gold.500 text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl">
                     Donate Now
                   </button>
                 </Link>
                 <a href="/whatsapp">
-                  <button
-                    className={`btn w-[253px] border-none bg-gray.800 ${montserrat.className} text-xl text-white drop-shadow-md hover:bg-black/95 md:w-[273px] md:text-2xl`}
-                  >
+                  <button className="btn w-[253px] border-none bg-gray.800 text-xl text-white drop-shadow-md hover:bg-black/95 md:w-[273px] md:text-2xl">
                     Stay In Touch
                   </button>
                 </a>
               </div>
             </div>
             <div className="flex w-fit gap-4 place-self-center rounded-xl border-2 border-black p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                ></path>
-              </svg>
+              <EnvelopeIcon className="h-6 w-6" />
               <a
                 href="mailto:info@hussainsark.org"
                 className="link border-l border-black pl-4 text-lg"

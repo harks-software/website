@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
-import { bebasNeue } from "../../utils/fonts";
+import { Bebas_Neue } from "next/font/google";
 
 interface Props {
   className: string;
 }
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bebas-neue",
+  display: "block",
+});
 
 const text = [
   "HARKS",
@@ -101,12 +108,12 @@ export const ChangingWordsLarge = ({ className }: Props) => {
 
   return (
     <div
-      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className}`}
+      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className} ${bebasNeue.className}`}
     >
       {show.map((textObject, i) => {
         return (
           <p
-            className={`animate-fade15 py-0 ${bebasNeue.className} font-light leading-[70px] text-white`}
+            className="animate-fade15 py-0 font-light leading-[70px] text-white"
             style={{
               fontSize: `${textObject.fontSize}px`,
               color: `rgba(255, 255, 255, ${textObject.opacity})`,
@@ -160,12 +167,12 @@ export const ChangingWordsSmall = ({ className }: Props) => {
 
   return (
     <div
-      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className}`}
+      className={`flex w-full flex-row flex-wrap justify-around md:justify-between ${className} ${bebasNeue.className}`}
     >
       {show.map((textObject, i) => {
         return (
           <p
-            className={`animate-fade15 py-0 ${bebasNeue.className} font-light leading-[50px] text-white`}
+            className="animate-fade15 py-0 font-light leading-[50px] text-white"
             style={{
               fontSize: `${textObject.fontSize}px`,
               color: `rgba(255, 255, 255, ${textObject.opacity})`,

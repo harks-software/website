@@ -7,12 +7,10 @@ import { VideoSlideshow } from "@/components/video-slideshow";
 
 import Image from "next/image";
 
-import { oswald } from "@/utils/fonts";
 import { ReactElement } from "react";
 
 interface VideosLayoutProps {
   children?: ReactElement | ReactElement[];
-  bottomPadding?: boolean;
   category: string;
   heading: string;
   backgroundStyle: Object;
@@ -30,18 +28,16 @@ interface VideosLayoutProps {
 
 export function VideosLayout(props: VideosLayoutProps) {
   return (
-    <MainLayout title={props.heading} bottomPadding={props.bottomPadding}>
+    <MainLayout title={props.heading}>
       <div
         className="block min-w-full py-5 text-white md:py-10"
         style={props.backgroundStyle}
       >
-        <h2
-          className={`mt-10 px-5 ${oswald.className} text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base`}
-        >
+        <h2 className="mt-10 px-5 text-xs font-bold italic tracking-[0.5em] text-white md:mt-28 md:px-10 md:text-base">
           {props.category.toUpperCase()}
         </h2>
         <h2 className="mt-3 px-5 text-xl font-thin text-white md:mt-5 md:px-10 md:text-4xl">
-          <strong className={`${oswald.className}`}>{props.heading}</strong> on
+          <strong>{props.heading}</strong> on
           <Image
             className="ml-2 inline-block h-[1.75rem] w-[1.75rem] md:h-[2.5rem] md:w-[2.5rem]"
             src={require("/public/assets/youtube.png")}
@@ -56,13 +52,13 @@ export function VideosLayout(props: VideosLayoutProps) {
           {props.description}
         </p>
         <div className="mt-5 flex items-center px-5 md:mt-8 md:px-10">
-          <div className="rounded-xl p-2 text-center md:p-4 bg-[rgba(255,255,255,0.25)]">
+          <div className="rounded-xl bg-[rgba(255,255,255,0.25)] p-2 text-center md:p-4">
             <p className="">Videos</p>
             <p className="font-bold">{`${props.videos.length}${
               props.plus.videos ? "+" : ""
             }`}</p>
           </div>
-          <div className="ml-5 rounded-xl p-2 text-center md:p-4 bg-[rgba(255,255,255,0.25)]">
+          <div className="ml-5 rounded-xl bg-[rgba(255,255,255,0.25)] p-2 text-center md:p-4">
             <p className="">Guests</p>
             <p className="font-bold">{`${props.images.length}${
               props.plus.guests ? "+" : ""
@@ -81,7 +77,7 @@ export function VideosLayout(props: VideosLayoutProps) {
         <ImageSlideshow images={props.images} />
       </div>
       <div
-        className={`mx-auto mt-8 w-full max-w-2xl px-3 md:mt-12 ${
+        className={`mx-auto my-8 w-full max-w-2xl px-3 md:my-12 ${
           props.quote ? "" : "hidden"
         }`}
       >

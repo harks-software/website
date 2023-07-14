@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,10 +6,6 @@ module.exports = {
     "./layouts/**/*.{js,tsx,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["var(--font-open-sans)", ...fontFamily.sans],
-      body: ["var(--font-open-sans)"],
-    },
     extend: {
       colors: {
         "yellow.700": "#554402",
@@ -43,12 +37,6 @@ module.exports = {
         "vmsGrey.500": "#49443E",
         "vmsGrey.100": "#EFEEE9",
         "vmsBrown.500": "#6D5F51",
-      },
-      fontFamily: {
-        oswald: "var(--font-oswald)",
-        montserrat: "var(--font-montserrat)",
-        bebas: "var(--font-bebas-neue)",
-        architects: "var(--font-architects-daughter)",
       },
       animation: {
         fade15: "fadeIn 1.5s ease-in-out",
