@@ -9,8 +9,7 @@ export function Navbar() {
           className="ml-2 text-sm text-white md:ml-4 text-center my-0 py-0 underline"
           href="/virtual-majlis-service"
         >
-          Eid Mubarak! We're excited to announce the launch of our virtual
-          majlis service!
+          Check out our new virtual majlis service!
         </Link>
       </div>
       {/* <div
