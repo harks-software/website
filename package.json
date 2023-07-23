@@ -31,7 +31,7 @@
     "sharp": "^0.32.2",
     "stripe": "^12.5.0",
     "swiper": "^9.4.1",
-    "typescript": "4.9.5",
+    "typescript": "^5.1.6",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/cors": "^2.8.13",
     "@types/node": "^20.2.0",
-    "@types/react": "18.0.28",
+    "@types/react": "^18.2.15",
     "@types/react-dom": "18.0.11",
     "@types/react-modal": "^3.16.0",
     "autoprefixer": "^10.4.13",
