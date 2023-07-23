@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ProcessSectionDesktop, ProcessSectionMobile } from "./process-section";
 import { PaymentItem } from "./payment-components";
+import VMSLogo from "public/assets/VMS/vms-logo.png";
 
 export default function VirtualMajlisService() {
   return (
@@ -8,7 +9,7 @@ export default function VirtualMajlisService() {
       <section className="flex w-full flex-col items-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat px-10 py-16 md:flex-row md:px-20 md:py-24">
         <div className="flex flex-[0.4] flex-col">
           <Image
-            src={require("../public/assets/VMS/vms-logo.png")}
+            src={VMSLogo}
             width={450}
             height={250}
             alt="Virtual Majlis Service"

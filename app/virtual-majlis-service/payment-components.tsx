@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { montserrat } from "../../utils/fonts";
 import React from "react";
 
 interface IPaymentItemProps {
@@ -16,9 +15,7 @@ export function PaymentItem({
   image,
 }: IPaymentItemProps) {
   return (
-    <div
-      className={`w-60 h-64 bg-gray.800 rounded-2xl my-4 mx-6 text-white ${montserrat.className}`}
-    >
+    <div className="my-4 mx-6 h-64 w-60 rounded-2xl bg-gray.800 text-white">
       <Image
         src={image}
         width={250}
@@ -27,9 +24,9 @@ export function PaymentItem({
         className="rounded-t-2xl"
       />
       <div className="flex flex-col justify-center">
-        <h4 className="text-center text-xs my-2">{title}</h4>
-        <h5 className="font-bold text-center mb-1">{description}</h5>
-        <p className="text-xs text-center">{details}</p>
+        <h4 className="my-2 text-center text-xs">{title}</h4>
+        <h5 className="mb-1 text-center font-bold">{description}</h5>
+        <p className="text-center text-xs">{details}</p>
       </div>
     </div>
   );
