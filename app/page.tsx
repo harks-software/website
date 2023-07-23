@@ -2,15 +2,13 @@ import Image from "next/image";
 import {
   ChangingWordsLarge,
   ChangingWordsSmall,
-} from "@/components/home/changing-words";
-import { CounterNumericDisplay } from "@/components/home/counter";
-import { ExploreSlideshow } from "@/components/home/explore-slideshow";
-import { ExploreSlideshowMI } from "@/components/home/explore-slideshow-mi";
-import { MainLayout } from "@/layouts/main";
+} from "@/app/components/home/changing-words";
+import { CounterNumericDisplay } from "@/app/components/home/counter";
+import { ExploreSlideshow } from "@/app/components/home/explore-slideshow";
+import { ExploreSlideshowMI } from "@/app/components/home/explore-slideshow-mi";
 import Link from "next/link";
-import { Testimonials } from "../components/testimonials";
-import { CalendarEvents } from "../components/home/calendar-events";
-import { calendar_v3, google } from "googleapis";
+import { Testimonials } from "./components/testimonials";
+import { CalendarEvents } from "./components/home/calendar-events";
 import {
   ChatBubbleLeftRightIcon,
   GlobeAmericasIcon,
@@ -22,14 +20,12 @@ import {
   CalendarDaysIcon,
 } from "@heroicons/react/24/outline";
 import { UserGroupIcon as UserGroupOutlineIcon } from "@heroicons/react/24/outline";
+import Chat from "public/assets/home/chat-3d.png";
+import Puzzle from "public/assets/home/puzzle-3d.png";
 
-export default function Index({
-  events,
-}: {
-  events: calendar_v3.Schema$Event[];
-}) {
+export default function Index() {
   return (
-    <MainLayout title="Home">
+    <>
       <section
         className="flex min-h-[1000px] w-full flex-col bg-cover bg-center bg-no-repeat pt-36 lg:px-24"
         style={{
@@ -63,7 +59,7 @@ export default function Index({
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-evenly pt-36 pb-14 md:flex-row md:items-start md:pb-12 lg:flex-nowrap lg:justify-start">
+        <div className="flex flex-wrap items-center justify-evenly pb-14 pt-36 md:flex-row md:items-start md:pb-12 lg:flex-nowrap lg:justify-start">
           <div className="flex flex-col items-center px-6 pb-4 text-white lg:px-0 lg:pb-0">
             <UserGroupIcon className="h-14 w-14" />
             <CounterNumericDisplay
@@ -140,7 +136,7 @@ export default function Index({
             </h2>
           </div>
           <Image
-            src={require("/public/assets/home/chat-3d.png")}
+            src={Chat}
             className="absolute mix-blend-overlay md:right-0"
             width={undefined}
             height={undefined}
@@ -160,7 +156,7 @@ export default function Index({
                   title: "Youth Day",
                   description:
                     "An annual event to celebrate the youth in honour of Hazrat Ali Akbar (A.S).",
-                  url: "https://youthday.hussainsark.com",
+                  url: "/youth-day",
                   thumbnailUrl: "/assets/home/explore/youthday.jpg",
                 },
                 {
@@ -182,13 +178,13 @@ export default function Index({
             </h2>
           </div>
           <Image
-            src={require("/public/assets/home/puzzle-3d.png")}
+            src={Puzzle}
             className="absolute -left-10 bottom-40 mix-blend-overlay"
             width={undefined}
             height={undefined}
             alt="background image"
           />
-          <div className="pt-12 pb-4">
+          <div className="pb-4 pt-12">
             <ExploreSlideshowMI
               items={[
                 {
@@ -339,13 +335,13 @@ export default function Index({
               style={{ filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))" }}
             />
           </div>
-          <CalendarEvents data={events} />
+          <CalendarEvents />
         </div>
       </section>
       <p className="w-full bg-beige.300 text-center text-2xl font-semibold text-[rgba(0,0,0,0.5)] md:text-4xl">
         . . .
       </p>
-      <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
+      <section className="flex w-full bg-beige.300 px-4 py-12 lg:px-8 xl:px-24">
         <Testimonials
           list={[
             {
@@ -363,26 +359,6 @@ export default function Index({
           ]}
         />
       </section>
-    </MainLayout>
+    </>
   );
-}
-
-export async function getServerSideProps() {
-  let events: any[] | undefined = [];
-  if (process.env.GOOGLE_API_KEY) {
-    const calendar = google.calendar({
-      version: "v3",
-      auth: process.env.GOOGLE_API_KEY,
-    });
-    const res = await calendar.events.list({
-      calendarId:
-        "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
-      timeMin: new Date().toISOString(),
-      maxResults: 5,
-      singleEvents: true,
-      orderBy: "startTime",
-    });
-    events = res.data.items;
-  }
-  return { props: { events } };
 }

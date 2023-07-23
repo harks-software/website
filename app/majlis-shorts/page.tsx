@@ -1,4 +1,14 @@
 import { VideosLayout } from "@/layouts/videos";
+import Short1 from "@/public/assets/majlis-shorts/thumbnails/short1.png";
+import Short2 from "@/public/assets/majlis-shorts/thumbnails/short2.png";
+import Short3 from "@/public/assets/majlis-shorts/thumbnails/short3.png";
+import Short4 from "@/public/assets/majlis-shorts/thumbnails/short4.png";
+import Short5 from "@/public/assets/majlis-shorts/thumbnails/short5.png";
+import Short6 from "@/public/assets/majlis-shorts/thumbnails/short6.png";
+import Short7 from "@/public/assets/majlis-shorts/thumbnails/short7.png";
+import Short8 from "@/public/assets/majlis-shorts/thumbnails/short8.png";
+import Short9 from "@/public/assets/majlis-shorts/thumbnails/short9.png";
+import Short10 from "@/public/assets/majlis-shorts/thumbnails/short10.png";
 
 const images = [
   {
@@ -22,6 +32,7 @@ const videos = [
       "Sheikh Javad Shomali Talks about showing people God's love in his lecture on Milad Un Nabi which you can watch now!",
     url: "https://www.youtube.com/embed/lziHecW07EY",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short1.png",
+    thumbnail: Short1,
   },
   {
     title:
@@ -30,6 +41,7 @@ const videos = [
       "Sheikh Nuru Mohammed talks about Bibi Zainab (S.A) and the critical role she played after the Battle of Karbala.",
     url: "https://www.youtube.com/embed/PeZG2doc-No",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short2.png",
+    thumbnail: Short2,
   },
   {
     title:
@@ -38,6 +50,7 @@ const videos = [
       "It is reported that once Hisham ibn Abdul Malik went to Makkah at the same time as the 4th Imam (A.S). Hisham entered Masjidul Haram but was unable to wade through the crowd of people even as the caliph of the time. Sometime later, Imam Sajjad (A.S) entered the haram, the crowd parted for him and he was able to perform Tawaf and kiss Hajar al-Aswad. Hisham was burning with jealousy, so when someone asked him who the Imam was, he pretended not to know Imam (A.S). Farazdaq was standing there, and when he heard that, he addressed Hisham with lines of poetry that will live on forever.",
     url: "https://www.youtube.com/embed/voLjm-mRo2o",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short3.png",
+    thumbnail: Short3,
   },
   {
     title:
@@ -46,6 +59,7 @@ const videos = [
       "Syed Muhammad Rizvi gives practical tips and advice to prepare for the Holy Month of Ramadhan.",
     url: "https://www.youtube.com/embed/N9f5UGz6HrE",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short4.png",
+    thumbnail: Short4,
   },
   {
     title: "Shafa'at in the Quran - Syed Muhammad Rizvi | HARKS Majlis Shorts",
@@ -53,6 +67,7 @@ const videos = [
       "Syed Muhammad Rizvi talks to us about Shafa'at (intersession) in the Quran and explains the importance of Shafa'at.",
     url: "https://www.youtube.com/embed/Zx3Cx1CjD8M",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short5.png",
+    thumbnail: Short5,
   },
   {
     title:
@@ -61,6 +76,7 @@ const videos = [
       "Syed Mohammed Baqer Al-Qazwini talks to us about how Imam Ali (A.S) describes God.",
     url: "https://www.youtube.com/embed/hTIx1DQ25Lk",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short6.png",
+    thumbnail: Short6,
   },
   {
     title:
@@ -69,6 +85,7 @@ const videos = [
       "Sayed Saleh Qazwini talks to us about the vast knowledge of Imam al-Sadiq not only in regard to Islam but also in matters concerning astronomy, medicine and physics.",
     url: "https://www.youtube.com/embed/Sfl4BJ0I3To",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short7.png",
+    thumbnail: Short7,
   },
   {
     title:
@@ -77,6 +94,7 @@ const videos = [
       "In this continuation of the 'Majlis Shorts' initiative by HARKS, Sheikh Azhar Nasser elucidates the beautiful connection that is forged between a soul and its Creator through supplication.",
     url: "https://www.youtube.com/embed/5JvNc8kfd-o",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short8.png",
+    thumbnail: Short8,
   },
   {
     title: "Shield from Shaytan - Sheikh Shabbar Mehdi | HARKS Majlis Shorts",
@@ -84,6 +102,7 @@ const videos = [
       "Sheikh Shabbar Mehdi talks to us about how we are protected from Shaytan.",
     url: "https://www.youtube.com/embed/dkMmDn2lNrY",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short9.png",
+    thumbnail: Short9,
   },
   {
     title:
@@ -91,6 +110,7 @@ const videos = [
     description: "Shaykh Mahdi Rastani explains how to communicate with Allah.",
     url: "https://www.youtube.com/embed/smB2Dhfwylw",
     thumbnailUrl: "/assets/majlis-shorts/thumbnails/short10.png",
+    thumbnail: Short10,
   },
 ];
 

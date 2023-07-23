@@ -1,7 +1,10 @@
+"use client";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./explore-slideshow.css";
 
 // Import Icons
 import { Navigation, Pagination } from "swiper";

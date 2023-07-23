@@ -1,8 +1,8 @@
+"use client";
 import { useState } from "react";
-import { MainLayout } from "../layouts/main";
-import DonateComponent from "../components/donate";
-import { PreviousWork } from "../components/donate/previous-work";
-import { CounterNumericDisplay } from "../components/home/counter";
+import DonateComponent from "app/components/donate";
+import { PreviousWork } from "app/components/donate/previous-work";
+import { CounterNumericDisplay } from "app/components/home/counter";
 import {
   UserGroupIcon,
   GlobeAmericasIcon,
@@ -19,7 +19,7 @@ export default function Donate() {
   const [tab, setTab] = useState(0);
 
   return (
-    <MainLayout title="Donate">
+    <>
       <PreviousWork items={PREVIOUS_WORK_IMAGES} />
       <div className="tabs -mt-12">
         <a
@@ -38,7 +38,7 @@ export default function Donate() {
             setTab(1);
           }}
         >
-          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-white text-transparent sm:text-sm md:text-xl lg:px-8">
+          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-transparent text-white sm:text-sm md:text-xl lg:px-8">
             UK BANK TRANSFER
           </span>
         </a>
@@ -49,7 +49,7 @@ export default function Donate() {
             setTab(2);
           }}
         >
-          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-white text-transparent sm:text-sm md:w-auto md:text-xl lg:px-8">
+          <span className="bg-gradient-to-r bg-clip-text px-2 text-xs font-bold text-transparent text-white sm:text-sm md:w-auto md:text-xl lg:px-8">
             CANADA BANK TRANSFER
           </span>
         </a>
@@ -138,6 +138,6 @@ export default function Donate() {
           <span className="font-medium leading-8 md:text-lg">COLLABS</span>
         </div>
       </div>
-    </MainLayout>
+    </>
   );
 }

@@ -1,5 +1,7 @@
 import { VideosLayout } from "@/layouts/videos";
-import { ImageSlideshow } from "@/components/image-slideshow";
+import { ImageSlideshow } from "@/app/components/image-slideshow";
+import Thumbnail1 from "@/public/assets/youth-day/thumbnail1.png";
+import Thumbnail2 from "@/public/assets/youth-day/thumbnail2.png";
 
 const images = [
   {
@@ -34,6 +36,7 @@ const videos = [
       "Hussain's Ark Presents... An Inspiring Festival of Celebration 🎉 In honour of the Wiladat of Hazrat Ali Akbar (A.S) Youth Day 2021 🟢 Thursday 25th March 2021",
     url: "https://www.youtube.com/embed/x4fAUGA-2qg",
     thumbnailUrl: "/assets/youth-day/thumbnail1.png",
+    thumbnail: Thumbnail1,
   },
   {
     title: "Youth Day 2021 - Giveaway Entries",
@@ -41,6 +44,7 @@ const videos = [
       "A video compilation of all the giveaway entries received for the Hussain's Ark Youth Day 2021 program in honour of the Wiladat of Hazrat Ali Akbar (A.S).",
     url: "https://www.youtube.com/embed/65QsbInftcc",
     thumbnailUrl: "/assets/youth-day/thumbnail2.png",
+    thumbnail: Thumbnail2,
   },
 ];
 

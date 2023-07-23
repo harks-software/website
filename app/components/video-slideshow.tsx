@@ -1,9 +1,11 @@
+"use client";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./video-slideshow.css";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 // Import Icons
 import {
   ArrowLeftIcon,
@@ -20,15 +22,16 @@ export type VideoFile = {
   url: string;
   title: string;
   description: string;
+  thumbnail: StaticImageData;
   thumbnailUrl: string;
 };
 
-export interface Props {
+export interface VideoSlideshowProps {
   videos: Array<VideoFile>;
   title: string;
 }
 
-export const VideoSlideshow = ({ videos, title }: Props) => {
+export const VideoSlideshow = ({ videos, title }: VideoSlideshowProps) => {
   // The fullscreen mode content will go inside the modal, which goes inside the body.
   Modal.setAppElement("body");
 
@@ -101,7 +104,7 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
           </h1>
           <p className="w-[95%] px-5">{videos[activeIndex]?.description}</p>
           {/* The "more video" section. */}
-          <div className="mt-10 ml-5 w-10/12 border-b-2 border-b-gray-400 pb-1 text-gray-400">
+          <div className="ml-5 mt-10 w-10/12 border-b-2 border-b-gray-400 pb-1 text-gray-400">
             {`More ${title}`.toUpperCase()}
           </div>
           <ul className="w-full px-5">
@@ -116,11 +119,13 @@ export const VideoSlideshow = ({ videos, title }: Props) => {
                   document.querySelector(".mobile-header")?.scrollIntoView();
                 }}
               >
-                <Image
+                {/* <Image
                   className="h-1/6 w-1/4"
-                  src={require(`../public${v.thumbnailUrl}`)}
+                  src={v.thumbnail}
                   alt={""}
-                />
+                  width={100}
+                  height={100}
+                /> */}
                 <span className="w-[70%] pl-5 text-sm font-semibold">
                   {v.title}
                 </span>

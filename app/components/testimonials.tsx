@@ -1,7 +1,9 @@
+"use client";
 import "swiper/css";
 
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./testimonials.css";
 
 interface IQuote {
   content: string;
@@ -33,9 +35,9 @@ export function Testimonials({ list }: ITestimonialsProps) {
       {list.map((item) => (
         <SwiperSlide key={item.content}>
           {/* mobile */}
-          <div className="relative rounded-2xl bg-white py-6 px-4 md:hidden">
+          <div className="relative rounded-2xl bg-white px-4 py-6 md:hidden">
             <i className="fa-solid fa-quote-left absolute left-0 top-36 text-2xl text-[#E7AC37]"></i>
-            <i className="fa-solid fa-quote-left absolute right-2 bottom-2 rotate-180 text-2xl text-[#E7AC37]"></i>
+            <i className="fa-solid fa-quote-left absolute bottom-2 right-2 rotate-180 text-2xl text-[#E7AC37]"></i>
             <div className="flex w-full items-center">
               <div
                 className="my-2 mr-4 flex h-24 w-24 items-center justify-center rounded-full"
@@ -63,8 +65,8 @@ export function Testimonials({ list }: ITestimonialsProps) {
             </div>
           </div>
           {/* desktop */}
-          <div className="items.center relative hidden content-evenly rounded-2xl bg-white py-6 px-4 md:flex">
-            <i className="fa-solid fa-quote-left absolute top-0 left-28 text-5xl text-[#E7AC37]"></i>
+          <div className="items.center relative hidden content-evenly rounded-2xl bg-white px-4 py-6 md:flex">
+            <i className="fa-solid fa-quote-left absolute left-28 top-0 text-5xl text-[#E7AC37]"></i>
             <i className="fa-solid fa-quote-left absolute bottom-0 rotate-180 text-5xl text-[#E7AC37] md:right-8 lg:right-28"></i>
             <div
               className="my-auto mr-4 flex h-24 w-24 items-center justify-center rounded-full"

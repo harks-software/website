@@ -1,10 +1,9 @@
-import { MainLayout } from "@/layouts/main";
 import Image from "next/image";
-import { Testimonials } from "../components/testimonials";
+import { Testimonials } from "app/components/testimonials";
 
 export default function Index() {
   return (
-    <MainLayout title="Join the crew">
+    <>
       <div className="flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4">
         <div className="hidden w-[100px] lg:flex">
           <div className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red.500 via-gold.500 to-yellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent">
@@ -43,7 +42,7 @@ export default function Index() {
               allowFullScreen
               className="md:mx-4"
             ></iframe>
-            <div className="mt-4 h-[500px] max-w-[725px] bg-[#404040] p-4 md:mt-0 md:ml-auto md:h-[400px]">
+            <div className="mt-4 h-[500px] max-w-[725px] bg-[#404040] p-4 md:ml-auto md:mt-0 md:h-[400px]">
               <h1 className="pb-4 text-xl font-extrabold uppercase text-[#E7AD36] lg:text-2xl">
                 Global Youth Community
               </h1>
@@ -136,10 +135,10 @@ export default function Index() {
         </div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSducX3xxKefIeh5W5bBMm9AIdDkcKsd2phNL7D0sDpfzEZepQ/viewform?embedded=true"
-          className="mx-auto mt-10 mb-4 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
+          className="mx-auto mb-4 mt-10 h-[700px] w-full rounded-md shadow-md lg:w-6/12"
         ></iframe>
       </div>
-      <section className="flex w-full bg-beige.300 py-12 px-4 lg:px-8 xl:px-24">
+      <section className="flex w-full bg-beige.300 px-4 py-12 lg:px-8 xl:px-24">
         <Testimonials
           list={[
             {
@@ -157,6 +156,6 @@ export default function Index() {
           ]}
         />
       </section>
-    </MainLayout>
+    </>
   );
 }

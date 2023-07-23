@@ -1,7 +1,9 @@
+"use client";
 // Import Swiper React components
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "./image-slideshow.css";
 
 import { A11y, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -32,7 +34,7 @@ export const ImageSlideshow = ({ images }: Props) => (
             background: `url(${image.url}) no-repeat center center /cover`,
           }}
         >
-          <div className="image-cover absolute top-0 left-0 z-0 h-full w-full rounded-lg">
+          <div className="image-cover absolute left-0 top-0 z-0 h-full w-full rounded-lg">
             <div className="absolute bottom-0 z-10 hidden group-hover:block group-active:block">
               <h1 className="px-5 pb-5 font-bold text-white md:text-2xl">
                 {image.title}

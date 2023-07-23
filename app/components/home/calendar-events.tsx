@@ -1,13 +1,41 @@
 import dayjs from "dayjs";
-import { calendar_v3 } from "googleapis";
 import advancedFormat from "dayjs/plugin/advancedFormat";
+import { calendar_v3, google } from "googleapis";
 
 dayjs.extend(advancedFormat);
 
-export function CalendarEvents({ data }: { data: calendar_v3.Schema$Event[] }) {
+async function getEvents() {
+  const calendar = google.calendar({
+    version: "v3",
+    auth: process.env.GOOGLE_API_KEY,
+  });
+  const res = await calendar.events.list({
+    calendarId:
+      "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
+    timeMin: new Date().toISOString(),
+    maxResults: 5,
+    singleEvents: true,
+    orderBy: "startTime",
+  });
+  const events = res.data.items;
+
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+
+  // // Recommendation: handle errors
+  // if (!res.ok) {
+  //   // This will activate the closest `error.js` Error Boundary
+  //   throw new Error('Failed to fetch data')
+  // }
+
+  return events;
+}
+
+export async function CalendarEvents() {
+  const events = await getEvents();
   return (
     <div className="flex w-[300px] flex-col py-4 sm:w-[450px] lg:w-full">
-      {data.map((event, i) => {
+      {events?.map((event, i) => {
         const date = dayjs(event.start?.date);
         return (
           <div

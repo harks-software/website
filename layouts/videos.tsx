@@ -1,9 +1,8 @@
-import { VideoFile } from "@/components/video-slideshow";
-import { ImageFile } from "@/components/image-slideshow";
-import { MainLayout } from "./main";
+import { VideoFile } from "@/app/components/video-slideshow";
+import { ImageFile } from "@/app/components/image-slideshow";
 
-import { ImageSlideshow } from "@/components/image-slideshow";
-import { VideoSlideshow } from "@/components/video-slideshow";
+import { ImageSlideshow } from "@/app/components/image-slideshow";
+import { VideoSlideshow } from "@/app/components/video-slideshow";
 
 import Image from "next/image";
 
@@ -28,7 +27,7 @@ interface VideosLayoutProps {
 
 export function VideosLayout(props: VideosLayoutProps) {
   return (
-    <MainLayout title={props.heading}>
+    <>
       <div
         className="block min-w-full py-5 text-white md:py-10"
         style={props.backgroundStyle}
@@ -89,6 +88,6 @@ export function VideosLayout(props: VideosLayoutProps) {
         </p>
       </div>
       <div>{props.children}</div>
-    </MainLayout>
+    </>
   );
 }

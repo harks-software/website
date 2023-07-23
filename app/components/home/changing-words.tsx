@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { Bebas_Neue } from "@next/font/google";
 

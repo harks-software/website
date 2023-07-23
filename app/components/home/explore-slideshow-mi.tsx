@@ -1,7 +1,9 @@
+"use client";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./explore-slideshow.css";
 
 // Import Icons
 import { Navigation, Pagination } from "swiper";
@@ -42,6 +44,8 @@ export const ExploreSlideshowMI = ({ items }: Props) => {
             <a
               className="flex h-[320px] w-[300px] flex-col rounded-md bg-[#18181873]"
               href={item.url}
+              target="_blank"
+              rel="noreferrer"
             >
               <div
                 className="group h-[350px] w-full rounded-md"

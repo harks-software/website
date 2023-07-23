@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "public/assets/harks-logo-circle.png";
 
 export function Navbar() {
   return (
     <div className="sticky top-0 left-0 z-40 w-full">
-      <div className="flex justify-center w-full p-2 pr-6 md:pr-8 drop-shadow-xl bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-no-repeat bg-center">
+      <div className="flex w-full justify-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat p-2 pr-6 drop-shadow-xl md:pr-8">
         <Link
-          className="ml-2 text-sm text-white md:ml-4 text-center my-0 py-0 underline"
+          className="my-0 ml-2 py-0 text-center text-sm text-white underline md:ml-4"
           href="/virtual-majlis-service"
         >
           Check out our new virtual majlis service!
@@ -209,7 +210,7 @@ export function Navbar() {
                   <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
                     <Link href="/virtual-majlis-service">
                       Virtual Majlis Service
-                      <div className="badge badge-success">New</div>
+                      <div className="badge-success badge">New</div>
                     </Link>
                   </li>
                 </ul>
@@ -239,12 +240,7 @@ export function Navbar() {
           </svg>
         </Link>
         <Link className="mr-4 flex-none cursor-pointer lg:hidden" href="/">
-          <Image
-            height={48}
-            width={48}
-            src={require("../public/assets/harks-logo-circle.png")}
-            alt="HARKS LOGO"
-          />
+          <Image height={48} width={48} src={Logo} alt="HARKS LOGO" />
         </Link>
 
         {/* MOBILE MENU END */}
@@ -255,7 +251,7 @@ export function Navbar() {
             <Image
               height={40}
               width={40}
-              src={require("../public/assets/harks-logo-circle.png")}
+              src={Logo}
               className="mr-4"
               alt="HARKS LOGO"
             />
@@ -364,7 +360,7 @@ export function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white py-2 px-4 font-bold shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs ">
+            <div className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white px-4 py-2 font-bold shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs ">
               WATCH LIVE
               <svg
                 role="img"
@@ -379,7 +375,7 @@ export function Navbar() {
           </a>
           <Link
             href="/donate"
-            className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white py-2 px-4 font-bold uppercase shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs"
+            className="mr-4 flex cursor-pointer whitespace-nowrap rounded-2xl bg-white px-4 py-2 font-bold uppercase shadow-md transition-all duration-200 hover:bg-zinc-400/60 md:text-[0.65rem] lg:text-xs"
           >
             Donate
             <svg
