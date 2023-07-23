@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="flex w-full justify-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat p-2 pr-6 drop-shadow-xl md:pr-8">
         <Link
           className="my-0 ml-2 py-0 text-center text-sm text-white underline md:ml-4"
-          href="/virtual-majlis-service"
+          href="/digital-hub/virtual-majlis-service"
         >
           Check out our new virtual majlis service!
         </Link>
@@ -183,10 +183,10 @@ export function Navbar() {
                 </a>
                 <ul className="bg-white">
                   <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/youth-day">Youth Day</Link>
+                    <Link href="/initiatives/youth-day">Youth Day</Link>
                   </li>
                   <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/majlis-shorts">Majlis Shorts</Link>
+                    <Link href="/initiatives/majlis-shorts">Majlis Shorts</Link>
                   </li>
                 </ul>
               </li>
@@ -208,7 +208,7 @@ export function Navbar() {
                 </a>
                 <ul className="w-44 bg-white">
                   <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/virtual-majlis-service">
+                    <Link href="/digital-hub/virtual-majlis-service">
                       Virtual Majlis Service
                       <div className="badge-success badge">New</div>
                     </Link>
@@ -297,10 +297,10 @@ export function Navbar() {
               className="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
-                <Link href="/youth-day">Youth Day</Link>
+                <Link href="/initiatives/youth-day">Youth Day</Link>
               </li>
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
-                <Link href="/majlis-shorts">Majlis Shorts</Link>
+                <Link href="/initiatives/majlis-shorts">Majlis Shorts</Link>
               </li>
             </ul>
           </div>
@@ -329,7 +329,7 @@ export function Navbar() {
               className="dropdown-content menu rounded-box w-max bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
-                <Link href="/virtual-majlis-service">
+                <Link href="/digital-hub/virtual-majlis-service">
                   Virtual Majlis Service{" "}
                   <div className="badge bg-yellow.500">New</div>
                 </Link>

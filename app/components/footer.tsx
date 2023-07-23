@@ -40,23 +40,23 @@ export function Footer() {
             <div className="flex gap-4">
               <div className="grid grid-cols-4 gap-4 text-sm">
                 <div className="flex flex-col gap-2">
-                  <Link href="/" className="link link-hover uppercase">
+                  <Link href="/" className="link-hover link uppercase">
                     Home
                   </Link>
                   <Link
                     href="/join-the-crew"
-                    className="link link-hover uppercase"
+                    className="link-hover link uppercase"
                   >
                     Join The Crew
                   </Link>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <Link href="/about-us" className="link link-hover uppercase">
+                  <Link href="/about-us" className="link-hover link uppercase">
                     About Us
                   </Link>
                   <Link
                     href="/contact-us"
-                    className="link link-hover uppercase"
+                    className="link-hover link uppercase"
                   >
                     Contact Us
                   </Link>
@@ -64,14 +64,14 @@ export function Footer() {
                 <div className="flex flex-col gap-1">
                   <p className="uppercase">Initiatives</p>
                   <Link
-                    href="/youth-day"
-                    className="link link-hover text-xs italic"
+                    href="/initiatives/youth-day"
+                    className="link-hover link text-xs italic"
                   >
                     Youth Day
                   </Link>
                   <Link
-                    href="/majlis-shorts"
-                    className="link link-hover text-xs italic"
+                    href="/initiatives/majlis-shorts"
+                    className="link-hover link text-xs italic"
                   >
                     Majlis Shorts
                   </Link>
@@ -79,8 +79,8 @@ export function Footer() {
                 <div className="flex flex-col gap-1">
                   <p className="uppercase">Digital Hub</p>
                   <Link
-                    href="/virtual-majlis-service"
-                    className="link link-hover text-xs italic"
+                    href="/digital-hub/virtual-majlis-service"
+                    className="link-hover link text-xs italic"
                   >
                     Virtual Majlis Service
                   </Link>
@@ -96,14 +96,14 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://instagram.com/hussainsark"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Instagram
                 </a>
                 <a
-                  className="link link-hover flex place-content-center uppercase transition-all duration-200 hover:opacity-60"
+                  className="link-hover link flex place-content-center uppercase transition-all duration-200 hover:opacity-60"
                   href="https://instagram.com/hussainsark"
                   target="_blank"
                   rel="noreferrer"
@@ -122,14 +122,14 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://facebook.com/hussainsark"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Facebook
                 </a>
                 <a
-                  className="link link-hover flex place-content-center uppercase transition-all duration-200 hover:opacity-60"
+                  className="link-hover link flex place-content-center uppercase transition-all duration-200 hover:opacity-60"
                   href="https://facebook.com/hussainsark"
                   target="_blank"
                   rel="noreferrer"
@@ -148,7 +148,7 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://youtube.com/hussainsark"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -174,7 +174,7 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://tiktok.com/@hussainsark"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -200,7 +200,7 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <a
                   href="https://linkedin.com/company/harks"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -226,7 +226,7 @@ export function Footer() {
               <div className="flex flex-col gap-2 text-center">
                 <Link
                   href="/whatsapp-broadcasting"
-                  className="link link-hover hidden uppercase lg:block"
+                  className="link-hover link hidden uppercase lg:block"
                 >
                   WhatsApp
                 </Link>

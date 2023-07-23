@@ -29,14 +29,14 @@ export default function SuccessfulDonation() {
               title: "Youth Day",
               description:
                 "An annual event to celebrate the youth in honour of Hazrat Ali Akbar (A.S).",
-              url: "/youth-day",
+              url: "/initiatives/youth-day",
               thumbnailUrl: "/assets/home/explore/youthday.jpg",
             },
             {
               title: "Virtual Majlis Service",
               description:
                 "Providing you the opportunity to use our platform and support to host an online event.",
-              url: "/virtual-majlis-service",
+              url: "/digital-hub/virtual-majlis-service",
               thumbnailUrl: "assets/home/explore/vms.png",
             },
           ]}

@@ -67,7 +67,7 @@ export default function CheckoutForm({ setClientSecret }: ICheckoutFormProps) {
           window.location.protocol +
           "//" +
           window.location.host +
-          "/successful-donation",
+          "/donate/successful-donation",
       },
     });
 

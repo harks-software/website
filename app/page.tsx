@@ -156,14 +156,14 @@ export default function Index() {
                   title: "Youth Day",
                   description:
                     "An annual event to celebrate the youth in honour of Hazrat Ali Akbar (A.S).",
-                  url: "/youth-day",
+                  url: "/initiatives/youth-day",
                   thumbnailUrl: "/assets/home/explore/youthday.jpg",
                 },
                 {
                   title: "Virtual Majlis Service",
                   description:
                     "Providing you the opportunity to use our platform and support to host an online event.",
-                  url: "/virtual-majlis-service",
+                  url: "/digital-hub/virtual-majlis-service",
                   thumbnailUrl: "assets/home/explore/vms.png",
                 },
               ]}
@@ -354,7 +354,7 @@ export default function Index() {
               content:
                 "HARKS is an amazing initiative that inspires and attracts the youth of our community towards the path of Allah (swt) and the Ahlul Bayt (as). Their events are impactful and innovative and we look forward to seeing them continue to grow and develop the future of our community.",
               quoted: "Servants of Zahra",
-              img: "servents-of-zahra.jpg",
+              img: "servants-of-zahra.jpg",
             },
           ]}
         />
