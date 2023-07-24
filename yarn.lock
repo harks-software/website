@@ -295,6 +295,11 @@
   dependencies:
     glob "7.1.7"
 
+"@next/font@^13.4.10":
+  version "13.4.12"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.4.12.tgz#6b6f8f870241baaf9f7f4245e874cf3cf95e35ae"
+  integrity sha512-w/ygNFuscvvFKFTMoIqhU8Kaq1wM6x4XEu9bwzJaj8G7aloH866TUPeCgiKf+M/ACpMKfRahQa06REcg6T3CyA==
+
 "@next/swc-darwin-arm64@13.4.9":
   version "13.4.9"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.9.tgz#0ed408d444bbc6b0a20f3506a9b4222684585677"
@@ -980,13 +985,18 @@ color-string@^1.9.0:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^4.2, color@^4.2.3:
+color@^4.2.3:
   version "4.2.3"
   resolved "https://registry.npmjs.org/color/-/color-4.2.3.tgz"
   integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
   dependencies:
     color-convert "^2.0.1"
     color-string "^1.9.0"
+
+colord@^2.9:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/colord/-/colord-2.9.3.tgz#4f8ce919de456f1d5c1c368c307fe20f3e59fb43"
+  integrity sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==
 
 compare-func@^2.0.0:
   version "2.0.0"
@@ -1072,9 +1082,9 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-css-selector-tokenizer@^0.8.0:
+css-selector-tokenizer@^0.8:
   version "0.8.0"
-  resolved "https://registry.npmjs.org/css-selector-tokenizer/-/css-selector-tokenizer-0.8.0.tgz"
+  resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.8.0.tgz#88267ef6238e64f2215ea2764b3e2cf498b845dd"
   integrity sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==
   dependencies:
     cssesc "^3.0.0"
@@ -1090,14 +1100,15 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
-daisyui@^2.50.2:
-  version "2.50.2"
-  resolved "https://registry.npmjs.org/daisyui/-/daisyui-2.50.2.tgz"
-  integrity sha512-CzyTsqdkpP2Zwk5Fl+1pFfL7XewRn/COm4TyKx4DbdITpzADMe01j6YZRG/D0kAOyd7t4rXA3zvkqNc7Ak9ukQ==
+daisyui@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.3.1.tgz#3ebec616b3f37b43903d9c935026b1aaed5542c1"
+  integrity sha512-0PVNl+0r2Ie+FRkDNQABYcv8qLc0bt0lhUfSf8PxGocqpDsCB6cNQ5k8jOlnZIjUhc1EXMIDPU9r0pVrfRGftw==
   dependencies:
-    color "^4.2"
-    css-selector-tokenizer "^0.8.0"
-    postcss-js "^4.0.0"
+    colord "^2.9"
+    css-selector-tokenizer "^0.8"
+    postcss "^8"
+    postcss-js "^4"
     tailwindcss "^3"
 
 damerau-levenshtein@^1.0.8:
@@ -2705,6 +2716,11 @@ nanoid@^3.3.4:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
+nanoid@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
+  integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
+
 napi-build-utils@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
@@ -3012,7 +3028,7 @@ postcss-import@^14.1.0:
     read-cache "^1.0.0"
     resolve "^1.1.7"
 
-postcss-js@^4.0.0:
+postcss-js@^4, postcss-js@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npmjs.org/postcss-js/-/postcss-js-4.0.1.tgz"
   integrity sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==
@@ -3061,6 +3077,15 @@ postcss@8.4.14:
   integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
   dependencies:
     nanoid "^3.3.4"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
+postcss@^8:
+  version "8.4.27"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.27.tgz#234d7e4b72e34ba5a92c29636734349e0d9c3057"
+  integrity sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==
+  dependencies:
+    nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
@@ -3177,6 +3202,11 @@ react-countup@^6.4.1:
   dependencies:
     "@rollup/plugin-babel" "^6.0.2"
     countup.js "^2.4.1"
+
+react-daisyui@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-daisyui/-/react-daisyui-4.0.0.tgz#0db1429f757923ff9748b3ddc25a45b80d0afeca"
+  integrity sha512-kE+Ybw6GD00AQ6fGm0JRUUF7t3P127D2+XFVRwhEHqgdwLo8K/XhuWA69ilNZSLTklgrnghaUh8H1mtubk3fmg==
 
 react-dom@18.2.0:
   version "18.2.0"
