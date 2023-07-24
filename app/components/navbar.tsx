@@ -1,3 +1,4 @@
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/assets/harks-logo-circle.png";
@@ -128,106 +129,17 @@ export function Navbar() {
       </div> */}
 
       <div
-        className="navbar min-h-0 bg-gradient-to-r from-red.500 via-orange.500 to-yellow.500 p-0 md:px-3 lg:py-1.5"
+        className="navbar flex min-h-0 items-stretch gap-2 bg-gradient-to-r from-red.500 via-orange.500 to-yellow.500 p-0 px-4 py-2"
         style={{
           boxShadow: "0px 2px 20px 1px rgba(0,0,0,0.37)",
         }}
       >
-        {/* MOBILE MENU */}
-        <div className="flex-1 lg:hidden">
-          <div className="dropdown">
-            {/* HAMBURGER BUTTON */}
-            <label tabIndex={0} className=" ml-2 lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                strokeWidth="3"
-                stroke="white"
-                className="w-612 float-right m-2 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  fill="white"
-                />
-              </svg>
-            </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-end dropdown-content menu rounded-box menu-compact mt-16 w-52 bg-white p-2 font-extrabold text-black shadow"
-            >
-              <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                <Link href="/" className="justify-between">
-                  HOME
-                </Link>
-              </li>
-              <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                <Link href="/about-us">ABOUT US</Link>
-              </li>
-              <li
-                tabIndex={0}
-                className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300"
-              >
-                <a className="justify-between">
-                  INITIATIVES{" "}
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a>
-                <ul className="bg-white">
-                  <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/initiatives/youth-day">Youth Day</Link>
-                  </li>
-                  <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/initiatives/majlis-shorts">Majlis Shorts</Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                tabIndex={0}
-                className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300"
-              >
-                <a className="justify-between">
-                  DIGITAL HUB
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a>
-                <ul className="w-44 bg-white">
-                  <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                    <Link href="/digital-hub/virtual-majlis-service">
-                      Virtual Majlis Service
-                      <div className="badge-success badge">New</div>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                <Link href="/join-the-crew">JOIN THE CREW</Link>
-              </li>
-              <li className="cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-300">
-                <Link href="/contact-us">CONTACT US</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Link className="flex-1 cursor-pointer lg:hidden" href="/">
+          <Image className="h-10 w-10" src={Logo} alt="HARKS LOGO" />
+        </Link>
         <Link
           href="/donate"
-          className="my-2 mr-2 flex cursor-pointer rounded-3xl bg-white p-3 text-xs font-bold transition-all duration-200 hover:bg-zinc-400/60 lg:hidden"
+          className="flex cursor-pointer rounded-3xl bg-white p-3 text-xs font-bold transition-all duration-200 hover:bg-zinc-400/60 lg:hidden"
         >
           DONATE
           <svg
@@ -239,9 +151,64 @@ export function Navbar() {
             <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
           </svg>
         </Link>
-        <Link className="mr-4 flex-none cursor-pointer lg:hidden" href="/">
-          <Image height={48} width={48} src={Logo} alt="HARKS LOGO" />
-        </Link>
+
+        {/* MOBILE MENU */}
+        <div className="lg:hidden">
+          <div className="dropdown-end dropdown h-full">
+            {/* HAMBURGER BUTTON */}
+            <label tabIndex={0} className="lg:hidden">
+              <Bars3Icon className="h-full w-8 fill-white stroke-white" />
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu-compact dropdown-content menu my-2 -mr-4 w-56 bg-white p-2 font-extrabold text-black shadow"
+            >
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
+                <Link href="/" className="justify-between">
+                  HOME
+                </Link>
+              </li>
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
+                <Link href="/about-us">ABOUT US</Link>
+              </li>
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300">
+                <details>
+                  <summary className="hover:bg-gray-300">Initiatives</summary>
+                  <ul>
+                    <li className="cursor-pointer rounded-lg normal-case transition-all duration-300 hover:bg-gray-300">
+                      <Link href="/initiatives/youth-day">Youth Day</Link>
+                    </li>
+                    <li className="cursor-pointer rounded-lg normal-case transition-all duration-300 hover:bg-gray-300">
+                      <Link href="/initiatives/majlis-shorts">
+                        Majlis Shorts
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300">
+                <details>
+                  <summary className="hover:bg-gray-300">Digital Hub</summary>
+                  <ul>
+                    <li className="cursor-pointer rounded-lg normal-case transition-all duration-300 hover:bg-gray-300">
+                      <Link href="/digital-hub/virtual-majlis-service">
+                        Virual Majlis Service
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
+                <Link href="/join-the-crew">JOIN THE CREW</Link>
+              </li>
+              <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
+                <Link href="/contact-us">CONTACT US</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         {/* MOBILE MENU END */}
 
@@ -273,7 +240,7 @@ export function Navbar() {
               ABOUT US
             </label>
           </Link>
-          <div className="dropdown dropdown-hover px-3">
+          <div className="dropdown-hover dropdown px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -305,7 +272,7 @@ export function Navbar() {
             </ul>
           </div>
 
-          <div className="dropdown dropdown-hover px-3">
+          <div className="dropdown-hover dropdown px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -326,12 +293,11 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-max bg-white p-2 shadow"
+              className="dropdown-content menu rounded-box w-56 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/digital-hub/virtual-majlis-service">
                   Virtual Majlis Service{" "}
-                  <div className="badge bg-yellow.500">New</div>
                 </Link>
               </li>
             </ul>
