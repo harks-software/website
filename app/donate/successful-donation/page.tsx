@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ExploreSlideshow } from "app/components/home/explore-slideshow";
 import { ExploreSlideshowMI } from "app/components/home/explore-slideshow-mi";
 
@@ -23,7 +22,7 @@ export default function SuccessfulDonation() {
               description:
                 "Notable speakers and young individuals to discuss how to tackle the current issues faced by today's youth.",
               url: "/",
-              thumbnailUrl: "assets/home/explore/podcast.png",
+              thumbnailUrl: "/assets/home/explore/podcast.png",
             },
             {
               title: "Youth Day",
@@ -37,7 +36,7 @@ export default function SuccessfulDonation() {
               description:
                 "Providing you the opportunity to use our platform and support to host an online event.",
               url: "/digital-hub/virtual-majlis-service",
-              thumbnailUrl: "assets/home/explore/vms.png",
+              thumbnailUrl: "/assets/home/explore/vms.png",
             },
           ]}
         />

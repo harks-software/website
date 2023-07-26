@@ -22,6 +22,7 @@ import {
 import { UserGroupIcon as UserGroupOutlineIcon } from "@heroicons/react/24/outline";
 import Chat from "public/assets/home/chat-3d.png";
 import Puzzle from "public/assets/home/puzzle-3d.png";
+import { Suspense } from "react";
 
 export default function Index() {
   return (

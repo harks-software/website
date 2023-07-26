@@ -161,7 +161,7 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu-compact dropdown-content menu my-2 -mr-4 w-56 bg-white p-2 font-extrabold text-black shadow"
+              className="menu-compact dropdown-content menu my-2 -mr-4 w-56 bg-beige.300 p-2 font-extrabold text-black shadow"
             >
               <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
                 <Link href="/" className="justify-between">
