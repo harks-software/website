@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import { calendar_v3, google } from "googleapis";
+import { google } from "googleapis";
 
 dayjs.extend(advancedFormat);
 
@@ -18,6 +18,8 @@ async function getEvents() {
     orderBy: "startTime",
   });
   const events = res.data.items;
+
+  await new Promise((resolve) => setTimeout(resolve, 10000));
 
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
@@ -39,7 +41,7 @@ export async function CalendarEvents() {
         const date = dayjs(event.start?.date);
         return (
           <div
-            key={`calendar_event_${i}`}
+            key={event.id}
             className="my-4 flex h-[92px] w-full rounded-lg bg-white"
           >
             <div className="flex h-full flex-[0.2] flex-col rounded-l-lg bg-[#242424BF] p-1 font-bold sm:p-2">
