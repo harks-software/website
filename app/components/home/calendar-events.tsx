@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 import { google } from "googleapis";
+import { headers } from "next/dist/client/components/headers";
 
 dayjs.extend(advancedFormat);
 
@@ -18,8 +19,7 @@ async function getEvents() {
     orderBy: "startTime",
   });
   const events = res.data.items;
-
-  await new Promise((resolve) => setTimeout(resolve, 60000));
+  await new Promise((resolve) => setTimeout(resolve, 10000));
 
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
@@ -34,6 +34,9 @@ async function getEvents() {
 }
 
 export async function CalendarEvents() {
+  const headersList = headers();
+  // this is a hack to get it to do server-side instead of static
+  const referer = headersList.get("referer");
   const events = await getEvents();
   return (
     <div className="flex w-[300px] flex-col py-4 sm:w-[450px] lg:w-full">
