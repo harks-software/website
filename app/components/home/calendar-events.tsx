@@ -19,7 +19,7 @@ async function getEvents() {
   });
   const events = res.data.items;
 
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  await new Promise((resolve) => setTimeout(resolve, 60000));
 
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
