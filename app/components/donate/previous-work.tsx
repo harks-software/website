@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // Import Icons
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay } from "swiper/modules";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

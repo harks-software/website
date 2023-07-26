@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "./explore-slideshow.css";
 
 // Import Icons
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
