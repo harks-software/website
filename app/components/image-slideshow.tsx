@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./image-slideshow.css";
 
-import { A11y, Navigation } from "swiper";
+import { A11y, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export type ImageFile = {

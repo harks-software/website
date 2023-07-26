@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/solid/index";
 import { useState } from "react";
 import Modal from "react-modal";
-import { A11y, Controller, Navigation, Pagination } from "swiper";
+import { A11y, Controller, Navigation, Pagination } from "swiper/modules";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
