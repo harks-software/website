@@ -336,32 +336,7 @@ export default function Index() {
               style={{ filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))" }}
             />
           </div>
-          <Suspense
-            fallback={
-              <div className="flex w-[300px] flex-col py-4 sm:w-[450px] lg:w-full">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <div
-                    role="status"
-                    className="my-4 flex h-[92px] w-full animate-pulse rounded-lg bg-white"
-                    key={index}
-                  >
-                    <div className="mb-4 flex h-full flex-[0.2] flex-col rounded-l-lg bg-gray-200 p-1 font-bold dark:bg-gray-700 sm:p-2">
-                      <div className="mb-2.5 h-4 max-w-[80px] rounded-full bg-gray-700 dark:bg-gray-200"></div>
-                      <div className="mb-2.5 h-6 max-w-[120px] rounded-full bg-gray-700 dark:bg-gray-200"></div>
-                    </div>
-
-                    <div className="flex-1 flex-col p-4">
-                      <div className="mb-2.5 h-4 max-w-[100px] rounded-full bg-gray-200 dark:bg-gray-700"></div>
-                      <div className="mb-2.5 h-6 max-w-[300px] rounded-full bg-gray-200 dark:bg-gray-700"></div>
-                    </div>
-                    <span className="sr-only">Loading...</span>
-                  </div>
-                ))}
-              </div>
-            }
-          >
-            <CalendarEvents />
-          </Suspense>
+          <CalendarEvents />
         </div>
       </section>
       <p className="w-full bg-beige.300 text-center text-2xl font-semibold text-[rgba(0,0,0,0.5)] md:text-4xl">

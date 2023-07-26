@@ -1,43 +1,23 @@
+"use client";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import { google } from "googleapis";
-import { headers } from "next/dist/client/components/headers";
+import { calendar_v3, google } from "googleapis";
+import { useEffect, useState } from "react";
 
 dayjs.extend(advancedFormat);
 
-async function getEvents() {
-  const calendar = google.calendar({
-    version: "v3",
-    auth: process.env.GOOGLE_API_KEY,
-  });
-  const res = await calendar.events.list({
-    calendarId:
-      "c_1e18424b2d7858df66e3de351d24af817f5a2e7de037dc87131916da7d3a9689@group.calendar.google.com",
-    timeMin: new Date().toISOString(),
-    maxResults: 5,
-    singleEvents: true,
-    orderBy: "startTime",
-  });
-  const events = res.data.items;
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+export function CalendarEvents() {
+  const [events, setEvents] = useState<calendar_v3.Schema$Event[]>([]);
+  useEffect(() => {
+    async function fetchData() {
+      const fetchEvents = await fetch("/api/events");
+      const json = await fetchEvents.json();
+      const events = json.events as calendar_v3.Schema$Event[];
+      setEvents(events);
+    }
+    fetchData();
+  }, []);
 
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  // // Recommendation: handle errors
-  // if (!res.ok) {
-  //   // This will activate the closest `error.js` Error Boundary
-  //   throw new Error('Failed to fetch data')
-  // }
-
-  return events;
-}
-
-export async function CalendarEvents() {
-  const headersList = headers();
-  // this is a hack to get it to do server-side instead of static
-  const referer = headersList.get("referer");
-  const events = await getEvents();
   return (
     <div className="flex w-[300px] flex-col py-4 sm:w-[450px] lg:w-full">
       {events?.map((event, i) => {
