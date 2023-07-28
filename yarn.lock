@@ -3266,9 +3266,9 @@ react-countup@^6.4.1:
     countup.js "^2.5.0"
 
 react-daisyui@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-daisyui/-/react-daisyui-4.0.0.tgz#0db1429f757923ff9748b3ddc25a45b80d0afeca"
-  integrity sha512-kE+Ybw6GD00AQ6fGm0JRUUF7t3P127D2+XFVRwhEHqgdwLo8K/XhuWA69ilNZSLTklgrnghaUh8H1mtubk3fmg==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-daisyui/-/react-daisyui-4.0.1.tgz#ecdbb1204e028f437c9e706f954a9d385ced2ad8"
+  integrity sha512-i1G6ijy56nrQ6om5W0bojrlSvxlrx/3NNxr2Jev6Ra+KI7hZTfr89YAE6glap4L5Vzm6fBZeSzRKsf3bW57/NA==
 
 react-dom@18.2.0:
   version "18.2.0"
