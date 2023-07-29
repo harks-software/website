@@ -1,15 +1,5 @@
 {
   "extends": [
-    ":pinAllExceptPeerDependencies",
-    "group:all",
-    "schedule:monthly",
-    ":maintainLockFilesMonthly"
-  ],
-  "lockFileMaintenance": {
-    "commitMessageAction": "Update",
-    "extends": [
-      "group:all"
-    ]
-  },
-  "separateMajorMinor": false
+    "config:semverAllMonthly"
+  ]
 }
