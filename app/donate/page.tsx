@@ -28,7 +28,7 @@ export default function Donate() {
             setTab(0);
           }}
         >
-          <span className="bg-gradient-to-r from-red.500 to-mustard bg-clip-text px-2 text-xs font-bold text-transparent sm:text-sm md:text-xl lg:px-8">
+          <span className="bg-gradient-to-r from-red-500 to-mustard bg-clip-text px-2 text-xs font-bold text-transparent sm:text-sm md:text-xl lg:px-8">
             DONATE NOW
           </span>
         </a>
@@ -44,7 +44,7 @@ export default function Donate() {
         </a>
 
         <a
-          className="tab tab-lifted tab-xs z-10 -ml-2 border-none bg-red.500 sm:tab-lg"
+          className="tab tab-lifted tab-xs z-10 -ml-2 border-none bg-red-500 sm:tab-lg"
           onClick={() => {
             setTab(2);
           }}
@@ -84,7 +84,7 @@ export default function Donate() {
         <></>
       )}
       {tab === 2 ? (
-        <div className="w-full bg-red.500 p-8 text-sm font-medium text-white md:p-16 md:text-xl">
+        <div className="w-full bg-red-500 p-8 text-sm font-medium text-white md:p-16 md:text-xl">
           <p>
             <span className="font-bold">Account holder:</span> Hussain&apos;s
             Ark of Salvation

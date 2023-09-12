@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import "./about-us.css";
 
 export default function AboutUs() {
   return (
@@ -23,14 +21,14 @@ export default function AboutUs() {
           </p>
           <p className="mt-3 px-3 text-center text-lg font-bold uppercase sm:max-w-[70%] md:mt-5 md:text-4xl md:leading-[50px] lg:max-w-[80%]">
             <span className="text-gray-800">&ldquo;Verily </span>
-            <span className="text-red.500">Hussain </span>
+            <span className="text-red-500">Hussain </span>
             <span className="text-gray-800">is the shining </span>
-            <span className="text-gold.500">light of guidance </span>
+            <span className="text-yellow-600">light of guidance </span>
             <span className="text-gray-800">and the </span>
-            <span className="text-red.500">ark of salvation</span>
+            <span className="text-red-500">ark of salvation</span>
             <span className="text-gray-800">.&rdquo;</span>
           </p>
-          <p className="mb-8 mt-4 border-2 border-[#535353] px-2 py-1 text-center text-xs font-bold text-[#BA8415] md:mt-8 md:text-lg">
+          <p className="mb-8 mt-4 border-2 border-yellow-900 px-2 py-1 text-center text-xs font-bold text-yellow-600 md:mt-8 md:text-lg">
             Prophet Muhammad (PBUH)
           </p>
         </div>
@@ -38,7 +36,7 @@ export default function AboutUs() {
       <div className="mt-3 hidden bg-black py-3 sm:flex sm:flex-row sm:py-6">
         <div className="mr-3 flex basis-[5%] rotate-180 items-center justify-center bg-cream py-1 text-lg font-bold uppercase sm:mr-6 md:text-2xl lg:text-3xl">
           <p
-            className="gradient-text-vertical"
+            className="bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text text-transparent"
             style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
           >
             Our Vision
@@ -75,7 +73,7 @@ export default function AboutUs() {
       </div>
       <div className="mt-3 sm:hidden">
         <div className="h-[36px] w-full bg-[#303030]"></div>
-        <h1 className="gradient-text-horizontal mx-auto py-2 text-center text-lg font-bold uppercase md:text-2xl lg:text-3xl">
+        <h1 className="mx-auto bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text py-2 text-center text-lg font-bold uppercase text-transparent md:text-2xl lg:text-3xl">
           Our Vision
         </h1>
         <div className="flex w-full bg-[#303030] pt-2">
@@ -175,7 +173,7 @@ export default function AboutUs() {
         </div>
         <div className="flex basis-[5%] flex-col items-center">
           <p
-            className="gradient-text-vertical mb-3 shrink-0 text-lg font-bold uppercase md:text-2xl lg:text-3xl"
+            className="mb-3 shrink-0 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text text-lg font-bold uppercase text-transparent md:text-2xl lg:text-3xl"
             style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
           >
             Our Mission
@@ -210,7 +208,7 @@ export default function AboutUs() {
           />
         </div>
       </div>
-      <h1 className="gradient-text-horizontal mx-auto py-3 text-center text-lg font-extrabold uppercase md:text-2xl lg:text-3xl">
+      <h1 className="mx-auto bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text py-3 text-center text-lg font-extrabold uppercase text-transparent md:text-2xl lg:text-3xl">
         Our Purpose
       </h1>
       <div
@@ -624,7 +622,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="h-[36px] w-full bg-[#303030]"></div>
-      <h1 className="gradient-text-horizontal mx-auto py-3 text-center text-lg font-bold uppercase md:text-2xl lg:text-3xl">
+      <h1 className="mx-auto bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text py-3 text-center text-lg font-bold uppercase text-transparent md:text-2xl lg:text-3xl">
         Goals & Objectives
       </h1>
       <div
@@ -647,7 +645,7 @@ export default function AboutUs() {
               style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
               <div className="mr-3 h-full w-[85%] text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   An Expanding Digital Hub
                 </h1>
                 <span className="font-medium">
@@ -680,7 +678,7 @@ export default function AboutUs() {
                 />
               </div>
               <div className="ml-3 h-full w-[85%] text-right text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal-reversed mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   Unique Initiatives
                 </h1>
                 <span className="font-medium">
@@ -710,7 +708,7 @@ export default function AboutUs() {
               style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
               <div className="mr-3 h-full w-[85%] text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 font-bold uppercase sm:mb-3">
                   Addressing Reality
                 </h1>
                 <span className="font-medium">
@@ -743,7 +741,7 @@ export default function AboutUs() {
                 />
               </div>
               <div className="ml-3 h-full w-[85%] text-right text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal-reversed mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   Collaborations
                 </h1>
                 <span className="font-medium">
@@ -773,7 +771,7 @@ export default function AboutUs() {
               style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
               <div className="mr-3 h-full w-[85%] text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   Practical Applications
                 </h1>
                 <span className="font-medium">
@@ -805,7 +803,7 @@ export default function AboutUs() {
                 />
               </div>
               <div className="ml-3 h-full w-[85%] text-right text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal-reversed mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   Media Variety
                 </h1>
                 <span className="font-medium">
@@ -836,7 +834,7 @@ export default function AboutUs() {
               style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
               <div className="mr-3 h-full w-[85%] text-xs sm:text-base">
-                <h1 className="gradient-text-horizontal mb-1 font-bold uppercase sm:mb-3">
+                <h1 className="mb-1 bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-bold uppercase text-transparent sm:mb-3">
                   Digital Platform
                 </h1>
                 <span className="font-medium">

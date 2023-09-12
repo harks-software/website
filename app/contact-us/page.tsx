@@ -6,7 +6,7 @@ export default function ContactUs() {
     <div className="bg-beige.300 bg-contain">
       <div className="bg-[url('/assets/contact/overlay.png')] bg-no-repeat">
         <div className="mx-auto flex max-w-5xl flex-col gap-6 bg-contain px-4 py-6">
-          <h1 className="bg-gradient-to-r from-red.500 to-gold.400 bg-clip-text text-center text-4xl font-bold uppercase text-transparent">
+          <h1 className="bg-gradient-to-r from-red-500 to-gold.400 bg-clip-text text-center text-4xl font-bold uppercase text-transparent">
             Contact Us
           </h1>
           <p>
@@ -30,13 +30,13 @@ export default function ContactUs() {
             </iframe>
             <div className="my-auto flex h-fit flex-col items-center justify-center gap-8 border-slate-500 py-8 md:ml-4 md:w-auto md:items-start md:border-l-2 md:pl-8">
               <Link href="/join-the-crew">
-                <button className="btn w-[253px] border-none bg-red.500 text-xl text-white drop-shadow-md hover:bg-red.700 md:w-[273px] md:text-2xl">
+                <button className="btn w-[253px] border-none bg-red-500 text-xl text-white drop-shadow-md hover:bg-red-700 md:w-[273px] md:text-2xl">
                   Join the Crew
                 </button>
               </Link>
 
               <Link href="/donate">
-                <button className="btn w-[253px] border-none bg-gold.500 text-xl text-white drop-shadow-md hover:bg-yellow.700 md:w-[273px] md:text-2xl">
+                <button className="hover:bg-yellow.700 btn w-[253px] border-none bg-gold.500 text-xl text-white drop-shadow-md md:w-[273px] md:text-2xl">
                   Donate Now
                 </button>
               </Link>

@@ -6,13 +6,13 @@ export default function Index() {
     <>
       <div className="flex w-full bg-beige.300 bg-[url('/assets/contact/overlay.png')] bg-no-repeat py-4">
         <div className="hidden w-[100px] lg:flex">
-          <div className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red.500 via-gold.500 to-yellow.500 bg-clip-text text-3xl font-bold uppercase text-transparent">
+          <div className="flex h-[50px] origin-bottom-left rotate-90 whitespace-nowrap bg-gradient-to-r from-red-500 via-gold.500 to-yellow-500 bg-clip-text text-3xl font-bold uppercase text-transparent">
             Join The Crew
           </div>
         </div>
         <div className="flex w-full flex-col">
           <div className="flex flex-col p-6">
-            <h1 className="mt-6 text-xl font-bold uppercase text-red.500 lg:text-2xl">
+            <h1 className="mt-6 text-xl font-bold uppercase text-red-500 lg:text-2xl">
               Spark Change Around the Globe
             </h1>
             <div className="py-2">
@@ -43,7 +43,7 @@ export default function Index() {
               className="md:mx-4"
             ></iframe>
             <div className="mt-4 h-[500px] max-w-[725px] bg-[#404040] p-4 md:ml-auto md:mt-0 md:h-[400px]">
-              <h1 className="pb-4 text-xl font-extrabold uppercase text-[#E7AD36] lg:text-2xl">
+              <h1 className="pb-4 text-xl font-extrabold uppercase text-yellow-500 lg:text-2xl">
                 Global Youth Community
               </h1>
               <div className="text-lg text-white">
@@ -116,7 +116,7 @@ export default function Index() {
       >
         <div className="text-center text-2xl font-semibold uppercase leading-[60px] text-white md:text-3xl">
           Are you{" "}
-          <span className="text-3xl font-bold text-[#E7AD36] md:text-4xl">
+          <span className="text-3xl font-bold text-yellow-500 md:text-4xl">
             passionate
           </span>{" "}
           about what we do?
@@ -124,7 +124,7 @@ export default function Index() {
 
         <div className="mt-4 text-center text-2xl font-semibold uppercase text-white md:text-3xl">
           Are you willing to{" "}
-          <span className="text-3xl font-bold text-red.500 md:text-4xl">
+          <span className="text-3xl font-bold text-red-500 md:text-4xl">
             commit
           </span>
           ?

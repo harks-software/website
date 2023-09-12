@@ -99,12 +99,12 @@ export default function Index() {
             className="mx-auto text-center text-xl font-bold uppercase leading-[30px] text-white lg:text-3xl lg:leading-[60px]"
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
           >
-            “Verily <span className="text-[#BE1E2D]">Hussain</span> is the
-            shining <span className="text-[#D29923]">light of guidance</span>
+            “Verily <span className="text-red-500">Hussain</span> is the shining{" "}
+            <span className="text-yellow-500">light of guidance</span>
             <br /> and the{" "}
-            <span className="text-[#BE1E2D]">ark of salvation.</span>”
+            <span className="text-red-500">ark of salvation.</span>”
           </div>
-          <div className="mx-auto mt-12 w-max border-4 p-4 text-lg font-bold text-[#D29923] sm:text-xl md:mt-8 md:text-xl lg:text-2xl">
+          <div className="mx-auto mt-12 w-max border-4 p-4 text-lg font-bold text-yellow-500 sm:text-xl md:mt-8 md:text-xl lg:text-2xl">
             Prophet Muhammad (PBUH)
           </div>
         </div>
@@ -113,13 +113,7 @@ export default function Index() {
         <ChangingWordsLarge className="hidden md:flex" />
         <ChangingWordsSmall className="flex md:hidden" />
       </section>
-      <section
-        className="w-full pt-2"
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, #BE1E2D 0%, #D36732 65.1%, #E7AD36 100%)",
-        }}
-      >
+      <section className="w-full bg-gradient-to-b from-red-500 to-yellow-500 pt-2">
         <div
           className="flex w-full items-center justify-center bg-white py-2 text-center text-base font-bold"
           style={{ boxShadow: "0px 6px 6px rgba(0, 0, 0, 0.25)" }}
@@ -248,7 +242,7 @@ export default function Index() {
           <div className="flex flex-col py-4">
             <div className="my-4 h-[175px] w-[300px] rounded-lg bg-white/70 shadow-lg sm:w-[472px]">
               <div className="flex h-full w-full flex-row">
-                <div className="h-[175px] w-4 rounded-l-lg bg-red.500"></div>
+                <div className="h-[175px] w-4 rounded-l-lg bg-red-500"></div>
                 <div className="w-full p-4 pr-0">
                   <div className="flex w-full">
                     <h4 className="whitespace-nowrap pr-1 text-2xl font-semibold text-black sm:text-3xl">
@@ -256,7 +250,7 @@ export default function Index() {
                     </h4>
                     <Link href="/join-the-crew" className="ml-auto">
                       <button
-                        className="ml-auto whitespace-nowrap rounded-l-lg bg-red.500 p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
+                        className="ml-auto whitespace-nowrap rounded-l-lg bg-red-500 p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
                         style={{
                           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                         }}
@@ -274,7 +268,7 @@ export default function Index() {
             </div>
             <div className="my-4 h-[175px] w-[300px] rounded-lg bg-white/70 shadow-lg sm:w-[472px]">
               <div className="flex h-full w-full flex-row">
-                <div className="h-[175px] w-4 rounded-l-lg bg-[#E7AD36]"></div>
+                <div className="h-[175px] w-4 rounded-l-lg bg-yellow-500"></div>
                 <div className="w-full p-4 pr-0">
                   <div className="flex w-full">
                     <h4 className="text-2xl font-semibold text-black sm:text-3xl">
@@ -282,7 +276,7 @@ export default function Index() {
                     </h4>
                     <Link href="/contact-us" className="ml-auto">
                       <button
-                        className="ml-auto rounded-l-lg bg-[#E7AD36] p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
+                        className="ml-auto rounded-l-lg bg-yellow-500 p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
                         style={{
                           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                         }}

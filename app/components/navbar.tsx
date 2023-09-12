@@ -5,7 +5,7 @@ import Logo from "public/assets/harks-logo-circle.png";
 
 export function Navbar() {
   return (
-    <div className="sticky top-0 left-0 z-40 w-full">
+    <div className="sticky left-0 top-0 z-40 w-full">
       <div className="flex w-full justify-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat p-2 pr-6 drop-shadow-xl md:pr-8">
         <Link
           className="my-0 ml-2 py-0 text-center text-sm text-white underline md:ml-4"
@@ -129,7 +129,7 @@ export function Navbar() {
       </div> */}
 
       <div
-        className="navbar flex min-h-0 items-stretch gap-2 bg-gradient-to-r from-red.500 via-orange.500 to-yellow.500 p-0 px-4 py-2"
+        className="navbar flex min-h-0 items-stretch gap-2 bg-gradient-to-r from-red-500 to-yellow-500 p-0 px-4 py-2"
         style={{
           boxShadow: "0px 2px 20px 1px rgba(0,0,0,0.37)",
         }}
@@ -161,7 +161,7 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu-compact dropdown-content menu my-2 -mr-4 w-56 bg-beige.300 p-2 font-extrabold text-black shadow"
+              className="menu-compact menu dropdown-content my-2 -mr-4 w-56 bg-beige.300 p-2 font-extrabold text-black shadow"
             >
               <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
                 <Link href="/" className="justify-between">
@@ -240,7 +240,7 @@ export function Navbar() {
               ABOUT US
             </label>
           </Link>
-          <div className="dropdown-hover dropdown px-3">
+          <div className="dropdown dropdown-hover px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -261,7 +261,7 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+              className="menu dropdown-content rounded-box w-52 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/initiatives/youth-day">Youth Day</Link>
@@ -272,7 +272,7 @@ export function Navbar() {
             </ul>
           </div>
 
-          <div className="dropdown-hover dropdown px-3">
+          <div className="dropdown dropdown-hover px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -293,7 +293,7 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-56 bg-white p-2 shadow"
+              className="menu dropdown-content rounded-box w-56 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/digital-hub/virtual-majlis-service">

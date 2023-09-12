@@ -21,7 +21,7 @@ export default function VirtualMajlisService() {
           </p>
           <a
             href="#get-started"
-            className="max-w-[181px] rounded-2xl bg-vmsRed.500 px-10 py-6 text-center font-bold text-white transition-all duration-200 hover:opacity-50"
+            className="max-w-[181px] rounded-2xl bg-red-500 px-10 py-6 text-center font-bold text-white transition-all duration-200 hover:opacity-50"
           >
             Get started
           </a>
@@ -159,7 +159,7 @@ export default function VirtualMajlisService() {
           Reach out to us at{" "}
           <a
             href="mailto:vms@hussainsark.org"
-            className="text-vmsRed.500 hover:underline"
+            className="text-red-500 hover:underline"
           >
             vms@hussainsark.org
           </a>
@@ -179,7 +179,7 @@ export default function VirtualMajlisService() {
           </svg>
           <a
             href="https://www.youtube.com/@hussainsark"
-            className="ml-2 text-sm text-vmsRed.500 hover:underline lg:text-base"
+            className="ml-2 text-sm text-red-500 hover:underline lg:text-base"
           >
             @harksvms
           </a>
@@ -198,7 +198,7 @@ export default function VirtualMajlisService() {
             />
           </svg>
           <a
-            className="ml-2 text-sm text-vmsRed.500 hover:underline lg:text-base"
+            className="ml-2 text-sm text-red-500 hover:underline lg:text-base"
             href="https://www.instagram.com/hussainsark"
           >
             @harksvms

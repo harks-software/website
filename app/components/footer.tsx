@@ -4,7 +4,7 @@ import Logo from "public/assets/harks-logo-transparent.png";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col place-items-center bg-gradient-to-r from-[#be1e2d] to-[#e7ad36] text-white">
+    <footer className="flex flex-col place-items-center bg-gradient-to-r from-red-500 to-yellow-500 text-white">
       <div className="mt-2 w-full bg-white py-2 text-black">
         <p className="text-center text-xs font-bold uppercase lg:text-base">
           &ldquo;Verily <span className="text-red-700">Hussain</span> is the
@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex place-items-center gap-2">
             <Image
               src={Logo}
-              className="rounded-full border-4 border-yellow.500 bg-white px-2 py-4"
+              className="rounded-full border-4 border-yellow-500 bg-white px-2 py-4"
               alt="HARKS LOGO"
               width={80}
               height={80}
