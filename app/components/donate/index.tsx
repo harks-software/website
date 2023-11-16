@@ -4,6 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./checkout-form";
 import FixedDonation from "./fixed-donation";
+import { CurrencyCode } from "@/utils/currency";
 
 const stripe = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string,
@@ -11,6 +12,8 @@ const stripe = loadStripe(
 
 export default function DonateComponent() {
   const [clientSecret, setClientSecret] = useState<string>("");
+  const [amount, setAmount] = useState("");
+  const [currency, setCurrency] = useState<CurrencyCode>("cad");
   const [success, setSuccess] = useState<boolean>(false);
 
   const appearance: { theme: "stripe"; variables: {} } = {
@@ -51,10 +54,23 @@ export default function DonateComponent() {
       )}
       {clientSecret ? (
         <Elements options={options} stripe={stripe}>
-          <CheckoutForm setClientSecret={setClientSecret} />
+          <CheckoutForm
+            setClientSecret={setClientSecret}
+            amount={amount}
+            currency={currency}
+          />
         </Elements>
       ) : (
-        <FixedDonation {...{ clientSecret, setClientSecret }} />
+        <FixedDonation
+          {...{
+            clientSecret,
+            setClientSecret,
+            amount,
+            setAmount,
+            currency,
+            setCurrency,
+          }}
+        />
       )}
     </div>
   );
