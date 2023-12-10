@@ -5,7 +5,7 @@ import Logo from "public/assets/harks-logo-circle.png";
 
 export function Navbar() {
   return (
-    <div className="sticky top-0 left-0 z-40 w-full">
+    <div className="sticky left-0 top-0 z-40 w-full">
       <div className="flex w-full justify-center bg-[url('../public/assets/VMS/section1-bg.png')] bg-cover bg-center bg-no-repeat p-2 pr-6 drop-shadow-xl md:pr-8">
         <Link
           className="my-0 ml-2 py-0 text-center text-sm text-white underline md:ml-4"
@@ -154,14 +154,14 @@ export function Navbar() {
 
         {/* MOBILE MENU */}
         <div className="lg:hidden">
-          <div className="dropdown-end dropdown h-full">
+          <div className="dropdown dropdown-end h-full">
             {/* HAMBURGER BUTTON */}
             <label tabIndex={0} className="lg:hidden">
               <Bars3Icon className="h-full w-8 fill-white stroke-white" />
             </label>
             <ul
               tabIndex={0}
-              className="menu-compact dropdown-content menu my-2 -mr-4 w-56 bg-beige.300 p-2 font-extrabold text-black shadow"
+              className="menu-compact menu dropdown-content my-2 -mr-4 w-56 bg-beige.300 p-2 font-extrabold text-black shadow"
             >
               <li className="cursor-pointer rounded-lg uppercase transition-all duration-300 hover:bg-gray-300">
                 <Link href="/" className="justify-between">
@@ -193,7 +193,12 @@ export function Navbar() {
                   <ul>
                     <li className="cursor-pointer rounded-lg normal-case transition-all duration-300 hover:bg-gray-300">
                       <Link href="/digital-hub/virtual-majlis-service">
-                        Virual Majlis Service
+                        Virtual Majlis Service
+                      </Link>
+                    </li>
+                    <li className="cursor-pointer rounded-lg normal-case transition-all duration-300 hover:bg-gray-300">
+                      <Link href="/digital-hub/shia-timeline">
+                        Shia Timeline
                       </Link>
                     </li>
                   </ul>
@@ -240,7 +245,7 @@ export function Navbar() {
               ABOUT US
             </label>
           </Link>
-          <div className="dropdown-hover dropdown px-3">
+          <div className="dropdown dropdown-hover px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -261,7 +266,7 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+              className="menu dropdown-content rounded-box w-52 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/initiatives/youth-day">Youth Day</Link>
@@ -272,7 +277,7 @@ export function Navbar() {
             </ul>
           </div>
 
-          <div className="dropdown-hover dropdown px-3">
+          <div className="dropdown dropdown-hover px-3">
             <label
               tabIndex={0}
               className="flex cursor-pointer items-center whitespace-nowrap font-extrabold text-white transition-all duration-200 hover:opacity-60"
@@ -293,12 +298,15 @@ export function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box w-56 bg-white p-2 shadow"
+              className="menu dropdown-content rounded-box w-56 bg-white p-2 shadow"
             >
               <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
                 <Link href="/digital-hub/virtual-majlis-service">
                   Virtual Majlis Service{" "}
                 </Link>
+              </li>
+              <li className="cursor-pointer rounded-lg font-bold transition-all duration-300 hover:bg-gray-300">
+                <Link href="/digital-hub/shia-timeline">Shia Timeline</Link>
               </li>
             </ul>
           </div>
