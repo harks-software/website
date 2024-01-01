@@ -26,7 +26,7 @@ export default function CurrencyDropdown({
       <div>
         <Menu.Button className="inline-flex w-full rounded-md border border-gray-400 bg-white px-4 py-2 font-medium  text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
           <div className="flex-grow text-left">{currency.toUpperCase()}</div>
-          <BsChevronDown size={5} className="-mr-1" aria-hidden="true" />
+          <BsChevronDown size={10} className="-mr-1" aria-hidden="true" />
         </Menu.Button>
       </div>
 
