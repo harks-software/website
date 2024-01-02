@@ -31,6 +31,7 @@ export function Footer() {
             <Link href="/donate">Donate</Link>
           </p>
           <p>© 2023 Hussain&apos;s Ark of Salvation</p>
+          <p>UK Registered Charity No: 1202021</p>
         </div>
         <div className="flex flex-col lg:border-l lg:pl-8">
           <div className="hidden w-full flex-col gap-1 lg:flex">
