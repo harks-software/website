@@ -66,6 +66,44 @@ export default function Donate() {
                 </span>
               </div>
             </div>
+            {/* Mobile donate component */}
+            <div className="col-span-2 mb-6 block p-6 sm:hidden lg:col-span-1">
+              <div className="mt-0 w-full items-center justify-center bg-cream ">
+                <DonateComponent />
+              </div>
+              <div className="my-4 rounded-lg bg-white/70 shadow-lg">
+                <div className="flex h-full w-full flex-row">
+                  <div className="w-4 rounded-l-lg bg-[#E7AD36]"></div>
+                  <div className="w-full p-4 pr-0">
+                    <div className="flex w-full">
+                      <h4 className="text-2xl font-semibold text-black sm:text-3xl">
+                        Bank Transfer
+                      </h4>
+                      <Link href="/contact-us" className="ml-auto">
+                        <button
+                          className="ml-auto rounded-l-lg bg-[#E7AD36] p-1 text-sm font-semibold text-white transition-all duration-200 hover:opacity-80 sm:p-3 sm:text-base"
+                          style={{
+                            textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                          }}
+                        >
+                          EMAIL US
+                        </button>
+                      </Link>
+                    </div>
+                    <p className="w-full pt-2 sm:w-3/4">
+                      Please reach out to us via{" "}
+                      <a
+                        href="mailto:info@hussainsark.org"
+                        className="font-bold underline"
+                      >
+                        info@hussainsark.org
+                      </a>{" "}
+                      if you wish to make a donation through a bank transfer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/** Lifted from ExploreSlideshow component (without the slideshow feature) */}
             <div className="grid justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col rounded-md bg-[#18181873]">
@@ -92,7 +130,7 @@ export default function Donate() {
                   </div>
                 </a>
               </div>
-              <div className="flex flex-col rounded-md bg-[#18181873]">
+              {/* <div className="flex flex-col rounded-md bg-[#18181873]">
                 <a href={"/podcast"}>
                   <div
                     className="group h-[197px] w-full rounded-md"
@@ -100,9 +138,9 @@ export default function Donate() {
                       background: `url("/assets/home/explore/podcast.png") no-repeat center center /cover`,
                       filter: "drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25))",
                     }}
-                  ></div>
-                  {/* Item title and description */}
-                  <div
+                  ></div> */}
+              {/* Item title and description */}
+              {/* <div
                     className="my-5 cursor-pointer px-2 text-center text-white"
                     style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
                   >
@@ -113,7 +151,7 @@ export default function Donate() {
                     </p>
                   </div>
                 </a>
-              </div>
+              </div> */}
               <div className="flex flex-col rounded-md bg-[#18181873]">
                 <a href={"/initiatives/youth-day"}>
                   <div
@@ -156,8 +194,9 @@ export default function Donate() {
               />
             </section>
           </div>
-          <div className="col-span-2 mb-6 p-6 lg:col-span-1">
-            <div className="mt-0 w-full items-center justify-center bg-cream">
+          {/* Desktop donate component */}
+          <div className="col-span-2 mb-6 hidden p-6 sm:block lg:col-span-1">
+            <div className="mt-0 w-full items-center justify-center bg-cream ">
               <DonateComponent />
             </div>
             <div className="my-4 rounded-lg bg-white/70 shadow-lg">
@@ -182,10 +221,10 @@ export default function Donate() {
                   <p className="w-full pt-2 sm:w-3/4">
                     Please reach out to us via{" "}
                     <a
-                      href="mailto:hussainark@gmail.com"
+                      href="mailto:info@hussainsark.org"
                       className="font-bold underline"
                     >
-                      hussainark@gmail.com
+                      info@hussainsark.org
                     </a>{" "}
                     if you wish to make a donation through a bank transfer.
                   </p>
