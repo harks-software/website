@@ -85,6 +85,12 @@ export function Footer() {
                   >
                     Virtual Majlis Service
                   </Link>
+                  <Link
+                    href="/digital-hub/shia-timeline"
+                    className="link-hover link text-xs italic"
+                  >
+                    Shia Timeline
+                  </Link>
                 </div>
               </div>
             </div>

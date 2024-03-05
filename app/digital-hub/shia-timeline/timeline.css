@@ -1,0 +1,68 @@
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(100, 45px);
+    gap: 8px;
+    grid-template-rows: repeat(25, minmax(20px, auto));
+    overflow-x: scroll;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.year {
+    background-color: blue;
+    grid-row-start: 4;
+    grid-column: span 4 / span 4;
+}
+
+.imam {
+    background-color: green;
+    text-align: center;
+    grid-row-start: 3;
+}
+
+.caliph {
+    background-color: orange;
+    text-align: center;
+    font-weight: normal;
+    padding: 4px;
+    align-self: flex-end;
+}
+
+.abbasid {
+    background-color: red;
+}
+
+.ghaybah {
+    background-color: darkblue;
+}
+
+.companion {
+    background-color: #00c4cc;
+    text-align: center;
+    font-weight: normal;
+    padding: 4px;
+    align-self: flex-start;
+}
+
+.scholar {
+    background-color: #ff6865;
+    text-align: center;
+    font-weight: normal;
+    padding: 4px;
+    align-self: flex-start;
+}
+
+.book {
+    background-color: deeppink;
+    text-align: center;
+    font-weight: normal;
+    padding: 4px;
+}
