@@ -28,7 +28,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-modal": "^3.16.1",
-    "sharp": "^0.32.2",
+    "sharp": "^0.35.0",
     "stripe": "^12.5.0",
     "swiper": "^10.0.0",
     "typescript": "^5.1.6",
